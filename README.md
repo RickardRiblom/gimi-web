@@ -7,12 +7,18 @@ Alright Gimi-web will be a Single page Application that will host the content fo
 * gimitheapp.com
 * ukepengen.no
 
-The content is stored in the folders /veckopengen.se, /ukepengen.no, /gimitheapp.com.
+The content is stored in the folders /specs/veckopengen.se, /specs/ukepengen.no, /specs/gimitheapp.com/.
 This is rough description of how i would have done it and the milestones this project has. The milestones will be tied to a monetary reward. The last milestone is arbitrary feedback. We will only do this one iteration to not impose great risk on the project. Code reviews and feedback for every commit is calculated into the individual milestones.
 
 The end result should be a Single Page Application (SPA) written in react powering these three sites. Some content in the SPA will be site specific (i.e veckopengen.se, ukepengen.no and gimitheapp.com specific). More information on this in the trello cards.
 
 Trello cards is at this url: https://trello.com/b/YfuphV6N/gimi-web
+
+When you git push to this repo the webserver will be built (see server/app.js) and the files in src directory will be served to:
+https://gimi-web.herokuapp.com/
+
+right now you can see the english specs at:
+https://gimi-web.herokuapp.com/specs/gimitheapp.com/
 
 Here are the MileStones:
 
