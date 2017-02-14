@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-ukepengen.no	TRUE	/	FALSE	1999999999	PHPSESSID	ba07c1896464af079aa3d50267c82ad1
-ukepengen.no	TRUE	/	FALSE	1999999999	pll_language	nb
-.ukepengen.no	TRUE	/	FALSE	1999999999	__cfduid	d3b089a9fa01eade1e98fc1ccc7de83241487081777
-

@@ -6,10 +6,10 @@ const port = (process.env.PORT || 8080)
 
 const indexPath = path.join(__dirname, '../src/index.html')
 const filesPath = express.static(path.join(__dirname, '../build/'))
-const publicPath= express.static(path.join(__dirname, '../public/'))
+const specsPath= express.static(path.join(__dirname, '../specs/'))
 
 app.use('/', filesPath)
-app.use('/', publicPath)
+app.use('/specs/', specsPath)
 app.get('/', function (_, res) { res.sendFile(indexPath) })
 
 app.listen(port)

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from gimitheapp.com/terms/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Feb 2017 14:23:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta name="theme-color" content="#464646">
+
+    <meta name="author" content="">
+    <meta name="description"
+          content="Veckopengen – Det nya sättet för barn och föräldrar att hantera vecko- eller månadspengen!">
+
+    <title>Gimi &raquo; Terms</title>
+
+    <script type="text/javascript">
+        var footerCounterValue = 173673324;
+        var counterValue = 74931859;
+    </script>
+
+    <script type="text/javascript" src="http://veckopengen.se/wordpress/wp-admin/admin-ajax.php?action=pll_xdata_check&amp;redirect=http%3A%2F%2Fgimitheapp.com%2Fterms%2F&amp;nonce=ff0b871b87"></script><link rel='dns-prefetch' href='http://s.w.org/' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/gimitheapp.com\/wordpress\/wp-includes\/js\/wp-emoji.js?ver=4.7.2","twemoji":"http:\/\/gimitheapp.com\/wordpress\/wp-includes\/js\/twemoji.js?ver=4.7.2"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji4" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var stringFromCharCode = String.fromCharCode,
+			flag, flag2, technologist, technologist2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * This works because the image will be one of three things:
+				 * - Two empty squares, if the browser doesn't render emoji
+				 * - Two squares with 'U' and 'N' in them, if the browser doesn't render flag emoji
+				 * - The United Nations flag
+				 *
+				 * The first two will encode to small images (1-2KB data URLs), the third will encode
+				 * to a larger image (4-5KB data URL).
+				 */
+				context.fillText( stringFromCharCode( 55356, 56826, 55356, 56819 ), 0, 0 );
+				if ( canvas.toDataURL().length < 3000 ) {
+					return false;
+				}
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				/*
+				 * Test for rainbow flag compatibility. As the rainbow flag was added out of sequence with
+				 * the usual Unicode release cycle, some browsers support it, and some don't, even if their
+				 * Unicode support is up to date.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + rainbow emoji).
+				 */
+				context.fillText( stringFromCharCode( 55356, 57331, 65039, 8205, 55356, 57096 ), 0, 0 );
+				flag = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55356, 57331, 55356, 57096 ), 0, 0 );
+				flag2 = canvas.toDataURL();
+
+				return flag !== flag2;
+			case 'emoji4':
+				/*
+				 * Emoji 4 has the best technologists. So does WordPress!
+				 *
+				 * To test for support, try to render a new emoji (woman technologist: medium skin tone),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (woman technologist: medium skin tone + personal computer).
+				 */
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0 );
+				technologist = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 55357, 56507), 0, 0 );
+				technologist2 = canvas.toDataURL();
+
+				return technologist !== technologist2;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji4' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='cookie-notice-front-css'  href='../plugins/cookie-notice/css/fronte100.css?ver=4.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jquery-migrate330a.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxurl":"http:\/\/gimitheapp.com\/wordpress\/wp-admin\/admin-ajax.php","hideEffect":"fade","onScroll":"no","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"TRUE","cookieTime":"31536000","cookiePath":"\/","cookieDomain":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../plugins/cookie-notice/js/frontd468.js?ver=1.2.37'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../wordpress/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wordpress/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../indexa013.html?p=801' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embeddcea.json?url=http%3A%2F%2Fgimitheapp.com%2Fterms%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed0433?url=http%3A%2F%2Fgimitheapp.com%2Fterms%2F&amp;format=xml" />
+<style type="text/css">
+#blanket {
+background-color:#111;
+opacity: 0.65;
+*background:none;
+position:absolute;
+z-index: 9001;
+top:0px;
+left:0px;
+width:100%;
+}
+
+#popUpDiv {
+position:absolute;
+background:url(pop-back.html) no-repeat;
+width:400px;
+height:400px;
+border:5px solid #000;
+z-index: 9002;
+}
+.lightbox {
+  display: none;
+}
+.smsHeader{
+font-size:16px;
+  font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, 
+}
+.smsButton{    border: none;
+    outline: none;
+    background-color: #0698c0;
+    padding: 6px 15px;
+    font-size: 18px;
+    color: #FFF;
+    font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all .3s;
+    margin-right: 9px;
+    padding-top: 8px;
+}
+.smsInput{
+        height: 36px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: relative;
+    top: 0px;
+    width: 220px;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.sent{
+    background-color: #4ec006;
+}
+ </style>
+<script type="text/javascript">
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
+</script>
+		<link rel="alternate" href="http://veckopengen.se/villkor/" hreflang="sv" />
+<link rel="alternate" href="index.html" hreflang="en" />
+<link rel="alternate" href="http://no.gimitheapp.com/villkor/" hreflang="nb" />
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="../themes/veckopengen/favicon-16x16.png">
+    <link rel="stylesheet" href="../themes/veckopengen/assets/styles/all.css">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70149855-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+<body class="page-template-default page page-id-801 is-loading">
+<header class="site-header" role="navigation">
+    <div class="row">
+        <button class="nav-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar">
+            <!--			<span class="sr-only">Toggle navigation</span>-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="nav-logo">
+            <a href="../index.html" class="init">
+                                                            <img src="../uploads/2016/05/admin-ajax.png" alt=""/>
+                                                </a>
+
+            <a href="../index.html" class="scroll">
+                                    <img src="../uploads/2016/05/admin-ajax.png" alt=""/>
+                            </a>
+        </div>
+
+        <div class="nav-logo-mobile">
+            <a href="../index.html">
+                                    <img src="../uploads/2016/05/admin-ajax.png" alt=""/>
+                            </a>
+        </div>
+
+        <nav id="primary-navigation top-bar" class="site-navigation primary-navigation" role="navigation">
+            <div class="nav-menu">
+                <div class="menu-primary-nav-en-container"><ul id="menu-primary-nav-en" class=""><li id="menu-item-780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-780"><a href="../index.html">Home</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="../family-community/index.html">Family community</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="../training/index.html">Coaching</a></li>
+<li id="menu-item-810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-810"><a href="../news/index.html">News</a></li>
+<li id="menu-item-811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-811"><a href="../about-us/index.html">About us</a></li>
+<li id="menu-item-1252-sv" class="lang-item lang-item-2 lang-item-sv lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-1252-sv"><a href="http://veckopengen.se/villkor/" hreflang="sv-SE" lang="sv-SE"><img src="http://veckopengen.se/polylang/sv_SE.png" title="Svenska" alt="Svenska" /></a></li>
+<li id="menu-item-1252-nb" class="lang-item lang-item-43 lang-item-nb menu-item menu-item-type-custom menu-item-object-custom menu-item-1252-nb"><a href="http://no.gimitheapp.com/villkor/" hreflang="nb-NO" lang="nb-NO"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGSSURBVHjaYnzIAAVy//9zRV36skTnATPzPwaGf2BBCOMPEgkQQCxAUcHaaiD5////ngQpRkZG4aLC/3//MPz58x+Efv//DSL/Acnfv+9u2AQQQCxgg/7/e/IUSL18/weo7c+DB0AVDL+BioCqgejXv1+//v/6zSwrC7QBIIDAGv4CVf0F0f9ADvn/5xfI1F8gpSDVQD2/QCTT799AVwEEEIvM379AZ0Cc9Aeo8/9/gbUb/mMDQGUanz4BBBAjc/D5/mTpF+9///0HdvO/f0BtQA6I/AMk//3+CxIHikgJss7OOQ0QQIx///6FGP+f4X/JgmfdcZL/cQAmJqb3798DBBDLPWZmkdysP/fuC2zY9BvspLd21v9+gXzMAPLub6g3fv9hUVa6evocQACxAL35HxxkQKUgZ/3//+8nRMUvkCBIJ4jxD+iQP8DAZgAIILCGP3+YJEEuEeUDBRqzjCzTX1DAM4CDn/nPH5Dqv3//gR0PEECMV2FRqPD+vaDeibcXzK4JC/+BxTEkghlgJBAABBgA9J5akqVspaUAAAAASUVORK5CYII=" title="Norsk Bokmål" alt="Norsk Bokmål" /></a></li>
+</ul></div>            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+    <main role="main">
+        
+                <article class="row">
+                    <div class="medium-10 medium-push-1 large-8 large-push-2 columns">
+                        <header class="fadeInLeft wow">
+                            <h1>Terms</h1>
+                        </header>
+                        <div class="content fadeInUp wow">
+                            <p><strong>Ethical rules</strong></p>
+<p><em>The ethical rules gives a reflection to our own valuations – to protect the children, their development and give them a great knowledge about digital money.</em></p>
+<p>At Gimi we are working in a way that gives children the opportunity to learn in a comfortable and pedagogical tempo how to handle their own money and prepare themselves for the life as a grown-up. Below you can take part of our ethical rules that shows how we relate to children and members of their family that are users at Gimi.</p>
+<p>We want to make clear that our work goes beyond the boundries of Gimi. We dosen’t only want our children to feel safe using our app, but also when they are purchasing items from the Internet or ”internetsurf” in general. We have a continous work where we try to influence other companies to follow the ethic rules that we at Gimi has developed.</p>
+<p>Our ethical rules has been developed with help from educators, psychologists, economists, children and parents. The rules relates to global rules and international laws, and they are customized to the digital world where many youths has access. The rules has been created to show how we at Gimi handles information and behavior among our young users. We think and hope that other operators, who are reaching out to children and youths, will follow our ethical rules so that the childrens development and interests will always come first.</p>
+<p>Areas that we have put focus to when we have worked with our ethical rules are;</p>
+<p>Marketing towards children, Collection of information regarding the children, production and developing services and goods for children, decision environment for children and youths, justification of wrong decisions, support and communication for the whole family.</p>
+<p>Why we have developed our ethical rules?</p>
+<p>Children are today using the Internet more and more and by only 3 years most children are online. Early, children are exposed to messages and information from companies. They have to make decisions when it comes to purchases and make other different choices. That children is exposed to advertisements and commercials pointed towards them is a reality that we have to accept. We find it extremely important, with this kind of exposed market, that behavior, marketing and ethical rules is adjusted the children. It is the children that should be able to use the Internet, not the other way around.</p>
+<p><strong>Our ethical rules</strong></p>
+<p><strong>Purchases should be adjusted to the children</strong></p>
+<p>We think that the purchase offers should be adapted to the children. Today, the children are more exposed to information and offers through the internet.  It’s difficult to see a clear line between what is incitements and what is just sharing information. It’s important that apps and companies gets aware of how they reach out to children. If their approach and purpose is to trick the children into purchasing items, the children are not going to be able to get the right knowledge about handling their own money.</p>
+<p><strong>Education and lessons learned will be at focus</strong></p>
+<p>Our vision is that society should help educating children about economy in a fun and pedagogical way. The purpose with lessons learned is to make sure that the children will be able to think for themselves, hit their own solutions in a safe environment and create more innovation.</p>
+<p><strong>Decisions are supposed to prepare the children for the grown-up life</strong></p>
+<p>It’s important that the children learns how to take responsibility . By putting children in a safe and comfortable zone, you will not challenge them and maybe even stop their ability to get a fast curve of learning. Children is supposed to be able to take different kind of choices, right and wrong, so that they after a while can eliminate the wrong choices when it comes to economy and purchases. We will create a method for children so that they can implement their choices and let the parents adjust the responsibility after how mature behavior the children shows.</p>
+<p><strong>The children will owe their own money</strong></p>
+<p>In a pedagogical way, we would like to give the children a greater understanding for money by giving them responsibility for their own money. It’s important that children can decide what they would do with the money. Making wrong decisions when it comes to economical actions will make the children take better decisions next time when it is a similar purchase.</p>
+<p><strong>The child should be able to make a dections in his own tempo</strong></p>
+<p>Children should be able to decide over their own economy without any influence from commercials, misleading messages or the ”must-have” society.</p>
+<p><strong>Stop – think – buy is a good method</strong></p>
+<p>It is only positive that the children gets space to reflect over their decisions before they buys something. There should be time for reflections and collecting information connected to the purchase, adjusted to the size of the purchase. A fine example for enough time for reflection is where the seller pauses the purchasing process and encourage you to press an additional button to finalize your purchase.</p>
+<p><strong>Clarity &amp; Overview</strong></p>
+<p>It should be easy to see when a purchase has been completed and what any extra costs you can expect. Many children buys stuff from the internet these days, without the knowledge that there is a cost connected with the decision. Generating clarity to create an understanding for decision making and even the consequence from purchases is our ”perfect picture” how a purchasing process for children should be.</p>
+<p><strong>Accentuate economical conversations within the family</strong></p>
+<p>The economical conversations between children and parents at home is important. A good time to discuss around the economical topic is when the family is gathered. By doing that you give the children the opportunity to take part of the day to day economy at home. Parents should talk about money, not only where there is no more money left, but also as something exciting. In the end that will lead to a positive setting.</p>
+<p><strong>How we handle information and data</strong></p>
+<p>Childrens information is sensitive. That is why we have adjust our handling of information in a way that protects the information and at the same time creates a safe environment to handle money.</p>
+<p><strong>Handling data</strong></p>
+<p>We gather information from our users so that we can learn more about children and parents behavior. That information gives us the opportunity to develop and make our service better for the users. We collect all of our information safely, and we will never use the information for marketing offers or other incentives directed towards children.</p>
+<p><strong>Handling pictures</strong></p>
+<p>Uploaded pictures from users will not be used by Gimi for external use.  The pictures has only one purpose. To improve the users experience.</p>
+<p><strong>Personal information</strong></p>
+<p>The childs phone number, name and other personal information will be placed in our database. We will never take any part in this information, except from some circumstances when we will try to help users that needs to resetting or upgrade their account.</p>
+<p><strong>A safe platform for communication</strong></p>
+<p>We do not take any part when it comes to communication between users. Communication is suppose to improve the user experience and improve the communication at home when it comes to money.</p>
+<p><strong>Marketing aimed at children</strong></p>
+<p>Gimi will never do marketing aimed at children without any permission from the parents. The marketing will never take advantage from the childrens good beliefs and not contain any direct purchase solicitations.</p>
+<p><strong>We are not using in-app purchases for children</strong></p>
+<p>At Gimi the children are not able to implement in app-purchases, and can therefore not be encouraged to upgrade their service in change for money.</p>
+<p><strong>Our ethical rules follows</strong></p>
+<p>The UN Convention on the Rights of the Child</p>
+<p>We follow ”the UN convention on the rights of children” where the childrens rights shall come at first in every situations that includes children.</p>
+<p><a href="http://www.manskligarattigheter.se/sv/de-manskliga-rattigheterna/vilka-rattigheter-finns-det/barnets-rattigheter">http://www.manskligarattigheter.se/sv/de-manskliga-rattigheterna/vilka-rattigheter-finnsdet/barnets-rattigheter</a></p>
+<p>The ethical rules are suppose to follow (marknadsföringslagen) and make sure that marketing is not misguiding or agressive, and that it will be forbidden if it effetcs the consuments ability to make a reasonable decision.</p>
+<p>Our ethical rules agrees with the swedish governments study september 2012 that shows the misguiding and negative effects by encouraging children to purchases in apps, ”in-app purchases” <a style="color: blue;" href="http://www.etiskaradet.se/">http://www.etiskaradet.se/</a><u>.  </u>We agrees even with the Ethical council for payment services that has been developed for marketing and the content in payment services. Marketing are not allowed to happen if it reaches out to children under 14 years old, and the cost for the service exceeds 10 kroners.</p>
+<p><strong>ICC;s Rules for commercial and marketing communication</strong></p>
+<p>Our ethical rules follows article 18 in the ICC-rules and the particular demands that is set when it comes to marketing and commercials towards children and youths. If you look at article 18 you can see that certain demands has to be followed when it comes to marketing that reaches out to children and youths. It is not allowed to affect positive social behaviors, life styles or attitudes. Products who are inappropriate for children and youths are not allowed marketing in media, and these products are also supposed to be marked ”inappropriate for children”. Marketing are not allowed to take advantage of childrens young and natural goodwill and lack of experience. It is neither supposed to contain pictures or words that can give physical damages, or can effect someone in a negative way mentally or morally. Children and youths are not allowed to be pictured in situations that contains high risk, or activities where they can get injured or encourage others to take part of those kinds of activities. Children and youths can be effected negative from marketing that contains violence. In general commercial is not allowed to encourage to violence or give the impression that the attitude towards violence is ok. The ICC-rules also contains rules about social ratings. Marketing is not suppose to give the impression that a certain product gives a child or youth physical , socially or psychological advantages over children at same age.</p>
+<p>&nbsp;</p>
+<p class="p1"><span class="s1"><b>Gimi Terms of Service</b></span></p>
+<p class="p1"><span class="s1"><b>Personal Integrity</b></span></p>
+<p class="p1"><span class="s1">Being a collaborative community our top-priority will always be the relationship with our community. We are therefore firmly committed to the security and protection of integrity of our Users of the Services and their contacts.</span></p>
+<p class="p1"><span class="s1">The Gimi Privacy Policy further describes what information You may share with Gimi and other Users and how Gimi may use and share such information.</span></p>
+<p class="p1"><span class="s1"><b>Consent to Use of Data</b></span></p>
+<p class="p1"><span class="s1">You agree that Gimi, in accordance with the Gimi Privacy Policy, may collect and use technical data such as Your IP address, device ID, usage data and related information, including but not limited to technical information about Your mobile device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to You related to the Gimi Apps.</span></p>
+<p class="p1"><span class="s1"><b>Obligations and Restrictions to Use of Services</b></span></p>
+<p class="p1"><span class="s1">You guarantee that any Contact Information and other data, such as Your profile information, You may transfer to Gimi as a User of the Services (together “Content”), to the best of Your knowledge, is not false or otherwise may corrupt or disrupt the Services and that you have the right to share it with Gimi and other Users.</span></p>
+<p class="p1"><span class="s1">You shall not by any commercial means use the Services or otherwise transfer for value the Services or the Content. You agree not to challenge Gimis’s rights in or otherwise attempt to assert any rights in the Services, except those explicitly granted under these Terms. You agree not to use the Services except as expressly permitted under these Terms.</span></p>
+<p class="p1"><span class="s1">Scraping of any information contained in the Services, including any third party information accessible via the Services, is strictly prohibited.</span></p>
+<p class="p1"><span class="s1">The Services or the Content may not be used in any way, which is illegal, harmful or may be considered offensive by Gimi, other Users or third parties. You therefore agree not to exploit the Services in any unauthorized way whatsoever, including but not limited to, trespass or burdening network capacity. You further agree not to use our Services in any manner to harass, abuse, stalk, threaten, defame or otherwise infringe or violate the rights of any other party, and You acknowledge and agree that Gimi is not in any way responsible for any such use by You, nor for any harassing, threatening, defamatory, offensive or illegal messages or transmissions that You may receive as a result of using the Services. Notwithstanding any other remedies available to Gimi, You agree that Gimi may suspend or terminate Your use of the Services without notice.</span></p>
+<p class="p1"><span class="s1">You may contact Gimi at info@veckopengen.se to report any violation or infringement of Your rights by Users of the Services.</span></p>
+<p class="p1"><span class="s1"><b>Proprietary Rights</b></span></p>
+<p class="p1"><span class="s1">The Services are protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. Gimi and its licensors shall retain ownership in and to the Services and to all related intellectual property rights, including without limitation trademarks, trade names, database rights and patents. You are granted only a limited right to use the Services subject to these Terms.</span></p>
+<p class="p1"><span class="s1"><b>Scope of License</b></span></p>
+<p class="p1"><span class="s1">Your compliance with these Terms at all times, Gimi grants You a personal, limited and non-exclusive right to use the Services for Your own personal, non-commercial use. This license does not allow You to use the Gimi Apps on any mobile device that You do not own or control. You may only redistribute the Gimi Apps unmodified for non-commercial purposes to a party that has agreed to these Terms. You may not copy (except as expressly permitted by these Terms), decompile, reverse engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Gimi Apps, any updates, or any part thereof (except as and only to the extent any foregoing restriction is prohibited by applicable law or to the extent as may be permitted by the licensing terms governing use of any open sourced components included in the Gimi Apps).</span></p>
+<p class="p1"><span class="s1">The license does not allow You to use Gimi’s name, trademarks or other commercial symbols. All rights and licenses not expressly granted to You under these Terms shall be retained by Gimi.</span></p>
+<p class="p1"><span class="s1"><b>Support</b></span></p>
+<p class="p1"><span class="s1">Gimi strives to provide adequate and efficient technical support, upgrades and updates for the Services. Gimi shall not, however, be under any obligation to provide support or maintenance for the Services under these Terms and reserves the right to limit the support, upgrades and updates provided from time to time.</span></p>
+<p class="p1"><span class="s1"><b>Termination</b></span></p>
+<p class="p1"><span class="s1">Your right to use the Services continues until these Terms are terminated. Gimi may terminate them and Your use of the Services at any time. You may terminate them at any time by uninstalling the Gimi Apps and ceasing the use of the Services. These Terms will automatically terminate if You fail substantially to comply with them. Upon any termination, You agree to stop using the Services. Upon termination by You, or by Gimi due to Your breach of these Terms, You will not be refunded any part of the Services, license fees or other prepaid fees, if any. Upon termination by Gimi without cause, You will be refunded such prepaid fees following a written request by Yourself, provided a receipt for such fees and a clear payment instruction are included.</span></p>
+<p class="p1"><span class="s1">Any prepaid fees for the Services are connected to the User device as well as its phone number. Therefore, if You change device or its SIM-card, You cannot transfer the balance to a new device or SIM-card and no refund will be available in such cases. Gimi reserves the right, at its own discretion, to remove any remaining balance resulting from prepaid fees without any right of refund twelve (12) months from the purchase.</span></p>
+<p class="p1"><span class="s1">Provisions of sections No Warranty, Limitation of Liability, and Termination shall survive any termination of these Terms.</span></p>
+<p class="p1"><span class="s1"><b>Assignability</b></span></p>
+<p class="p1"><span class="s1">Gimi reserves the right, at its own discretion, to freely assign and transfer the rights and duties under these Terms to any third party.</span></p>
+<p class="p1"><span class="s1"><b>Additional and Changed Terms</b></span></p>
+<p class="p1"><span class="s1">As Gimi provides global Services, additional Terms of Services may apply to Users in certain jurisdictions and will in such cases be made available in appendices hereto.</span></p>
+<p class="p1"><span class="s1">In case of material changes, the User shall always be notified thereof via publication on the Gimi website and provided the option to immediately terminate the Services. The revised Terms shall become effective upon such publishing or notification to the User. You will always find the latest version of these Terms at www.gimitheapp.com.</span></p>
+<p class="p1"><span class="s1"><b>No Warranty</b></span></p>
+<p class="p1"><span class="s1">To the maximum extent permitted by applicable law Gimi makes no warranty or representation, either expressed or implied with respect to the services, their quality, performance, merchantability, fitness for a particular purpose or non-infringement of third party rights. As a result, the services are provided ”as is” and you are assuming the entire risk as to their quality and performance.</span></p>
+<p class="p1"><span class="s1">You understand and acknowledge that Gimi will not be liable for network-related problems attributable to the operation of the Services and that network configuration changes may affect the Services’ performance.</span></p>
+<p class="p1"><span class="s1">Gimi makes no representation that the Services are available for use in any particular location. To the extent You choose to access the Services, You do so at Your own initiative and are responsible for compliance with any applicable laws, including but not limited to applicable local laws.</span></p>
+<p class="p1"><span class="s1"><b>Force Major</b></span></p>
+<p class="p1"><span class="s1">Parties are not responsible for delays or loss due to circumstances that the party has no control over and which significantly impedes the fulfilment of the obligation in question or that causes the fulfilment of the obligation is not economically justifiable.</span></p>
+<p class="p1"><span class="s1"><b>Limitation of Liability</b></span></p>
+<p class="p1"><span class="s1">To the extent not prohibited by law, you expressly agree that Gimi shall in no event be liable for any direct, indirect, special, incidental, consequential or exemplary damages, including but not limited to damages for loss of profits, data and goodwill, arising out of the use or inability to use the services or the content, even if advised of the possibility of such damages. In particular, and without limitation, Gimi shall have no liability for any information stored or processed within the Services, including the costs of recovering such information. Your only right or remedy with respect to any problems or dissatisfaction with the Services, is to uninstall the Gimi Apps and cease use of the Services.</span></p>
+<p class="p1"><span class="s1">Gimi shall not be liable for the validity and correctness of the content provided through and in connection with use of the services. Any use of the information obtained through the use of the services shall be done at your own discretion and risk.</span></p>
+<p class="p1"><span class="s1">Gimi controls and monitors Content made available by the Users via the Services, but can nevertheless not guarantee its origin and correctness. Therefore, You accept that You via the Services may be exposed to information that is erroneous or otherwise objectionable. Gimi shall not be liable for the Content and other information disseminated or delivered through or in connection with the Services. You agree that You shall bear all risks associated with the use of such information.</span></p>
+<p class="p1"><span class="s1">Nothing in this section Limitation of Liability shall, however, limit or exclude the Responsible Publisher’s liability under the Swedish Fundamental Law on Freedom of Expression.</span></p>
+<p class="p1"><span class="s1"><b>Governing Law</b></span></p>
+<p class="p1"><span class="s1">Your use of the Services and their various functionalities and the ensuing relationship between you and Gimi are governed by these Terms, which shall be construed in accordance with, and governed by, the laws of Sweden, excluding its choice of law rules. All disputes relating to these Terms shall exclusively be adjudicated in Sweden, with the District Court of Stockholm as the court of first instance.</span></p>
+<p class="p1"><span class="s1"><b>Gimi Privacy Policy</b></span></p>
+<p class="p1"><span class="s1">Gimi is an application that is intended to be used by children and parents to manage money.</span></p>
+<p class="p1"><span class="s1">Our website (www.gimitheapp.com) is for parents, while our app are designed for the whole family, including young children with parent supervision. We take privacy seriously at Gimi and this policy is designed to share what information we collect and how we use it. We last updated the contents of this policy on 21/3-2016. Gimi may change or update the Privacy Policy at any time. Unless another date is given, the changes are effective upon posting. Thus, you should review the Privacy Policy frequently. This Privacy Policy is also part of the Terms of Service that explain your rights and responsibilities when using Gimi’s services and sites.</span></p>
+<p class="p1"><span class="s1">Gimi (“we”) offer users (“You”) a service which purpose is to help the family to handle the children’s economy and educate children about digital money.</span></p>
+<p class="p1"><span class="s1">Being a collaborative community the top-priority of Gimi will always be the relationship with its community. Gimi is therefore firmly committed to the security and protection of the personal integrity of our Users of the Services (as defined in the Terms of Service) and their contacts.</span></p>
+<p class="p1"><span class="s1">Downloading and Installing a Gimi Application means that you agree to the Terms of Service and Privacy Policy.</span></p>
+<p class="p1"><span class="s1">If you don’t agree with this Privacy Policy or the Terms of Service, you should not use the sites and services. If you have any questions please contact us at info@veckopengen.se</span></p>
+<p class="p1"><span class="s1"><b>Contractual Relationsship</b></span></p>
+<p class="p1"><span class="s1">These Conditions of use (“Conditions”) govern the access or use by you, an individual, and applications, websites, content, products and services (“Services”) made available by Gimi.</span></p>
+<p class="p1"><span class="s1">Please read these Conditions very carefully before accessing or using the Services.</span></p>
+<p class="p1"><span class="s1">Your access or use of the Services constitutes your agreement to be bound by these Conditions, which establishes a contractual relationship between you and Gimi.</span></p>
+<p class="p1"><span class="s1">The access or use of the Services by any child under your parental responsibility constitutes your agreement to be bound by these Conditions, which establishes a contractual relationship between you and Gimi.</span></p>
+<p class="p1"><span class="s1">IF YOU DO NOT AGREE TO THESE TERMS, YOU OR ANY CHILD UNDER YOUR PARENTAL RESPONSIBILITY MAY NOT ACCESS OR USE THE SERVICES.</span></p>
+<p class="p1"><span class="s1"><b>Information Collected and Received</b></span></p>
+<p class="p1"><span class="s1"><i>Installation and Use</i></span></p>
+<p class="p1"><span class="s1">When you install and use the Gimi Apps, Gimi will collect, process and retain personal information from You and any devices you may use in Your interaction with our Services. This information may include the following: geo-location, Your IP address, data usage, device ID or unique identifier, device type, ID for advertising, ad data, unique device token, operating system, operator, connection information, screen resolution, usage statistics, version of the Gimi Apps You use and other information based on Your interaction with our Services.</span></p>
+<p class="p1"><span class="s1"><i>User Profile</i></span></p>
+<p class="p1"><span class="s1">Where the User registers a user profile in the Gimi Apps with via SMS and/or e-mail verification, the User confirms being the holder of a certain number and e-mail-address. The information up-loaded to the profile section of the Gimi Apps will be received and stored by Gimi until the User changes or deletes such data or terminates the Services. Compulsory information when creating a profile is the User’s phone number, email, choice of children or parent and additional information that may be provided at the User’s option include, but is not limited to, photo, gender, street address and zip code, country of residence, professional website, Facebook page, Twitter adress, Instagram account and a short status message. Gimi may supplement the information provided collected with information from third parties and add it to information provided by You.</span></p>
+<p class="p1"><span class="s1">Please note that any content uploaded to and displayed in the user profile by the User is not moderated by Gimi and is not protected under the Swedish Fundamental Law on Freedom of Expression. The User is solely liable for the publication of such content.</span></p>
+<p class="p1"><span class="s1"><i>Identifiers</i></span></p>
+<p class="p1"><span class="s1">In addition, You may provide us with Your user identifier information regarding certain third party services, i.e Facebook, Google+, LinkedIn and Twitter, necessary for the application to interoperate with such third party services. In that case Gimi will store and process also that information (and also mapped photo where applicable), for as long as You use the Services and will not use this information for any other purpose than required in order to obtain interoperability and functionality in relation to such third party services. Please note that we never store any passwords to the mentioned third party services.</span></p>
+<p class="p1"><span class="s1"><i>Contact Information</i></span></p>
+<p class="p1"><span class="s1">If you provide us with personal information about someone else, you confirm that they are aware that You have provided their data and that they consent to our processing of their data according to our Privacy Policy.</span></p>
+<p class="p1"><span class="s1"><i>Please note that no other Contact Information, than the phone numbers and thereto attached names and email addresses will be received, stored and used from the User’s address Book. Other numbers or information that may be contained in your device’s phone book will be filtered away and therefore not be stored or used by Gimi. Addresses, passwords and credit card numbers and any other similar information will automatically be prevented from being entered into the Gimi database by our safety algorithms, that filters any number and other information stored in the phone book in a number sequence not compatible with that used for telephone numbers. Please also note that You always choose not to share Contact Information with Gimi and if You have shared information and changed Your mind, You can easily delist Your number or opt-out to render your entire Contact Information unavailable for search in the database.</i></span></p>
+<p class="p1"><span class="s1">Opt-in/registration</span></p>
+<p class="p1"><span class="s1">With the Gimi apps Your are provided with a fast and smart signup process for Your phone that, among other features, will provide instant search results from Your phonebook. Apart from Your location when performing an active search, and exclusively for the purpose of optimizing the search result, no further data or information that accounted for in the Terms and this Privacy Policy will be processed when You use the Gimi Apps opt-in (and such location data will not be stored).</span></p>
+<p class="p1"><span class="s1"><b>Use, Sharing and Disclosure of User and Contact Information</b></span></p>
+<p class="p1"><span class="s1">Information related to the User or Contact Information will be used to:</span></p>
+<ol class="ol1">
+<li class="li1"><span class="s1"><span class="s1">Enable Gimi Name Search, as described below, to Users who have activated that functionality,</span></span></li>
+<li class="li1"><span class="s1"><span class="s1">Contact you from Gimi for verification purpose or with information pertaining to the Services, e.g. newsletter e-mails and similar notifications, and verify provided User Profile information with third party providers,</span></span></li>
+<li class="li1"><span class="s1"><span class="s1">Deliver messages through the Gimi apps,</span></span></li>
+<li class="li1"><span class="s1"><span class="s1">Enable You to use and share Your user information in connection with Your use of third party services,</span></span></li>
+<li class="li1"><span class="s1"><span class="s1">Customize, measure and improve our Services, and</span></span></li>
+<li class="li1"><span class="s1">Personalize, measure and improve our advertising and use geo-location information to provide You with location based information and services (such as advertising, search results and other personalized content).</span></li>
+</ol>
+<p class="p1"><span class="s1"><i>Miscellaneous</i></span></p>
+<p class="p1"><span class="s1">In addition to the above Gimi may disclose information related to the Users and Contact Information if we believe such action is necessary to:</span></p>
+<ol class="ol2">
+<li class="li1"><span class="s1">comply with the law, or legal process served on us;</span></li>
+<li class="li1"><span class="s1">protect and defend our rights or property (including the enforcement of our agreements); or</span></li>
+<li class="li1"><span class="s1">act in urgent circumstances to protect the personal safety of Users or members of the public.</span></li>
+</ol>
+<p class="p1"><span class="s1">Gimi may share Your personal data with trusted third party service providers and partners. Gimi will always require these parties to take appropriate organizational and technical measures to protect your personal data and traffic data and to observe the relevant legislation.</span></p>
+<p class="p1"><span class="s1">The following is a description of how Gimi may share information about You with trusted third party partners:</span></p>
+<ol class="ol1">
+<li class="li1"><span class="s1">Gimi uses a third party partner company in order to send You or a third party you wish to contact SMS when you use the Services. In order to send you the SMS; we send the third party company Your and the relevant third party’s phone numbers for the transmission of requested SMS.</span></li>
+<li class="li1"><span class="s1">Gimi may use Push Notification Services to notify you about up-dates and important information. In such cases, Your phone number may be part of the notification. This message is sent to the push notification service provider, for delivery to Your device. You may, however, at any time-opt out or disable push notifications.</span></li>
+<li class="li1"><span class="s1">Gimi may allow you to use third party services to create your user profile or log in to use our Services, share information with such third parties, or to connect your user profile with the respective third parties. Those third parties may automatically provide us with access to certain personal information retained by them about You (e.g., content viewed by you, content liked by You and information about the advertisements you have been shown or may have clicked on). You control the personal information You allow us to have access to through the privacy settings on the respective third party service and the permissions You give us when You grant us access to the personal information about You retained by the respective third party service. By associating an account managed by a third party with Your Gimi user profile and authorizing us to have access to this information, You agree that we may collect, use and retain the information provided by these third party services in accordance with this Privacy Policy. As an example, Gimi may send a queried telephone number to Twitter in order to verify it against the Twitter API or retrieve the holders’ Twitter ID or Twitter photo, if available. If the Twitter ID is available, Gimi will display a Tweet and follow button in the Users’ Gimi apps, which the User may use to send an open tweet to, and start to follow, the holder of the number. The Gimi apps is not, however, designed to be a Twitter communication application and You will not be able to retrieve the replied or further tweets to the Gimi apps. When using the Twitter functionalities You are bound by the Twitter Terms of Service, located at <a style="color: blue;" href="http://twitter.com/tos">https://twitter.com/tos</a>, and the Twitter privacy policy, located at <a style="color: blue;" href="https://twitter.com/privacy">https://twitter.com/privacy</a>.</span></li>
+<li class="li1"><span class="s1">For the provision of free versions of the Services, Gimi may also collaborate with a few selected third party advertising networks, which in such case may be provided limited information related to the freemium User’s device (but no other User or Contact Information).</span></li>
+<li class="li1"><span class="s1">Gimi, or a third party on its behalf, may collect and use your email address, telephone number and ID for advertising (including, but not limited to, content viewed by you, content you have commented on and information about the advertisements you have been shown or may have clicked on) through the Gimi apps and share this information with third party advertisers and networks. Such third parties may use this information and information collected from other sources in order to provide measurement services and targeted ads. You can limit or opt-out of the collection and use of Your information for ad targeting by third parties via Your device settings.</span></li>
+</ol>
+<p class="p1"><span class="s1">The submission of Contact Information by You and the processing thereof by Gimi is constitutionally protected under the applicable law, see the Gimi Terms of Service. Gimi may, however, disclose information contained in the Service and about you if we determine that for national security, law enforcement, or other issues of public importance that disclosure of information is necessary, always provided, of course, it is also lawful.</span></p>
+<p class="p1"><span class="s1">Gimi may from time to time ask you to provide information on your experiences from using the Gimi Services, which will be used to measure and improve quality. You are at no time under any obligation to provide any of such data. Any and all information which is voluntarily submitted in feedback forms or any surveys that You accept to take part in is used for the purposes of reviewing this feedback and improving the Gimi software, products and websites.</span></p>
+<p class="p1"><span class="s1"><b>Cookies and Automatically collected information</b></span></p>
+<p class="p1"><span class="s1">The Gimi Website uses so called “Cookies” in connection with the Services. Cookies are pieces of information stored on Your computer’s hard drive and/or other device’s browser that enables Gimi to keep Your login session for thirty days. The use of Cookies is standard practice. Cookies do not enable any access to and/or inspection of other information on Your computer or other device. If You do not wish to receive cookies, or wish to be notified of when they are placed, You may set your web browser to do so, if your browser so permits. Please understand that if Cookies are turned off, You may not be able to obtain full functionality in certain parts of the Services.</span></p>
+<p class="p1"><span class="s1">The Gimi website and the Gimi Apps use Google Analytics, a web analytics solution by Google. Google Analytics also adds cookies to Your computer or mobile device when You visit our website or interact with certain parts of the Gimi Apps and collects usage information to create statistics for Gimi. See <a style="color: blue;" href="http://www.google.com/privacy.html">Google’s privacy policy</a> for details.</span></p>
+<p class="p1"><span class="s1">We also use the analytics-tool Mixpanel to measure the use of the Gimi apps, to learn more about the terms of Mixpanel read their terms here: <a href="https://mixpanel.com/terms/">https://mixpanel.com/terms/</a></span></p>
+<p class="p1"><span class="s1">The Gimi website also embeds badges from the social networking sites <a style="color: blue;" href="http://www.facebook.com/">Facebook</a> and <a style="color: blue;" href="http://twitter.com/">Twitter</a>. The badges may add cookies to Your computer or mobile device when You use the Services and have enabled Facebook connection. See <a style="color: blue;" href="http://www.facebook.com/policy.php">Facebook’s privacy policy</a>, <a style="color: blue;" href="http://www.google.com/privacy.html">Google’s privacy policy</a> and <a style="color: blue;" href="https://twitter.com/privacy">Twitter’s privacy policy</a> for details.</span></p>
+<p class="p1"><span class="s1">Gimi servers may automatically collect data about Your Internet address when You use the Gimi Services. This information, known as an Internet Protocol address, or “IP Address”, is a number that is automatically assigned to Your computer or other device by Your Internet service provider whenever You are on the Internet. When You request pages from the Services, our servers may log Your IP Address and, if applicable, Your domain name. Your IP Address is used to help identify You and to gather demographic information about our Users as a whole. Gimi’s servers may also record the referring page that linked you to Gimi (e.g. another web site or a search engine); the pages You visit on the Services; the web site you visit after Gimir’s web site; the ads you see and/or click on; other information about the type of Web browser, computer, platform, related software and settings you are using; any search terms You have entered on this web site or a referral site; and other Web usage activity and data logged by Gimi’s servers. Gimi uses this information for internal system administration, to help diagnose problems with servers, and to administer our Services. Such information may also be used to gather demographic information, such as country of origin and Internet Service Provider.</span></p>
+<p class="p1"><span class="s1">Gimi automatically gather, analyze and aggregate User data in order to improve Our services. Data gathered is stored and protected in Our servers. By accepting the Privacy Policy and Terms of Service the User agree to all data generated by Users within the Gimi Apps belongs to Gimi.</span></p>
+<p class="p1"><span class="s1"><b>Information Security</b></span></p>
+<p class="p1"><span class="s1">In order to provide the Gimi Services, Gimi may transfer, process and store personal data in a number of countries. Gimi may also subcontract processing of Your information to third parties located in countries other than Your home country. Information collected within the European Economic Area (“EEA”) may, for example, be transferred to and processed in a country outside of the EEA, which may not provide the same level of protection for personal data as within the EEA. You acknowledge and agree that Gimi may transfer Your personal data as described above for purposes consistent with this Privacy Policy. We take all reasonable precaution to protect Your information, Contact Information and other Content from misuse, loss and unauthorized access. Although we cannot guarantee this information will not be subject to unauthorized access, Gimi has physical, electronic, and procedural safeguards in place to protect it. The Information is stored on secured servers and protected by secured networks to which access is limited to a few authorized employees and personnel. However, no method of transmission over the Internet, or method of electronic storage, is 100% secure.</span></p>
+<p class="p1"><span class="s1"><b>Accuracy of Collected Information</b></span></p>
+<p class="p1"><span class="s1">Gimi may on its own initiative, or at your request, replenish, rectify or erase any incomplete, inaccurate or outdated information retained by Gimi in connection with the operation of the Services. You have always the right to know what information is stored about You and have any data corrected or deleted on Your request, which should be submitted in accordance with our contact details below.</span></p>
+<p class="p1"><span class="s1">The accuracy and security of information concerning the Users and their contacts are Gimi’s highest priority and they are free to opt-in or opt-out of the Services at any time.</span></p>
+<p class="p1"><span class="s1">If you use a service, feature, or functionality that is operated by a third party and made available through our Services (including Services we jointly offer with the third party), each party’s terms will govern the respective party’s relationship with you. Gimi is not responsible or liable for those third party’s terms or actions taken under the third party’s terms.</span></p>
+<p class="p1"><span class="s1"><b>Changes to this Privacy Policy</b></span></p>
+<p class="p1"><span class="s1">Gimi may at any time with or without a separate notice change this Privacy Policy, and You are encouraged to review this Policy from time to time on the website www.gimitheapp.com. In case of substantial changes, Gimi notifies the Users by push notice or via notice on the Gimi website.</span></p>
+<p class="p1"><span class="s1"><b>Contact</b></span></p>
+<p class="p1"><span class="s1">If You have any additional questions about Gimi’s Terms of Service or Privacy Policy or want to make a request regarding certain information, You are encouraged to contact Gimi.</span></p>
+<p class="p1"><span class="s1">The contact information is:</span></p>
+<p class="p1"><span class="s1">GimiAB, Reg. No. 556985-8029, Skeppsbron 44, 4 tr 111 30 Stockholm, Sweden.</span></p>
+<p class="p1"><span class="s1">You can also send your enquiries via email to info@gimitheapp.com</span></p>
+<p class="p1"><span class="s1">For Users that may have grievances pertaining to the Services, Gimi has appointed a Grievance Officer to deal with Your issues. You may reach him/her at support@gimitheapp.com</span></p>
+                        </div>
+                    </div>
+                </article>
+
+                    </main>
+
+<footer>
+    <div class="media">
+        <div class="row">
+            <div class="medium-12 columns">
+                <ul>
+                    <li class="media__logo">
+                        <a href="http://www.di.se/di/artiklar/2015/4/1/koll-pa-hur-det-rullar/">
+                                                            <img src="../uploads/2015/11/di.png" alt=""/>
+                                                    </a>
+                    </li>
+
+                    <li class="media__logo">
+                        <a href="http://www.aftenposten.no/okonomi/Lommepenge-appene-som-far-barna-til-a-jobbe-606435b.html">
+                                                            <img src="../uploads/2016/05/aftenposten_logo_svart_stor.png" alt=""/>
+                                                    </a>
+                    </li>
+
+                    <li class="media__logo">
+                        <a href="http://www.va.se/nyheter/2015/11/12/appen-som-ska-ersatta-spargrisen/" class="">
+                                                            <img src="../uploads/2015/11/veckans-affarer.png" alt=""/>
+                                                    </a>
+                    </li>
+
+                    <li class="media__logo">
+                        <a href="http://www.svd.se/sveriges-hetaste-startups">
+                                                            <img src="../uploads/2015/11/svd.png" alt=""/>
+                                                    </a>
+                    </li>
+
+                    <li class="media__logo">
+                        <a href="http://breakit.se/artikel/1053/fotbollsstjarnan-som-vill-lara-barn-spara-plockar-in-miljonbelopp">
+                                                            <img src="../uploads/2015/11/breakit.png" alt=""/>
+                                                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="row">
+
+            <div class="medium-6 medium-push-6 large-4 large-push-8 columns">
+
+                <div class="footer-bottom__counter">
+                    <div class="footer-counter"></div>
+                    <span class="kr">kr</span>
+                </div>
+
+                                    <p>Pocket money paid out</p>
+                
+
+                <div class="footer-bottom__appstore-links">
+
+                    <a href="https://itunes.apple.com/se/app/veckopengen-for-barn-och-foraldrar/id935778197?mt=8">
+                        <img class="appstore-badge"
+                             src="../themes/veckopengen/assets/images/apple-badge.png"
+                             alt="">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=se.veckopengen.app&amp;hl=sv">
+                        <img class="appstore-badge"
+                             src="../themes/veckopengen/assets/images/google-badge.png"
+                             alt="">
+                    </a>
+                                            <img class="vidiggar medium" src="../uploads/2015/11/vidiggar.png"
+                             alt=""/>
+                                    </div>
+            </div>
+
+            <div class="medium-6 medium-pull-6 large-4 large-pull-4 columns">
+                <div class="footer-bottom__content">
+                                            <h5>About Gimi</h5>
+                        <p>We at Gimi work to enable kids to handle money in a responsible and simple way. Our tools are meant to promote a secure, instructive and fun personal finance<br />
+for kids and parents.</p>
+<p>Please contact us for support or feedback at info@gimitheapp.com</p>
+<p>Or sign up for our newsletter</p>
+<p>&nbsp;</p>
+                    
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="http://veckopengen.us11.list-manage.com/subscribe/post?u=dd1fcf21d5484198d5b22b548&amp;id=bec2661b2f"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address </label>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                                           placeholder="Email adress">
+                                    <button type="submit">
+                                        <img
+                                            src="../themes/veckopengen/assets/images/submit-button-arrow.png"
+                                            alt="Subscribe"
+                                            name="subscribe" id="mc-embedded-subscribe">
+                                    </button>
+                                </div>
+
+                                <div id="mce-responses">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_dd1fcf21d5484198d5b22b548_bec2661b2f" tabindex="-1"
+                                           value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+
+                </div>
+            </div>
+
+            <div class="large-4 large-pull-4 columns">
+                                    <img class="vidiggar large" src="../uploads/2015/11/vidiggar.png"
+                         alt=""/>
+                            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="row">
+            <div class="medium-5 columns">
+                                    <p>Copyright 2016 - Gimi® AB - All rights reserved</p>
+                
+            </div>
+            <div class="medium-3 columns">
+                <div class="footer-social-nav-menu">
+                    <div class="menu-social-nav-en-container"><ul id="menu-social-nav-en" class=""><li id="menu-item-781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-781"><a href="https://www.facebook.com/gimitheapp/"><span class="fb"></span></a></li>
+<li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="https://twitter.com/gimitheapp"><span class="tw"></span></a></li>
+<li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="https://www.instagram.com/gimitheapp/"><span class="ig"></span></a></li>
+<li id="menu-item-784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-784"><a href="#ex1"><span class="sc"></span></a></li>
+</ul></div>                </div>
+            </div>
+            <div class="medium-4 columns">
+                <div class="footer-nav-menu">
+                    <div class="menu-footer-nav-en-container"><ul id="menu-footer-nav-en" class=""><li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-814"><a href="../press/index.html">Press</a></li>
+<li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-801 current_page_item menu-item-812"><a href="index.html">Terms</a></li>
+<li id="menu-item-813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-813"><a href="../faq/index.html">FAQ</a></li>
+</ul></div>                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="snapModal" class="reveal-modal snapchat-modal" data-reveal aria-hidden="true"
+     role="dialog">
+            <h3>Follow Gimi on Snapchat</h3>
+    
+            <h3><p>On Snapchat you can follow the development at Gimi, feel free to send us questions and feedback here and we&#8217;ll help you as fast as possible. Scan the code!</p>
+</h3>
+        
+            <img src="../uploads/2015/11/snapchat_code.png"
+             alt=""/>
+    
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+        <div class="video-player">
+        <div class="close-video">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 357 357"xml:space="preserve">
+<g>
+	<g id="close">
+		<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5 		"/>
+	</g>
+</g>
+</svg>
+        </div>
+
+        <div class="video-wrapper">
+            <video width="100%" height="100%" id="veckopengen-video" preload="none">
+                <source src="../uploads/2016/05/Alt_GIMI_6-10801.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1518004268504566',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+(function() {
+    window['DRTB'] = window['DRTB'] || {};
+    function drtb() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (('https:' === document.location.protocol) ? 'https' : 'http') + '://s3.eu-central-1.amazonaws.com/cc-drtb/drtb.min.js';
+        var e = document.getElementsByTagName('script')[0];
+        e.parentNode.insertBefore(s, e);
+    }
+    window.attachEvent ? window.attachEvent('onload', drtb) : window.addEventListener('load', drtb, false);
+}());
+
+DRTB.seat = 'Gimi';
+DRTB.info = {}
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.rawgit.com/noelboss/featherlight/1.6.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+$(document).ready(function() {
+if (window.location.href.indexOf('veckopengen.se') !== -1) {
+var send = true
+$(".open-movie").before("<div><span class='smsHeader'>SMS:a mig appen:</span><br/><input class='smsButton' type='submit' value='Skicka'><input value='+46' placeholder='SKRIV DITT NUMMER HÄR' class='smsInput' type='text'></div>")
+$(".open-movie").after("<a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>")
+  $(".open-movie").after("<div id='mylightbox' class='lightbox'></div>")
+  $( ".smsButton" ).click(function() {
+    var number = $(".smsInput").val().toString()
+  if(number.startsWith("07")) {
+    number = number.substring(1,10) 
+    number = "+46" + number
+    }
+    console.log(number)
+    if(!send)
+      return
+    window.jQuery.ajax({
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        },
+        type: "POST",
+        url: "http://vp-live.herokuapp.com/v0.5/send-sms/",
+        data: '{"phoneNo" : "' + number + '"}',
+        dataType: 'json',
+        success: function() {
+        console.log("success")
+        send = false
+        $(".smsInput").val("+46")
+        $(".smsButton").val("Skickat")
+$(".smsButton").addClass("sent")
+        },
+        error: function(e) {
+          console.log(e)
+        }
+    });
+  });
+}
+});
+</script>
+
+
+<script type="text/javascript">
+    adroll_adv_id = "WCNZUGWZSZADLIW5DVFFP4";
+    adroll_pix_id = "CO57CJJ6O5BPLHTS2OPSJW";
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
+<script type='text/javascript' src='../wordpress/wp-includes/js/wp-embede100.js?ver=4.7.2'></script>
+
+			<div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: #fff; background-color: #727272;"><div class="cookie-notice-container"><span id="cn-notice-text">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Cool</a>
+				</div>
+			</div>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70149855-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<script src="../themes/veckopengen/assets/scripts/components.js"></script>
+<script src="../themes/veckopengen/assets/scripts/app.js"></script>
+</body>
+
+<!-- Mirrored from gimitheapp.com/terms/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Feb 2017 14:24:00 GMT -->
+</html>
