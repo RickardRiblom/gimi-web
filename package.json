@@ -1,0 +1,23 @@
+{
+  "name": "gimi-web",
+  "version": "1.0.0",
+  "description": "## Specifications Alright Gimi-web will be a Single page Application that will host the content for the sites:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barnpengar/gimi-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barnpengar/gimi-web/issues"
+  },
+  "homepage": "https://github.com/Barnpengar/gimi-web#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
