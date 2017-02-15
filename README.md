@@ -24,7 +24,7 @@ https://gimi-web.herokuapp.com/specs/gimitheapp.com/
 
 Here are the MileStones:
 
-* fork veckopengen.se folder in src directory
+* fork veckopengen.se folder and copy into src directory
 * Support for different languages (i18n) on different sites. Make i18n support for every text on the whole site using your favourite react i18n component (end result should be a sv.json, en.json and no.json) in the src/i18n folder)
 * make routing support for different content on different sites (i.e solve all the trello cards in https://trello.com/b/YfuphV6N/gimi-web)
 * Make support for blog (see this card: https://trello.com/c/WkZrVbf5/4-localize-every-text-except-this-site-see-screenshot)
