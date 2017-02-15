@@ -1,5 +1,7 @@
 # gimi-web
 
+As the specifications are complete and well specced out this can be done by a junior developer for a fixed cost. If this goes well it is encouraged to start a recurring contract. Senior developer from our side will assist you (same developer as writing these specs)
+
 ## Specifications
 Alright Gimi-web will be a Single page Application that will host the content for the sites:
 
@@ -8,9 +10,9 @@ Alright Gimi-web will be a Single page Application that will host the content fo
 * ukepengen.no
 
 The content is stored in the folders /specs/veckopengen.se, /specs/ukepengen.no, /specs/gimitheapp.com/.
-This is rough description of how i would have done it and the milestones this project has. The milestones will be tied to a monetary reward. The last milestone is arbitrary feedback. We will only do this one iteration to not impose great risk on the project. Code reviews and feedback for every commit is calculated into the individual milestones.
+This is rough description of how i would have done it and the milestones this project has. The milestones will be tied to a monetary reward. The last milestone is arbitrary feedback. We will only do this one iteration of arbitrary feedback to not impose great risk for you. Code reviews and feedback for every commit is calculated into the individual milestones.
 
-The end result should be a Single Page Application (SPA) written in react powering these three sites. Some content in the SPA will be site specific (i.e veckopengen.se, ukepengen.no and gimitheapp.com specific). More information on this in the trello cards.
+The end result should be a Single Page Application (SPA) written in react powering these three sites (the routing solution you write will support this). Some content in the SPA will be site specific (i.e veckopengen.se, ukepengen.no and gimitheapp.com specific). More information on this in the trello cards.
 
 Trello cards is at this url: https://trello.com/b/YfuphV6N/gimi-web
 
@@ -38,3 +40,6 @@ Here are the MileStones:
 Budget: 1500 dollars
 
 Final feedback is 200 dollars, the reset of the milestones is 1300/number of milestones each
+
+## Guidelines ##
+Use bootstrap as layout engine. I encourage you to use babel/es6 however create clear build/deploy scripts in package.json if you do. If yor prefer not to work with the generated html pages youre free to do so. The raw psd files ar located in psd. Also if you have a better flow than the one presented above plz feel free to run it by me. We do a milestone for each point here over. That means you get a reward for every completed point stated above.
