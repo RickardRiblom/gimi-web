@@ -1,18 +1,15 @@
 import React from 'react';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 export default class Section extends React.Component {
     render() {
         return (
             <section className="features">
                 <div className="features__header wow fadeInDown">
-
                     <div className="row">
                         <div className="medium-8 medium-push-2 columns">
-                            <h2>Barnsligt bra för hela familjen</h2>
-
-                            <p>Veckopengens funktioner gör att barn kan hantera sina egna pengar och få ekonomiska superkrafter
-                                på riktigt. </p>
-
+                            <FormattedMessage tagName="h2" id="home.section1.header" />
+                            <FormattedMessage tagName="p" id="home.section1.desc"/>
                         </div>
                     </div>
                 </div>
@@ -75,15 +72,10 @@ export default class Section extends React.Component {
 
                         <div className="medium-6 medium-pull-6 columns">
                             <div className="feature__content wow fadeInLeft">
-                                <h3>Bättre koll på pengarna</h3>
-
-                                <p>Sätt upp dag och summa för vecko- eller månadspengen. Vi räknar dagar och säger till när det
-                                    är dags för utbetalning. Men ingen stress om det inte finns kontanter hemma, då läggs
-                                    nämligen vecko- eller månadspengen automatiskt i spargrisen.</p>
-                                <h4>Superkraft:</h4>
-                                <ul>
-                                    <li>Barn lär sig ta ansvar och att planera med sina pengar</li>
-                                </ul>
+                                <FormattedMessage tagName="h3" id="home.section2.header"/>
+                                <FormattedMessage tagName="p" id="home.section2.body"/>
+                                <FormattedMessage tagName="h4" id="home.section2.subheader"/>
+                                <FormattedMessage tagName="p" id="home.section2.superpower"/>
                             </div>
                         </div>
 
@@ -631,7 +623,7 @@ export default class Section extends React.Component {
                             </div>
                             <div className="anim-controlls">
 
-                                <p>10% sparränta</p>
+                                <FormattedMessage tagName="p" id="home.section3.interest"/>
                                 <a href="#" id="pig-minus-button">
                                     <img src="/assets/images/minus-circle.png"/>
                                 </a>
@@ -645,26 +637,18 @@ export default class Section extends React.Component {
                         </div>
                         <div className="medium-6 columns">
                             <div className="feature__content wow fadeInRight">
-                                <h3>Spargris som växer</h3>
-
-                                <p>Föräldrar kan uppmuntra till sparande genom att sätta en ränta i barnets egna spargris. När
-                                    barnet sedan sparar av sin vecko- eller månadspeng växer spargrisen och blir gladare.</p>
-                                <h4>Superkraft:</h4>
-                                <ul>
-                                    <li>Barn lär sig att det lönar sig att spara</li>
-                                </ul>
+                                <FormattedMessage tagName="h3" id="home.section3.header"/>
+                                <FormattedMessage tagName="p" id="home.section3.body"/>
+                                <FormattedMessage tagName="h4" id="home.section3.subheader"/>
+                                <FormattedMessage tagName="p" id="home.section3.superpower"/>
                             </div>
-
                         </div>
                     </div>
-
                     <div className="row third-line"></div>
-
                 </div>
 
                 <div className="feature tasks">
                     <div className="row">
-
                         <div className="medium-6 medium-push-6 columns fadeInRight wow">
 
                             <div className="cutter-image">
@@ -693,26 +677,16 @@ export default class Section extends React.Component {
                                 </div>
                             </div>
                         </div>
-
                         <div className="medium-6 medium-pull-6 columns">
                             <div className="feature__content wow fadeInLeft">
-                                <h3>Uppgifter med bildbevis</h3>
-
-                                <p>Föräldrar kan ge ut egna uppgifter med belöningar. Uppgifterna kan återkomma på vissa dagar,
-                                    kräva ett bildbevis eller gälla som först till kvarn mellan flera syskon.</p>
-                                <h4>Superkraft:</h4>
-                                <ul>
-                                    <li>Barn lär sig förstå värdet av att hjälpa till</li>
-                                </ul>
+                                <FormattedMessage tagName="h3" id="home.section4.header"/>
+                                <FormattedMessage tagName="p" id="home.section4.body"/>
+                                <FormattedMessage tagName="h4" id="home.section4.subheader"/>
+                                <FormattedMessage tagName="p" id="home.section4.superpower"/>
                             </div>
                         </div>
-
                     </div>
-
-
                     <div className="row fourth-line"></div>
-
-
                 </div>
 
                 <div className="feature save-objective">
@@ -720,30 +694,20 @@ export default class Section extends React.Component {
                         <div className="medium-6 columns fadeInLeft wow">
 
                             <div className="save-objective__slider">
-
-
                                 <div className="save-objective__slider-item">
                                     <img src="/assets/images/funfair.png"/>
-
-                                    <p>
-                                        <strong>33%</strong> sparat till tivoli-besök </p>
+                                    <p>  <strong>33%</strong> <FormattedMessage id="home.section5.point1"/> </p>
                                 </div>
 
                                 <div className="save-objective__slider-item">
                                     <img src="/assets/images/konsol.png"/>
-
-                                    <p>
-                                        <strong>57%</strong> sparat till spelkonsol </p>
+                                    <p> <strong>57%</strong> <FormattedMessage id="home.section5.point2"/> </p>
                                 </div>
 
                                 <div className="save-objective__slider-item">
                                     <img src="/assets/images/ball.png"/>
-
-                                    <p>
-                                        <strong>100%</strong> sparat till fotboll </p>
+                                    <p> <strong>100%</strong> <FormattedMessage id="home.section5.point3"/> </p>
                                 </div>
-
-
                             </div>
 
                             <div className="save-objective__progress-wrapper">
@@ -754,14 +718,10 @@ export default class Section extends React.Component {
                         </div>
                         <div className="medium-6 columns">
                             <div className="feature__content wow fadeInRight">
-                                <h3>Sparmål för stora drömmar </h3>
-
-                                <p>Barn kan sätta upp sina egna sparmål och se hur varje ny krona i spargrisen tar dem närmare
-                                    sparmålet.</p>
-                                <h4><strong>Superkraft: </strong></h4>
-                                <ul>
-                                    <li>Barn lär sig spara till saker som de tidigare bara drömt om</li>
-                                </ul>
+                                <FormattedMessage tagName="h3" id="home.section5.header"/>
+                                <FormattedMessage tagName="p" id="home.section5.body"/>
+                                <FormattedMessage tagName="h4" id="home.section3.subheader"/>
+                                <FormattedMessage tagName="p" id="home.section5.superpower"/>
                             </div>
                         </div>
                     </div>
@@ -782,7 +742,9 @@ export default class Section extends React.Component {
 										<img src="/assets/images/tip-pointer.png"
                                              alt="Tip pointer"/>
 									</span>
-                                    <span className="features__tip-text">Ladda ned nu och kom åt superkrafterna!</span>
+                                    <span className="features__tip-text">
+                                        <FormattedMessage id="home.section6.download_tip"/>
+                                    </span>
                                 </div>
 
                                 <a href="https://itunes.apple.com/se/app/veckopengen-for-barn-och-foraldrar/id935778197?mt=8">
@@ -797,7 +759,7 @@ export default class Section extends React.Component {
                             </div>
                             <div className="footer-carousel">
                                 <blockquote className="features__quote fadeInUp wow">
-                                    <p>“Lättanvänd och jättebra sätt att motivera barnen! ”</p>
+                                    <FormattedMessage tagName="p" id="home.quote1"/>
                                     <footer>– <span
                                         className="features__quote-name">Anna</span>,
                                         <span className="features__quote-age">37 år</span>
@@ -805,7 +767,7 @@ export default class Section extends React.Component {
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
-                                    <p>“Jag kan se hur långt det är kvar till nånting som jag sparar till!”</p>
+                                    <FormattedMessage tagName="p" id="home.quote2"/>
                                     <footer>– <span
                                         className="features__quote-name">Lion</span>,
                                         <span className="features__quote-age">10 år</span>
@@ -813,7 +775,7 @@ export default class Section extends React.Component {
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
-                                    <p>“Det är ballt med veckopengen i mobilen :) ”</p>
+                                    <FormattedMessage tagName="p" id="home.quote3"/>
                                     <footer>– <span
                                         className="features__quote-name">Benny</span>,
                                         <span className="features__quote-age">8 år</span>
@@ -821,8 +783,7 @@ export default class Section extends React.Component {
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
-                                    <p>“Tummen upp till Veckopengen. Ett bra sätt att hålla koll på vad man lovar barnen och att
-                                        de får en morot att för att hjälpa till hemma!”</p>
+                                    <FormattedMessage tagName="p" id="home.quote4"/>
                                     <footer>– <span
                                         className="features__quote-name">Thomas</span>,
                                         <span className="features__quote-age">Pappa till fyra</span>
@@ -830,8 +791,7 @@ export default class Section extends React.Component {
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
-                                    <p>“Ett enkelt sätt att lära barnen pengars värde. Väldigt fiffigt att man kan begära
-                                        bildbevis också!”</p>
+                                    <FormattedMessage tagName="p" id="home.quote5"/>
                                     <footer>– <span
                                         className="features__quote-name">Johanna</span>,
                                         <span className="features__quote-age">Mamma</span>
@@ -840,7 +800,9 @@ export default class Section extends React.Component {
                                 </blockquote>
                             </div>
                             <a href="upplev-veckopengen/index.html"
-                               className="button fadeInUp wow"> Upplev Veckopengen</a>
+                               className="button fadeInUp wow">
+                                <FormattedMessage id="home.section6.button"/>
+                            </a>
                         </div>
                     </div>
                 </div>

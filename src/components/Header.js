@@ -37,22 +37,22 @@ export default class Header extends React.Component {
                                 <ul id="menu-primary-nav-se" className="">
                                     <li id="menu-item-1236"
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-44 current_page_item menu-item-1236">
-                                        <Link to="/">Hem</Link></li>
+                                        <Link to="/"><FormattedMessage id="header.home"/></Link></li>
                                     <li id="menu-item-253"
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-253">
-                                        <Link to={`/${lang}/family`}>Upplev veckopengen</Link></li>
+                                        <Link to={`/${lang}/family`}><FormattedMessage id="header.family"/></Link></li>
                                     <li id="menu-item-254"
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-254">
-                                        <Link to={`/${lang}/training`}>Träning</Link></li>
+                                        <Link to={`/${lang}/training`}><FormattedMessage id="header.training"/></Link></li>
                                     <li id="menu-item-611"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-611">
-                                        <Link to={`/${lang}/news`}>Aktuellt</Link></li>
+                                        <Link to={`/${lang}/news`}><FormattedMessage id="header.news"/></Link></li>
                                     <li id="menu-item-522"
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-522">
-                                        <Link to={`/${lang}/about`}>Om oss</Link></li>
+                                        <Link to={`/${lang}/about`}><FormattedMessage id="header.about"/></Link></li>
                                     <li id="menu-item-1750"
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1750">
-                                        <a href="http://veckopengen.teamtailor.com/">JOBB</a></li>
+                                        <a href="http://veckopengen.teamtailor.com/"><FormattedMessage id="header.job"/></a></li>
                                     <li id="menu-item-1349-en"
                                         className="lang-item lang-item-27 lang-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-1349-en">
                                         <a href="http://gimitheapp.com/" hrefLang="en-US" lang="en-US"><img

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav } from 'reactstrap';
-import { FormattedMessage,injectIntl } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
 import { Link } from 'react-router';
 
 export default class Footer extends React.Component {
@@ -54,7 +54,7 @@ export default class Footer extends React.Component {
                                 <span className="kr">kr</span>
                             </div>
 
-                            <p>Utbetalda vecko- och månadspengar</p>
+                            <FormattedMessage tagName="p" id="footer.amout_paid_out"/>
 
 
                             <div className="footer-bottom__appstore-links">
@@ -76,13 +76,11 @@ export default class Footer extends React.Component {
 
                         <div className="medium-6 medium-pull-6 large-4 large-pull-4 columns">
                             <div className="footer-bottom__content">
-                                <h5>Om Veckopengen</h5>
-                                <p>Vi på Veckopengen arbetar för att barn och unga enkelt ska kunna hantera pengar på ett sunt
-                                    och ansvarsfullt sätt. Våra verktyg ska främja en trygg, lärorik och roligare privatekonomi
-                                    för både barn och föräldrar.</p>
-                                <p>Kontakta oss gärna för support eller feedback: <a href="mailto:info@veckopengen.se"
-                                                                                     target="_blank">info@veckopengen.se</a></p>
-                                <p>Signa up för vårt nyhetsbrev</p>
+                                <FormattedMessage id="footer.about_companyname" tagName="h5"/>
+                                <FormattedMessage id="footer.about" tagName="p"/>
+                                <FormattedHTMLMessage tagName="p" id="footer.about2" values={{email: 'info@veckopengen.se'}}/>
+
+                                <FormattedMessage tagName="p" id="footer.newsletter"/>
 
                                 <div id="mc_embed_signup">
                                     <form
@@ -93,7 +91,7 @@ export default class Footer extends React.Component {
 
                                             <div className="mc-field-group">
                                                 <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL"
-                                                       placeholder="Email adress"/>
+                                                       placeholder="Email address"/>
                                                     <button type="submit">
                                                         <img
                                                             src="/assets/images/submit-button-arrow.png"
@@ -159,13 +157,13 @@ export default class Footer extends React.Component {
                                     <ul id="menu-footer-nav-se" className="">
                                         <li id="menu-item-498"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a
-                                            href="press/index.html">Press</a></li>
+                                            href="press/index.html"><FormattedMessage id="footer.press"/></a></li>
                                         <li id="menu-item-247"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a
-                                            href="villkor/index.html">Villkor</a></li>
+                                            href="villkor/index.html"><FormattedMessage id="footer.terms"/></a></li>
                                         <li id="menu-item-249"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a
-                                            href="faq/index.html">Frågor &#038; svar</a></li>
+                                            href="faq/index.html"><FormattedMessage id="footer.faq"/></a></li>
                                     </ul>
                                 </div>
                             </div>

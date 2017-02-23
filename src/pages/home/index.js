@@ -2,7 +2,7 @@
  * Created by amitava on 22/02/17.
  */
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -55,7 +55,6 @@ export default class Home extends React.Component {
                 <Header/>
                 <main>
                     <section className="landing-hero">
-
                         <div className="row">
                             <div className="landing-hero__image">
                                 <img src="http://veckopengen.se/uploads/2015/10/NYNY-PHONE-NYHEMSIDA.png" alt=""/>
@@ -102,13 +101,12 @@ export default class Home extends React.Component {
                                     <div className="row">
                                         <div className="medium-8 medium-push-4 columns">
                                             <div className="landing-hero-content-slider__content">
-                                                <h2><h2>
-                                                    <span>Det nya sättet att hantera vecko- eller månadspengen!</span>
-                                                </h2>
-                                                </h2>
+                                                <FormattedMessage tagName="h2" id="home.slide1.header"/>
 
                                                 <div className="large-10">
-                                                    <p className="p1"><span className="s1">Woop woop! Mobilappen Veckopengen har ekonomiska superfunktioner som gör det roligt och lärorikt att hantera pengar. Både för barn och föräldrar.</span>
+                                                    <p className="p1"><span className="s1">
+                                                        <FormattedMessage id="home.slide1.desc"/>
+                                                    </span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -117,16 +115,10 @@ export default class Home extends React.Component {
                                     <div className="row">
                                         <div className="medium-8 medium-push-4 columns">
                                             <div className="landing-hero-content-slider__content">
-                                                <h2><p>&nbsp;</p>
-                                                    <h2>Surfkollen!</h2>
-                                                </h2>
+                                                <FormattedMessage tagName="h2" id="home.slide2.header"/>
 
                                                 <div className="large-10">
-                                                    <p><strong>Nu lanserar vi tjänsten Sufkollen tillsammans med
-                                                        Telenor, för att göra
-                                                        det lättare att hålla koll på surfen. <a
-                                                            href="aktuellt/surfkoll-lanseras-tillsammans-med-telenor/index.html">Läs
-                                                            mer här!</a></strong></p>
+                                                    <FormattedHTMLMessage tagName="p" id="home.slide2.desc"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,15 +126,10 @@ export default class Home extends React.Component {
                                     <div className="row">
                                         <div className="medium-8 medium-push-4 columns">
                                             <div className="landing-hero-content-slider__content">
-                                                <h2><h2>Med familjen i fokus</h2>
-                                                </h2>
+                                                <FormattedMessage tagName="h2" id="home.slide3.header"/>
 
                                                 <div className="large-10">
-                                                    <p><strong>Veckopengen har etiska regler för att hela familjen ska
-                                                        känna sig trygg. <em><a
-                                                            href="http://veckopengen.stuff.wmyl.se/villkor/">Läs mer om
-                                                            våra etiska
-                                                            regler här</a>.</em></strong></p>
+                                                    <FormattedHTMLMessage tagName="p" id="home.slide3.desc"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,13 +155,12 @@ export default class Home extends React.Component {
                                                 <a href="#" className="button button-movie">
                                                     <img src="/assets/images/play-icon.png"
                                                          alt=""/>
-                                                    Visa film</a>
+                                                    <FormattedMessage id="home.watch"/>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </section>
