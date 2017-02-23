@@ -2,7 +2,8 @@
 <html lang="sv-SE">
 
 <!-- Mirrored from veckopengen.se/traning/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Feb 2017 14:05:44 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,261 +22,294 @@
         var counterValue = 74931509;
     </script>
 
-    <script type="text/javascript" src="../wordpress/wp-admin/admin-ajax06ba.html?action=pll_xdata_check&amp;redirect=http%3A%2F%2Fveckopengen.se%2Ftraning%2F&amp;nonce=ff0c90e7dd"></script><link rel='dns-prefetch' href='http://s.w.org/' />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/veckopengen.se\/wordpress\/wp-includes\/js\/wp-emoji.js?ver=4.7.2","twemoji":"http:\/\/veckopengen.se\/wordpress\/wp-includes\/js\/twemoji.js?ver=4.7.2"}};
-			( function( window, document, settings ) {
-	var src, ready, ii, tests;
+    <script type="text/javascript"
+            src="../wordpress/wp-admin/admin-ajax06ba.html?action=pll_xdata_check&amp;redirect=http%3A%2F%2Fveckopengen.se%2Ftraning%2F&amp;nonce=ff0c90e7dd"></script>
+    <link rel='dns-prefetch' href='http://s.w.org/'/>
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "wpemoji": "http:\/\/veckopengen.se\/wordpress\/wp-includes\/js\/wp-emoji.js?ver=4.7.2",
+                "twemoji": "http:\/\/veckopengen.se\/wordpress\/wp-includes\/js\/twemoji.js?ver=4.7.2"
+            }
+        };
+        (function (window, document, settings) {
+            var src, ready, ii, tests;
 
-	/*
-	 * Create a canvas element for testing native browser support
-	 * of emoji.
-	 */
-	var canvas = document.createElement( 'canvas' );
-	var context = canvas.getContext && canvas.getContext( '2d' );
+            /*
+             * Create a canvas element for testing native browser support
+             * of emoji.
+             */
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext && canvas.getContext('2d');
 
-	/**
-	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
-	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
-	 *
-	 * @since 4.2.0
-	 *
-	 * @param type {String} Whether to test for support of "flag" or "emoji4" emoji.
-	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
-	 */
-	function browserSupportsEmoji( type ) {
-		var stringFromCharCode = String.fromCharCode,
-			flag, flag2, technologist, technologist2;
+            /**
+             * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+             * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+             *
+             * @since 4.2.0
+             *
+             * @param type {String} Whether to test for support of "flag" or "emoji4" emoji.
+             * @return {Boolean} True if the browser can render emoji, false if it cannot.
+             */
+            function browserSupportsEmoji(type) {
+                var stringFromCharCode = String.fromCharCode,
+                    flag, flag2, technologist, technologist2;
 
-		if ( ! context || ! context.fillText ) {
-			return false;
-		}
+                if (!context || !context.fillText) {
+                    return false;
+                }
 
-		// Cleanup from previous test.
-		context.clearRect( 0, 0, canvas.width, canvas.height );
+                // Cleanup from previous test.
+                context.clearRect(0, 0, canvas.width, canvas.height);
 
-		/*
-		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
-		 * it doesn't work when the font is bolder than 500 weight. So, we
-		 * check for bold rendering support to avoid invisible emoji in Chrome.
-		 */
-		context.textBaseline = 'top';
-		context.font = '600 32px Arial';
+                /*
+                 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+                 * it doesn't work when the font is bolder than 500 weight. So, we
+                 * check for bold rendering support to avoid invisible emoji in Chrome.
+                 */
+                context.textBaseline = 'top';
+                context.font = '600 32px Arial';
 
-		switch ( type ) {
-			case 'flag':
-				/*
-				 * This works because the image will be one of three things:
-				 * - Two empty squares, if the browser doesn't render emoji
-				 * - Two squares with 'U' and 'N' in them, if the browser doesn't render flag emoji
-				 * - The United Nations flag
-				 *
-				 * The first two will encode to small images (1-2KB data URLs), the third will encode
-				 * to a larger image (4-5KB data URL).
-				 */
-				context.fillText( stringFromCharCode( 55356, 56826, 55356, 56819 ), 0, 0 );
-				if ( canvas.toDataURL().length < 3000 ) {
-					return false;
-				}
+                switch (type) {
+                    case 'flag':
+                        /*
+                         * This works because the image will be one of three things:
+                         * - Two empty squares, if the browser doesn't render emoji
+                         * - Two squares with 'U' and 'N' in them, if the browser doesn't render flag emoji
+                         * - The United Nations flag
+                         *
+                         * The first two will encode to small images (1-2KB data URLs), the third will encode
+                         * to a larger image (4-5KB data URL).
+                         */
+                        context.fillText(stringFromCharCode(55356, 56826, 55356, 56819), 0, 0);
+                        if (canvas.toDataURL().length < 3000) {
+                            return false;
+                        }
 
-				context.clearRect( 0, 0, canvas.width, canvas.height );
+                        context.clearRect(0, 0, canvas.width, canvas.height);
 
-				/*
-				 * Test for rainbow flag compatibility. As the rainbow flag was added out of sequence with
-				 * the usual Unicode release cycle, some browsers support it, and some don't, even if their
-				 * Unicode support is up to date.
-				 *
-				 * To test for support, we try to render it, and compare the rendering to how it would look if
-				 * the browser doesn't render it correctly (white flag emoji + rainbow emoji).
-				 */
-				context.fillText( stringFromCharCode( 55356, 57331, 65039, 8205, 55356, 57096 ), 0, 0 );
-				flag = canvas.toDataURL();
+                        /*
+                         * Test for rainbow flag compatibility. As the rainbow flag was added out of sequence with
+                         * the usual Unicode release cycle, some browsers support it, and some don't, even if their
+                         * Unicode support is up to date.
+                         *
+                         * To test for support, we try to render it, and compare the rendering to how it would look if
+                         * the browser doesn't render it correctly (white flag emoji + rainbow emoji).
+                         */
+                        context.fillText(stringFromCharCode(55356, 57331, 65039, 8205, 55356, 57096), 0, 0);
+                        flag = canvas.toDataURL();
 
-				context.clearRect( 0, 0, canvas.width, canvas.height );
+                        context.clearRect(0, 0, canvas.width, canvas.height);
 
-				context.fillText( stringFromCharCode( 55356, 57331, 55356, 57096 ), 0, 0 );
-				flag2 = canvas.toDataURL();
+                        context.fillText(stringFromCharCode(55356, 57331, 55356, 57096), 0, 0);
+                        flag2 = canvas.toDataURL();
 
-				return flag !== flag2;
-			case 'emoji4':
-				/*
-				 * Emoji 4 has the best technologists. So does WordPress!
-				 *
-				 * To test for support, try to render a new emoji (woman technologist: medium skin tone),
-				 * then compare it to how it would look if the browser doesn't render it correctly
-				 * (woman technologist: medium skin tone + personal computer).
-				 */
-				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0 );
-				technologist = canvas.toDataURL();
+                        return flag !== flag2;
+                    case 'emoji4':
+                        /*
+                         * Emoji 4 has the best technologists. So does WordPress!
+                         *
+                         * To test for support, try to render a new emoji (woman technologist: medium skin tone),
+                         * then compare it to how it would look if the browser doesn't render it correctly
+                         * (woman technologist: medium skin tone + personal computer).
+                         */
+                        context.fillText(stringFromCharCode(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0);
+                        technologist = canvas.toDataURL();
 
-				context.clearRect( 0, 0, canvas.width, canvas.height );
+                        context.clearRect(0, 0, canvas.width, canvas.height);
 
-				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 55357, 56507), 0, 0 );
-				technologist2 = canvas.toDataURL();
+                        context.fillText(stringFromCharCode(55357, 56425, 55356, 57341, 55357, 56507), 0, 0);
+                        technologist2 = canvas.toDataURL();
 
-				return technologist !== technologist2;
-		}
+                        return technologist !== technologist2;
+                }
 
-		return false;
-	}
+                return false;
+            }
 
-	function addScript( src ) {
-		var script = document.createElement( 'script' );
+            function addScript(src) {
+                var script = document.createElement('script');
 
-		script.src = src;
-		script.defer = script.type = 'text/javascript';
-		document.getElementsByTagName( 'head' )[0].appendChild( script );
-	}
+                script.src = src;
+                script.defer = script.type = 'text/javascript';
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
 
-	tests = Array( 'flag', 'emoji4' );
+            tests = Array('flag', 'emoji4');
 
-	settings.supports = {
-		everything: true,
-		everythingExceptFlag: true
-	};
+            settings.supports = {
+                everything: true,
+                everythingExceptFlag: true
+            };
 
-	for( ii = 0; ii < tests.length; ii++ ) {
-		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+            for (ii = 0; ii < tests.length; ii++) {
+                settings.supports[tests[ii]] = browserSupportsEmoji(tests[ii]);
 
-		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+                settings.supports.everything = settings.supports.everything && settings.supports[tests[ii]];
 
-		if ( 'flag' !== tests[ ii ] ) {
-			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
-		}
-	}
+                if ('flag' !== tests[ii]) {
+                    settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[ii]];
+                }
+            }
 
-	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+            settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && !settings.supports.flag;
 
-	settings.DOMReady = false;
-	settings.readyCallback = function() {
-		settings.DOMReady = true;
-	};
+            settings.DOMReady = false;
+            settings.readyCallback = function () {
+                settings.DOMReady = true;
+            };
 
-	if ( ! settings.supports.everything ) {
-		ready = function() {
-			settings.readyCallback();
-		};
+            if (!settings.supports.everything) {
+                ready = function () {
+                    settings.readyCallback();
+                };
 
-		if ( document.addEventListener ) {
-			document.addEventListener( 'DOMContentLoaded', ready, false );
-			window.addEventListener( 'load', ready, false );
-		} else {
-			window.attachEvent( 'onload', ready );
-			document.attachEvent( 'onreadystatechange', function() {
-				if ( 'complete' === document.readyState ) {
-					settings.readyCallback();
-				}
-			} );
-		}
+                if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', ready, false);
+                    window.addEventListener('load', ready, false);
+                } else {
+                    window.attachEvent('onload', ready);
+                    document.attachEvent('onreadystatechange', function () {
+                        if ('complete' === document.readyState) {
+                            settings.readyCallback();
+                        }
+                    });
+                }
 
-		src = settings.source || {};
+                src = settings.source || {};
 
-		if ( src.concatemoji ) {
-			addScript( src.concatemoji );
-		} else if ( src.wpemoji && src.twemoji ) {
-			addScript( src.twemoji );
-			addScript( src.wpemoji );
-		}
-	}
+                if (src.concatemoji) {
+                    addScript(src.concatemoji);
+                } else if (src.wpemoji && src.twemoji) {
+                    addScript(src.twemoji);
+                    addScript(src.wpemoji);
+                }
+            }
 
-} )( window, document, window._wpemojiSettings );
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='cookie-notice-front-css'  href='../plugins/cookie-notice/css/fronte100.css?ver=4.7.2' type='text/css' media='all' />
-<script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
-<script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jquery-migrate330a.js?ver=1.4.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var cnArgs = {"ajaxurl":"http:\/\/veckopengen.se\/wordpress\/wp-admin\/admin-ajax.php","hideEffect":"fade","onScroll":"no","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"TRUE","cookieTime":"31536000","cookiePath":"\/","cookieDomain":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='../plugins/cookie-notice/js/frontd468.js?ver=1.2.37'></script>
-<link rel='https://api.w.org/' href='../wp-json/index.html' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../wordpress/xmlrpc0db0.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wordpress/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.7.2" />
-<link rel="canonical" href="index.html" />
-<link rel='shortlink' href='../indexe9b4.html?p=58' />
-<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedfda6.json?url=http%3A%2F%2Fveckopengen.se%2Ftraning%2F" />
-<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed5683?url=http%3A%2F%2Fveckopengen.se%2Ftraning%2F&amp;format=xml" />
-<style type="text/css">
-#blanket {
-background-color:#111;
-opacity: 0.65;
-*background:none;
-position:absolute;
-z-index: 9001;
-top:0px;
-left:0px;
-width:100%;
-}
+        })(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='cookie-notice-front-css' href='../plugins/cookie-notice/css/fronte100.css?ver=4.7.2'
+          type='text/css' media='all'/>
+    <script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+    <script>jQueryWP = jQuery;</script>
+    <script type='text/javascript' src='../wordpress/wp-includes/js/jquery/jquery-migrate330a.js?ver=1.4.1'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var cnArgs = {
+            "ajaxurl": "http:\/\/veckopengen.se\/wordpress\/wp-admin\/admin-ajax.php",
+            "hideEffect": "fade",
+            "onScroll": "no",
+            "onScrollOffset": "100",
+            "cookieName": "cookie_notice_accepted",
+            "cookieValue": "TRUE",
+            "cookieTime": "31536000",
+            "cookiePath": "\/",
+            "cookieDomain": ""
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='../plugins/cookie-notice/js/frontd468.js?ver=1.2.37'></script>
+    <link rel='https://api.w.org/' href='../wp-json/index.html'/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../wordpress/xmlrpc0db0.php?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wordpress/wp-includes/wlwmanifest.xml"/>
+    <meta name="generator" content="WordPress 4.7.2"/>
+    <link rel="canonical" href="index.html"/>
+    <link rel='shortlink' href='../indexe9b4.html?p=58'/>
+    <link rel="alternate" type="application/json+oembed"
+          href="../wp-json/oembed/1.0/embedfda6.json?url=http%3A%2F%2Fveckopengen.se%2Ftraning%2F"/>
+    <link rel="alternate" type="text/xml+oembed"
+          href="../wp-json/oembed/1.0/embed5683?url=http%3A%2F%2Fveckopengen.se%2Ftraning%2F&amp;format=xml"/>
+    <style type="text/css">
+        #blanket {
+            background-color: #111;
+            opacity: 0.65;
+            *background: none;
+            position: absolute;
+            z-index: 9001;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
 
-#popUpDiv {
-position:absolute;
-background:url(pop-back.html) no-repeat;
-width:400px;
-height:400px;
-border:5px solid #000;
-z-index: 9002;
-}
-.lightbox {
-  display: none;
-}
-.smsHeader{
-font-size:16px;
-  font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, 
-}
-.smsButton{    border: none;
-    outline: none;
-    background-color: #0698c0;
-    padding: 6px 15px;
-    font-size: 18px;
-    color: #FFF;
-    font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    transition: all .3s;
-    margin-right: 9px;
-    padding-top: 8px;
-}
-.smsInput{
-        height: 36px;
-    border: 1px solid gray;
-    border-radius: 6px;
-    position: relative;
-    top: 0px;
-    width: 220px;
-    padding-left: 6px;
-    padding-top: 4px;
-    font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-}
+        #popUpDiv {
+            position: absolute;
+            background: url(pop-back.html) no-repeat;
+            width: 400px;
+            height: 400px;
+            border: 5px solid #000;
+            z-index: 9002;
+        }
 
-.sent{
-    background-color: #4ec006;
-}
- </style>
-<script type="text/javascript">
-(function(h,e,a,t,m,p) {
-m=e.createElement(a);m.async=!0;m.src=t;
-p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
-})(window,document,'script','https://u.heatmap.it/log.js');
-</script>
-		<link rel="alternate" href="index.html" hreflang="sv" />
-<link rel="alternate" href="http://gimitheapp.com/training-2/" hreflang="en" />
-<link rel="alternate" href="http://no.gimitheapp.com/trening/" hreflang="nb" />
+        .lightbox {
+            display: none;
+        }
+
+        .smsHeader {
+            font-size: 16px;
+            font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri,
+        }
+
+        .smsButton {
+            border: none;
+            outline: none;
+            background-color: #0698c0;
+            padding: 6px 15px;
+            font-size: 18px;
+            color: #FFF;
+            font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            transition: all .3s;
+            margin-right: 9px;
+            padding-top: 8px;
+        }
+
+        .smsInput {
+            height: 36px;
+            border: 1px solid gray;
+            border-radius: 6px;
+            position: relative;
+            top: 0px;
+            width: 220px;
+            padding-left: 6px;
+            padding-top: 4px;
+            font-family: HelveticaNeueLT-Bold, "Helvetica Neue Bold", "HelveticaNeue-Bold", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+        }
+
+        .sent {
+            background-color: #4ec006;
+        }
+    </style>
+    <script type="text/javascript">
+        (function (h, e, a, t, m, p) {
+            m = e.createElement(a);
+            m.async = !0;
+            m.src = t;
+            p = e.getElementsByTagName(a)[0];
+            p.parentNode.insertBefore(m, p);
+        })(window, document, 'script', 'https://u.heatmap.it/log.js');
+    </script>
+    <link rel="alternate" href="index.html" hreflang="sv"/>
+    <link rel="alternate" href="http://gimitheapp.com/training-2/" hreflang="en"/>
+    <link rel="alternate" href="http://no.gimitheapp.com/trening/" hreflang="nb"/>
 
     <link rel="icon" type="image/png" sizes="16x16"
           href="../themes/veckopengen/favicon-16x16.png">
@@ -313,295 +347,392 @@ p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
 
         <div class="nav-logo">
             <a href="../index.html" class="init">
-                                                            <img src="../uploads/2015/11/NYLOGGA_hem_vit.png" alt=""/>
-                                                </a>
+                <img src="../uploads/2015/11/NYLOGGA_hem_vit.png" alt=""/>
+            </a>
 
             <a href="../index.html" class="scroll">
-                                    <img src="../uploads/2015/11/NYLOGGA_hem_gra.png" alt=""/>
-                            </a>
+                <img src="../uploads/2015/11/NYLOGGA_hem_gra.png" alt=""/>
+            </a>
         </div>
 
         <div class="nav-logo-mobile">
             <a href="../index.html">
-                                    <img src="../uploads/2015/11/NYLOGGA_hem_gra.png" alt=""/>
-                            </a>
+                <img src="../uploads/2015/11/NYLOGGA_hem_gra.png" alt=""/>
+            </a>
         </div>
 
         <nav id="primary-navigation top-bar" class="site-navigation primary-navigation" role="navigation">
             <div class="nav-menu">
-                <div class="menu-primary-nav-se-container"><ul id="menu-primary-nav-se" class=""><li id="menu-item-1236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1236"><a href="../index.html">Hem</a></li>
-<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../upplev-veckopengen/index.html">Upplev veckopengen</a></li>
-<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-254"><a href="index.html">Träning</a></li>
-<li id="menu-item-611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-611"><a href="../aktuellt/index.html">Aktuellt</a></li>
-<li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="../om-oss/index.html">Om oss</a></li>
-<li id="menu-item-1750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1750"><a href="http://veckopengen.teamtailor.com/">JOBB</a></li>
-<li id="menu-item-1349-en" class="lang-item lang-item-27 lang-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-1349-en"><a href="http://gimitheapp.com/training-2/" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English" /></a></li>
-<li id="menu-item-1349-nb" class="lang-item lang-item-43 lang-item-nb menu-item menu-item-type-custom menu-item-object-custom menu-item-1349-nb"><a href="http://no.gimitheapp.com/trening/" hreflang="nb-NO" lang="nb-NO"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGSSURBVHjaYnzIAAVy//9zRV36skTnATPzPwaGf2BBCOMPEgkQQCxAUcHaaiD5////ngQpRkZG4aLC/3//MPz58x+Efv//DSL/Acnfv+9u2AQQQCxgg/7/e/IUSL18/weo7c+DB0AVDL+BioCqgejXv1+//v/6zSwrC7QBIIDAGv4CVf0F0f9ADvn/5xfI1F8gpSDVQD2/QCTT799AVwEEEIvM379AZ0Cc9Aeo8/9/gbUb/mMDQGUanz4BBBAjc/D5/mTpF+9///0HdvO/f0BtQA6I/AMk//3+CxIHikgJss7OOQ0QQIx///6FGP+f4X/JgmfdcZL/cQAmJqb3798DBBDLPWZmkdysP/fuC2zY9BvspLd21v9+gXzMAPLub6g3fv9hUVa6evocQACxAL35HxxkQKUgZ/3//+8nRMUvkCBIJ4jxD+iQP8DAZgAIILCGP3+YJEEuEeUDBRqzjCzTX1DAM4CDn/nPH5Dqv3//gR0PEECMV2FRqPD+vaDeibcXzK4JC/+BxTEkghlgJBAABBgA9J5akqVspaUAAAAASUVORK5CYII=" title="Norsk Bokmål" alt="Norsk Bokmål" /></a></li>
-</ul></div>            </div>
+                <div class="menu-primary-nav-se-container">
+                    <ul id="menu-primary-nav-se" class="">
+                        <li id="menu-item-1236"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1236">
+                            <a href="../index.html">Hem</a></li>
+                        <li id="menu-item-253"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a
+                                href="../upplev-veckopengen/index.html">Upplev veckopengen</a></li>
+                        <li id="menu-item-254"
+                            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-254">
+                            <a href="index.html">Träning</a></li>
+                        <li id="menu-item-611"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-611"><a
+                                href="../aktuellt/index.html">Aktuellt</a></li>
+                        <li id="menu-item-522"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a
+                                href="../om-oss/index.html">Om oss</a></li>
+                        <li id="menu-item-1750"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1750"><a
+                                href="http://veckopengen.teamtailor.com/">JOBB</a></li>
+                        <li id="menu-item-1349-en"
+                            class="lang-item lang-item-27 lang-item-en menu-item menu-item-type-custom menu-item-object-custom menu-item-1349-en">
+                            <a href="http://gimitheapp.com/training-2/" hreflang="en-US" lang="en-US"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC"
+                                    title="English" alt="English"/></a></li>
+                        <li id="menu-item-1349-nb"
+                            class="lang-item lang-item-43 lang-item-nb menu-item menu-item-type-custom menu-item-object-custom menu-item-1349-nb">
+                            <a href="http://no.gimitheapp.com/trening/" hreflang="nb-NO" lang="nb-NO"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGSSURBVHjaYnzIAAVy//9zRV36skTnATPzPwaGf2BBCOMPEgkQQCxAUcHaaiD5////ngQpRkZG4aLC/3//MPz58x+Efv//DSL/Acnfv+9u2AQQQCxgg/7/e/IUSL18/weo7c+DB0AVDL+BioCqgejXv1+//v/6zSwrC7QBIIDAGv4CVf0F0f9ADvn/5xfI1F8gpSDVQD2/QCTT799AVwEEEIvM379AZ0Cc9Aeo8/9/gbUb/mMDQGUanz4BBBAjc/D5/mTpF+9///0HdvO/f0BtQA6I/AMk//3+CxIHikgJss7OOQ0QQIx///6FGP+f4X/JgmfdcZL/cQAmJqb3798DBBDLPWZmkdysP/fuC2zY9BvspLd21v9+gXzMAPLub6g3fv9hUVa6evocQACxAL35HxxkQKUgZ/3//+8nRMUvkCBIJ4jxD+iQP8DAZgAIILCGP3+YJEEuEeUDBRqzjCzTX1DAM4CDn/nPH5Dqv3//gR0PEECMV2FRqPD+vaDeibcXzK4JC/+BxTEkghlgJBAABBgA9J5akqVspaUAAAAASUVORK5CYII="
+                                    title="Norsk Bokmål" alt="Norsk Bokmål"/></a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
 
 
-    <main role="main">
+<main role="main">
 
-        <section class="tips">
-                            <div class="row">
-                    <div class="medium-10 large-8 medium-offset-1 large-offset-2 columns">
-                        <div class="tips__heading fadeInDown wow">
-                            <h2>Ekonomisk träning för <br/> framtidens superföräldrar.</h2>
+    <section class="tips">
+        <div class="row">
+            <div class="medium-10 large-8 medium-offset-1 large-offset-2 columns">
+                <div class="tips__heading fadeInDown wow">
+                    <h2>Ekonomisk träning för <br/> framtidens superföräldrar.</h2>
 
-                            <p>Här ger vi dig som är förälder tips på hur du kan ge dina barn en bättre förståelse för pengar och mer än bara en veckopeng.</p>
+                    <p>Här ger vi dig som är förälder tips på hur du kan ge dina barn en bättre förståelse för pengar
+                        och mer än bara en veckopeng.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="quick-tips fadeInUp wow">
+            <h3></h3>
+
+            <div class="owl-carousel quick-tips__carousel">
+                <div class="item row">
+                    <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
+                    <div class="tips__tip">
+                        <div class="tips__tip-headline">
+                            <div class="tips__list-circle">1</div>
+                            <p>Prata pengar! </p>
                         </div>
+
+                        <p>Barn pekar och vill ha. Genom att betala åt barnen får de inte en uppfattning om var pengar
+                            kommer ifrån eller vad som krävs för att spara ihop till något värdefullt. Se till att
+                            diskutera vad dina barn ska få och vad de ska betala för själva. Det är först när det finns
+                            en idé om hur pengar kan användas som de får ett riktigt värde.</p>
                     </div>
                 </div>
-            
-            <section class="quick-tips fadeInUp wow">
-                <h3></h3>
+                <div class="item row">
+                    <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
+                    <div class="tips__tip">
+                        <div class="tips__tip-headline">
+                            <div class="tips__list-circle">2</div>
+                            <p>Använd mobilen!</p>
+                        </div>
 
-                <div class="owl-carousel quick-tips__carousel">
-                                                                        <div class="item row">
-                                <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
-                                <div class="tips__tip">
-                                    <div class="tips__tip-headline">
-                                        <div class="tips__list-circle">1</div>
-                                        <p>Prata pengar! </p>
-                                    </div>
-
-                                    <p>Barn pekar och vill ha. Genom att betala åt barnen får de inte en uppfattning om var pengar kommer ifrån eller vad som krävs för att spara ihop till något värdefullt. Se till att diskutera vad dina barn ska få och vad de ska betala för själva. Det är först när det finns en idé om hur pengar kan användas som de får ett riktigt värde.</p>
-                                </div>
-                            </div>
-                                                                                                <div class="item row">
-                                <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
-                                <div class="tips__tip">
-                                    <div class="tips__tip-headline">
-                                        <div class="tips__list-circle">2</div>
-                                        <p>Använd mobilen!</p>
-                                    </div>
-
-                                    <p>Använd ett betalkort eller pengar i telefonen. Då lär sig barnen om digitala pengar och att de ofta förekommer som siffror på en skärm. Det är så pengar kommer att användas i framtiden och därför ett bra sätt att förbereda sina barn för vuxenlivet.</p>
-                                </div>
-                            </div>
-                                                                                                <div class="item row">
-                                <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
-                                <div class="tips__tip">
-                                    <div class="tips__tip-headline">
-                                        <div class="tips__list-circle">3</div>
-                                        <p>Börja tidigt!</p>
-                                    </div>
-
-                                    <p>I tidig ålder är det som lättast att lära ut ett bra förhållningssätt till pengar. Men du kan lika gärna använda en annan belöning än just pengar, det kan vara lördagsgodis i utbyte mot en veckas ordentlig tandborstning. Försök att belöna positiva beteenden, de är dem du vill se mer av!</p>
-                                </div>
-                            </div>
-                                                            </div>
-
-                <div class="row navigation">
-                    <div class="small-1 columns">
-                        <a class="quick-tips-prev"><img
-                                src="../themes/veckopengen/assets/images/arrow-left.png" alt="Prev"></a>
-                    </div>
-                    <div class="small-1 columns small-offset-10">
-                        <a class="quick-tips-next"><img
-                                src="../themes/veckopengen/assets/images/arrow-right.png" alt="Next"></a>
+                        <p>Använd ett betalkort eller pengar i telefonen. Då lär sig barnen om digitala pengar och att
+                            de ofta förekommer som siffror på en skärm. Det är så pengar kommer att användas i framtiden
+                            och därför ett bra sätt att förbereda sina barn för vuxenlivet.</p>
                     </div>
                 </div>
-            </section>
+                <div class="item row">
+                    <div class="medium-10 medium-offset-1 large-8 large-offset-2 columns"
+                    <div class="tips__tip">
+                        <div class="tips__tip-headline">
+                            <div class="tips__list-circle">3</div>
+                            <p>Börja tidigt!</p>
+                        </div>
+
+                        <p>I tidig ålder är det som lättast att lära ut ett bra förhållningssätt till pengar. Men du kan
+                            lika gärna använda en annan belöning än just pengar, det kan vara lördagsgodis i utbyte mot
+                            en veckas ordentlig tandborstning. Försök att belöna positiva beteenden, de är dem du vill
+                            se mer av!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row navigation">
+                <div class="small-1 columns">
+                    <a class="quick-tips-prev"><img
+                            src="../themes/veckopengen/assets/images/arrow-left.png" alt="Prev"></a>
+                </div>
+                <div class="small-1 columns small-offset-10">
+                    <a class="quick-tips-next"><img
+                            src="../themes/veckopengen/assets/images/arrow-right.png" alt="Next"></a>
+                </div>
+            </div>
         </section>
+    </section>
 
-        <section id="tips-tabs" class="tips-tabs">
-            <div class="row tips-tabs__tab-wrapper">
-                <a class="medium-4 columns tips-tabs__tab tips-tabs__tab--active">
-                    <div class="fadeInGrow wow">
+    <section id="tips-tabs" class="tips-tabs">
+        <div class="row tips-tabs__tab-wrapper">
+            <a class="medium-4 columns tips-tabs__tab tips-tabs__tab--active">
+                <div class="fadeInGrow wow">
                     <p>
                         <img class="wallet-tab-icon"
                              src="../themes/veckopengen/assets/images/training.png"
                              alt="">
-                        Ekonomiskt träning                    </p>
-                    </div>
-                </a>
-                <a class="medium-4 columns tips-tabs__tab">
-                    <div class="fadeInGrow wow">
+                        Ekonomiskt träning </p>
+                </div>
+            </a>
+            <a class="medium-4 columns tips-tabs__tab">
+                <div class="fadeInGrow wow">
                     <p>
                         <img class="pig-tab-icon"
                              src="../themes/veckopengen/assets/images/phone.png"
                              alt="">
-                        Digitala hjälpmedel                    </p>
-                        </div>
-                </a>
-                <a class="medium-4 columns tips-tabs__tab">
-                    <div class="fadeInGrow wow">
+                        Digitala hjälpmedel </p>
+                </div>
+            </a>
+            <a class="medium-4 columns tips-tabs__tab">
+                <div class="fadeInGrow wow">
                     <p>
                         <img class="tasks-tab-icon"
                              src="../themes/veckopengen/assets/images/tasks-tab-icon.png"
                              alt="">
-                        Övning och lärande                    </p>
-                        </div>
-                </a>
+                        Övning och lärande </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="tips-tab-content-1" class="tips-tab-content tips-tab-content-1">
+        <div class="row medium-collapse">
+            <div class="medium-7 columns fadeInLeft wow">
+                <div class="tips-tab-content__content">
+                    <blockquote>Det handlar inte om mängden pengar, utan om förhållandet till dem.</blockquote>
+                    <p><b>Introducera och agera bollplank</b><br/>
+                        De flesta barn får sin första veckopeng mellan 7-10 år och då uppgår den oftast till 20 kr. I
+                        takt med att barnet mognar och blir äldre kan du öka veckopengen och slutligen ansvaret genom
+                        att gå över till månadspeng. Tänk på att du inte bara ska ge ut pengar, utan snarare diskutera
+                        med ditt barn om de är nöjda med sina val och hur de har valt att använda sina pengar.</p>
+                    <p><strong>Middagsbordet är inte fel</strong><br/>
+                        Att prata om pengar vid middagsbordet är inte fel. Pengar ska vara kul och inte ångestdrabbat
+                        eller på tals då de är slut eller barnet vill köpa något. Många gräl mellan föräldrar och barn
+                        handlar just om pengar, därför ska man prata om det ofta och inte bara när det kniper i
+                        plånboken. Ett bra tillfälle är då du ger ut vecko- eller månadspengarna till barnet.</p>
+                    <p><strong>Förhandla med dina barn<br/>
+                    </strong>Förhandla med ditt barn om vad pengarna ska räcka till och kom överens. En lagom nivå på
+                        veckopengen är då de har råd att köpa det som de behöver och samtidigt ha lite pengar kvar till
+                        att spara. Om ditt barn säger att andra har mer i veckopeng kan du förklara varför de har
+                        mindre, det är viktigt att du förklarar att alla människor inte har lika mycket pengar.</p>
+                    <p><b>Säg nej när pengarna är slut</b><br/>
+                        Genom att vara överens om en vecko- eller månadspeng kan dina barn själva ta ansvar för vad de
+                        vill handla eller spara till. De kan på så sätt vänta sig att få pengar vid vissa tillfällen och
+                        på så sätt disponera sina pengar och ta ansvar för vad de vill köpa. Och om pengarna är slut, ja
+                        då är de slut och barnet får vänta till nästa veckopeng.</p>
+                    <p><strong>Låt dina barn köpa fel saker</strong><br/>
+                        Små barn köper godis för den största delen av sina veckopengar. För pojkar är TV- och dataspel
+                        mer vanligt och för tjejer är det smink och kläder. Även om du som förälder inte gillar något
+                        som dina barn vill köpa är det viktigt att de får bestämma själva över sin veckopeng. De måste
+                        få lära sig att göra val och att göra fel val. Det egna valet är hela idén och om vi tar bort
+                        det hindrar vi också våra barn från att tänka, lära och prova sig fram.</p>
+                </div>
             </div>
-        </section>
+            <div class="medium-5 columns">
+                <aside class="tips-tab-content__box fadeInRight wow">
+                    <div class="tips-tab-content__profile">
+                        <div class="row">
+                            <div class="large-2 columns no-padding">
+                                <img class="tips-tab-content__avatar"
+                                     src="../uploads/2015/10/emma34.png"
+                                     alt="">
+                            </div>
 
-                                    <section id="tips-tab-content-1" class="tips-tab-content tips-tab-content-1">
-                    <div class="row medium-collapse">
-                        <div class="medium-7 columns fadeInLeft wow">
-                            <div class="tips-tab-content__content">
-                                <blockquote>Det handlar inte om mängden pengar, utan om förhållandet till dem.</blockquote>
-                                <p><b>Introducera och agera bollplank</b><br />
-De flesta barn får sin första veckopeng mellan 7-10 år och då uppgår den oftast till 20 kr. I takt med att barnet mognar och blir äldre kan du öka veckopengen och slutligen ansvaret genom att gå över till månadspeng. Tänk på att du inte bara ska ge ut pengar, utan snarare diskutera med ditt barn om de är nöjda med sina val och hur de har valt att använda sina pengar.</p>
-<p><strong>Middagsbordet är inte fel</strong><br />
-Att prata om pengar vid middagsbordet är inte fel. Pengar ska vara kul och inte ångestdrabbat eller på tals då de är slut eller barnet vill köpa något. Många gräl mellan föräldrar och barn handlar just om pengar, därför ska man prata om det ofta och inte bara när det kniper i plånboken. Ett bra tillfälle är då du ger ut vecko- eller månadspengarna till barnet.</p>
-<p><strong>Förhandla med dina barn<br />
-</strong>Förhandla med ditt barn om vad pengarna ska räcka till och kom överens. En lagom nivå på veckopengen är då de har råd att köpa det som de behöver och samtidigt ha lite pengar kvar till att spara. Om ditt barn säger att andra har mer i veckopeng kan du förklara varför de har mindre, det är viktigt att du förklarar att alla människor inte har lika mycket pengar.</p>
-<p><b>Säg nej när pengarna är slut</b><br />
-Genom att vara överens om en vecko- eller månadspeng kan dina barn själva ta ansvar för vad de vill handla eller spara till. De kan på så sätt vänta sig att få pengar vid vissa tillfällen och på så sätt disponera sina pengar och ta ansvar för vad de vill köpa. Och om pengarna är slut, ja då är de slut och barnet får vänta till nästa veckopeng.</p>
-<p><strong>Låt dina barn köpa fel saker</strong><br />
-Små barn köper godis för den största delen av sina veckopengar. För pojkar är TV- och dataspel mer vanligt och för tjejer är det smink och kläder. Även om du som förälder inte gillar något som dina barn vill köpa är det viktigt att de får bestämma själva över sin veckopeng. De måste få lära sig att göra val och att göra fel val. Det egna valet är hela idén och om vi tar bort det hindrar vi också våra barn från att tänka, lära och prova sig fram.</p>
+                            <div class="large-10 columns">
+                                <p><strong>Emma Persson</strong>
+                                </p>
+                                <p class="profession">Ekonom</p>
                             </div>
                         </div>
-                        <div class="medium-5 columns">
-                                                            <aside class="tips-tab-content__box fadeInRight wow">
-                                    <div class="tips-tab-content__profile">
-                                        <div class="row">
-                                            <div class="large-2 columns no-padding">
-                                                                                                    <img class="tips-tab-content__avatar"
-                                                         src="../uploads/2015/10/emma34.png"
-                                                         alt="">
-                                                                                            </div>
-
-                                            <div class="large-10 columns">
-                                                <p><strong>Emma Persson</strong>
-                                                </p>
-                                                                                                    <p class="profession">Ekonom</p>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Emma Persson är f.d. privatekonom för unga på Nordea Bank. Hon har länge lärt ut kunskap inom pengar och ekonomi för hela familjen.</p>
-<p><strong style="line-height: 1.5;">Emmas tips</strong></p>
-<ul>
-<li>Veckopengen kan bli en grund till att prata om drömmar, sparande och möjligheter. Missa inte den.</li>
-<li>Dra av på veckopengen när du betalar åt barnet, då blir det en tydlig gräns mellan dina och dina barns pengar.</li>
-</ul>
-                                </aside>
-                            
-                            <div class="tips-tab-content__bubbles">
-                                                                                                <div
-                                        class="tips-tab-content__bubble wow"><span
-                                            class="text">I Sverige får två av tre barn en vecko- eller månadspeng av sina föräldrar.</span>
-                                    </div>
-                                                                                                                                                                                                                </div>
-
-                        </div>
                     </div>
-                </section>
-                                                <section id="tips-tab-content-2" class="tips-tab-content tips-tab-content-2">
-                    <div class="row medium-collapse">
-                        <div class="medium-7 columns fadeInLeft wow">
-                            <div class="tips-tab-content__content">
-                                <blockquote>Appar och digitala hjälpmedel är bra för barnets inlärning.</blockquote>
-                                <p><strong>Lärande som inte är skadligt<br />
-</strong>Det finns ingen forskning som visar att det skulle vara skadligt för barn, stora som små, att använda en surfplatta eller mobil. Att surfplattan eller mobilen ska sända ut skadlig strålning eller göra att ett barn på något sätt får sämre inlärning är bara en myt. Det finns däremot en risk då vi låter bli att lära våra barn om digitala tjänster och plattfomar, via mobiler och läsplattor, vilket leder till barnen inte lär sig den teknik som resten av samhället har anammat.</p>
-<p><strong>Ge utrymme för ny form av lärande<br />
-</strong>Som föräldrar är vi ofta känslostyrda och vi människor har överlag svårt att relatera till nya saker i samhället. Att använda digitala verktyg till barnen för att underlätta vardagen ses av många som skamligt. På samma sätt som vi har skepsis mot mobiler och surfplattor har vi bemött boken och tv:n när de var nya i samhället. Men låt inte dina egna ideal av barndomen styra.</p>
-<p><strong>Pengar i mobilen<br />
-</strong>Mobilen<strong> </strong>är för vuxna det vanligaste sättet att hålla koll på pengarna. Så bör det även vara för barnen. Idag har de flesta barn en egen mobil och de har en bra förståelse för hur den används. Därför är det bara bra att de också kan hantera sina pengar i telefonen. Använd appar som är förståeliga för barn för att förklara pengars värde och symboliken med att spara och slösa.</p>
-<p><strong>Digitala köp är också köp</strong><br />
-Det är svårare för barn att förstå att köp i mobilen eller på nätet också kostar pengar. Eftersom de inte får något i handen som de kan ta eller känna på är det viktigt att du som förälder upplyser om att digitala köp i telefonen också kostar riktiga pengar. En av tio ungdomar uppger nämligen att de har köpt något som de först trodde var gratis och varannan har handlat något på nätet de senaste tre månaderna.</p>
-<p><strong>Låt det digitala främja kreativiteten</strong><br />
-En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos barn, jämfört med t.ex. Lego. Men om man tittar på ett paket Lego, så står det ju precis vad man ska bygga, jämför det med Minecraft t.ex, där finns inga gränser till vad man kan skapa och bygga med oändligt antal ”lego-bitar”. Nästa generations digitala plattformar kommer utan tvekan att överväga den fysiska världens begränsningar vad det gäller kreativitet.</p>
+                    <p>Emma Persson är f.d. privatekonom för unga på Nordea Bank. Hon har länge lärt ut kunskap inom
+                        pengar och ekonomi för hela familjen.</p>
+                    <p><strong style="line-height: 1.5;">Emmas tips</strong></p>
+                    <ul>
+                        <li>Veckopengen kan bli en grund till att prata om drömmar, sparande och möjligheter. Missa inte
+                            den.
+                        </li>
+                        <li>Dra av på veckopengen när du betalar åt barnet, då blir det en tydlig gräns mellan dina och
+                            dina barns pengar.
+                        </li>
+                    </ul>
+                </aside>
+
+                <div class="tips-tab-content__bubbles">
+                    <div
+                            class="tips-tab-content__bubble wow"><span
+                            class="text">I Sverige får två av tre barn en vecko- eller månadspeng av sina föräldrar.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="tips-tab-content-2" class="tips-tab-content tips-tab-content-2">
+        <div class="row medium-collapse">
+            <div class="medium-7 columns fadeInLeft wow">
+                <div class="tips-tab-content__content">
+                    <blockquote>Appar och digitala hjälpmedel är bra för barnets inlärning.</blockquote>
+                    <p><strong>Lärande som inte är skadligt<br/>
+                    </strong>Det finns ingen forskning som visar att det skulle vara skadligt för barn, stora som små,
+                        att använda en surfplatta eller mobil. Att surfplattan eller mobilen ska sända ut skadlig
+                        strålning eller göra att ett barn på något sätt får sämre inlärning är bara en myt. Det finns
+                        däremot en risk då vi låter bli att lära våra barn om digitala tjänster och plattfomar, via
+                        mobiler och läsplattor, vilket leder till barnen inte lär sig den teknik som resten av samhället
+                        har anammat.</p>
+                    <p><strong>Ge utrymme för ny form av lärande<br/>
+                    </strong>Som föräldrar är vi ofta känslostyrda och vi människor har överlag svårt att relatera till
+                        nya saker i samhället. Att använda digitala verktyg till barnen för att underlätta vardagen ses
+                        av många som skamligt. På samma sätt som vi har skepsis mot mobiler och surfplattor har vi
+                        bemött boken och tv:n när de var nya i samhället. Men låt inte dina egna ideal av barndomen
+                        styra.</p>
+                    <p><strong>Pengar i mobilen<br/>
+                    </strong>Mobilen<strong> </strong>är för vuxna det vanligaste sättet att hålla koll på pengarna. Så
+                        bör det även vara för barnen. Idag har de flesta barn en egen mobil och de har en bra förståelse
+                        för hur den används. Därför är det bara bra att de också kan hantera sina pengar i telefonen.
+                        Använd appar som är förståeliga för barn för att förklara pengars värde och symboliken med att
+                        spara och slösa.</p>
+                    <p><strong>Digitala köp är också köp</strong><br/>
+                        Det är svårare för barn att förstå att köp i mobilen eller på nätet också kostar pengar.
+                        Eftersom de inte får något i handen som de kan ta eller känna på är det viktigt att du som
+                        förälder upplyser om att digitala köp i telefonen också kostar riktiga pengar. En av tio
+                        ungdomar uppger nämligen att de har köpt något som de först trodde var gratis och varannan har
+                        handlat något på nätet de senaste tre månaderna.</p>
+                    <p><strong>Låt det digitala främja kreativiteten</strong><br/>
+                        En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos barn, jämfört med
+                        t.ex. Lego. Men om man tittar på ett paket Lego, så står det ju precis vad man ska bygga, jämför
+                        det med Minecraft t.ex, där finns inga gränser till vad man kan skapa och bygga med oändligt
+                        antal ”lego-bitar”. Nästa generations digitala plattformar kommer utan tvekan att överväga den
+                        fysiska världens begränsningar vad det gäller kreativitet.</p>
+                </div>
+            </div>
+            <div class="medium-5 columns">
+                <aside class="tips-tab-content__box fadeInRight wow">
+                    <div class="tips-tab-content__profile">
+                        <div class="row">
+                            <div class="large-2 columns no-padding">
+                                <img class="tips-tab-content__avatar"
+                                     src="../uploads/2015/10/bodil-ny1.png"
+                                     alt="">
+                            </div>
+
+                            <div class="large-10 columns">
+                                <p><strong>Bodil Hallin</strong>
+                                </p>
+                                <p class="profession">Budgetrådgivare</p>
                             </div>
                         </div>
-                        <div class="medium-5 columns">
-                                                            <aside class="tips-tab-content__box fadeInRight wow">
-                                    <div class="tips-tab-content__profile">
-                                        <div class="row">
-                                            <div class="large-2 columns no-padding">
-                                                                                                    <img class="tips-tab-content__avatar"
-                                                         src="../uploads/2015/10/bodil-ny1.png"
-                                                         alt="">
-                                                                                            </div>
-
-                                            <div class="large-10 columns">
-                                                <p><strong>Bodil Hallin</strong>
-                                                </p>
-                                                                                                    <p class="profession">Budgetrådgivare</p>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Bodil har länge arbetat med familjens ekonomi och hur man på nya sätt och med nya verktyg kan förbättra barnens lärande kring pengar.</p>
-<p><strong>Bodils tips</strong></p>
-<ul>
-<li> Använd digitala hjälpmedel för att lära barn om pengar.</li>
-<li>Ladda ner spel som pedagogiskt låter barn hantera pengar i en fiktiv värld.</li>
-<li>Upplys dina barn om att köp som appar, musik eller spel på nätet kostar pengar.</li>
-</ul>
-                                </aside>
-                            
-                            <div class="tips-tab-content__bubbles">
-                                                                                                <div
-                                        class="tips-tab-content__bubble wow"><span
-                                            class="text">84% av alla barn i Sverige i åldern 5-8 har tillgång till en surfplatta.</span>
-                                    </div>
-                                                                                                                                <div
-                                        class="tips-tab-content__bubble wow"><span
-                                            class="text">Av våra ungdomar har varannan handlat något på nätet de senaste tre månaderna.</span>
-                                    </div>
-                                                                                                                                                    </div>
-
-                        </div>
                     </div>
-                </section>
-                                                <section id="tips-tab-content-3" class="tips-tab-content tips-tab-content-3">
-                    <div class="row medium-collapse">
-                        <div class="medium-7 columns fadeInLeft wow">
-                            <div class="tips-tab-content__content">
-                                <blockquote>Om man saknar pengar är det inte bara att gå till automaten.</blockquote>
-                                <p><strong>Förbered dina barn för vuxenlivet<br />
-</strong>Precis som det går att träna på matematik, balanssinne och fotboll går det att lära sig att vara ekonomisk. Ett bra sätt att lära barnen om ekonomi är att ge dem viss frihet att ifrågasätta och tänka själva. Om vi under barnens uppväxt låter dem göra egna val kommer de att göra både drömaffärer och dåliga köp. Även de dålig valen leder till lärande och att barnen nästa gång ändrar sitt beteende. Ge dina barn viss frihet att välja själva.</p>
-<p><strong>Ge möjlighet till en extra slant<br />
-</strong>Att ge sina barn uppgifter i hemmet eller skolan är ett bra sätt att låta barnen förstå att pengar ofta kräver en motprestation. När barn tjänar egna pengar får de en större förståelse för att pengarna har ett värde och en större känsla av att pengarna är deras. Dessutom kan det vara bra för känslan av familjär gemenskap i hemmet att alla hjälper till. Dock så bör inte barnet få pengar för allt, då får de uppfattningen att man får betalt så fort man gör något.</p>
-<p><strong>Lek och lär<br />
-</strong>Att leka med pengar och spela spel som Monopol är ett bra sätt att introducera nya begrepp och skapa en förståelse för intäkter och utgifter. När dina barn leker affär hemma, har de kul samtidigt som de får inblick i begrepp som pengar och handel. Har du äldre barn kan ni börja ”investera” i riktiga eller fiktiva företag och låta det bli en lek där ni jämför med den riktiga marknaden och tävlar om vem som lyckats satsa i rätt företag!</p>
-<p><strong>Ge ut sparbonus<br />
-</strong>Genom att ge barnen en sparränta ökar du möjligheten för att de ska vilja spara sina pengar. Att spara är viktigt och om barn förstår att det ofta krävs tid för att ha råd med någonting dyrt har man kommit långt. Låt barnen sätta upp sparmål och låt dem förstå att pengar som sparas växer med tiden. Det är en realistisk bil av hur vår värld ser ut idag.</p>
-<p><strong>När pengarna tar slut<br />
-</strong>Om pengarna inte räcker till det barnet önskar bör ni ha ett snack kring varför, om det är så att ditt barn får för lite pengar eller om han eller hon spenderar pengarna alldeles för lätt. Oförutsedda utgifter är en sak, men om du lär barnet att de alltid kan ta ut mer pengar kommer barnet inte förstå att pengars värde.</p>
+                    <p>Bodil har länge arbetat med familjens ekonomi och hur man på nya sätt och med nya verktyg kan
+                        förbättra barnens lärande kring pengar.</p>
+                    <p><strong>Bodils tips</strong></p>
+                    <ul>
+                        <li> Använd digitala hjälpmedel för att lära barn om pengar.</li>
+                        <li>Ladda ner spel som pedagogiskt låter barn hantera pengar i en fiktiv värld.</li>
+                        <li>Upplys dina barn om att köp som appar, musik eller spel på nätet kostar pengar.</li>
+                    </ul>
+                </aside>
+
+                <div class="tips-tab-content__bubbles">
+                    <div
+                            class="tips-tab-content__bubble wow"><span
+                            class="text">84% av alla barn i Sverige i åldern 5-8 har tillgång till en surfplatta.</span>
+                    </div>
+                    <div
+                            class="tips-tab-content__bubble wow"><span
+                            class="text">Av våra ungdomar har varannan handlat något på nätet de senaste tre månaderna.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="tips-tab-content-3" class="tips-tab-content tips-tab-content-3">
+        <div class="row medium-collapse">
+            <div class="medium-7 columns fadeInLeft wow">
+                <div class="tips-tab-content__content">
+                    <blockquote>Om man saknar pengar är det inte bara att gå till automaten.</blockquote>
+                    <p><strong>Förbered dina barn för vuxenlivet<br/>
+                    </strong>Precis som det går att träna på matematik, balanssinne och fotboll går det att lära sig att
+                        vara ekonomisk. Ett bra sätt att lära barnen om ekonomi är att ge dem viss frihet att
+                        ifrågasätta och tänka själva. Om vi under barnens uppväxt låter dem göra egna val kommer de att
+                        göra både drömaffärer och dåliga köp. Även de dålig valen leder till lärande och att barnen
+                        nästa gång ändrar sitt beteende. Ge dina barn viss frihet att välja själva.</p>
+                    <p><strong>Ge möjlighet till en extra slant<br/>
+                    </strong>Att ge sina barn uppgifter i hemmet eller skolan är ett bra sätt att låta barnen förstå att
+                        pengar ofta kräver en motprestation. När barn tjänar egna pengar får de en större förståelse för
+                        att pengarna har ett värde och en större känsla av att pengarna är deras. Dessutom kan det vara
+                        bra för känslan av familjär gemenskap i hemmet att alla hjälper till. Dock så bör inte barnet få
+                        pengar för allt, då får de uppfattningen att man får betalt så fort man gör något.</p>
+                    <p><strong>Lek och lär<br/>
+                    </strong>Att leka med pengar och spela spel som Monopol är ett bra sätt att introducera nya begrepp
+                        och skapa en förståelse för intäkter och utgifter. När dina barn leker affär hemma, har de kul
+                        samtidigt som de får inblick i begrepp som pengar och handel. Har du äldre barn kan ni börja
+                        ”investera” i riktiga eller fiktiva företag och låta det bli en lek där ni jämför med den
+                        riktiga marknaden och tävlar om vem som lyckats satsa i rätt företag!</p>
+                    <p><strong>Ge ut sparbonus<br/>
+                    </strong>Genom att ge barnen en sparränta ökar du möjligheten för att de ska vilja spara sina
+                        pengar. Att spara är viktigt och om barn förstår att det ofta krävs tid för att ha råd med
+                        någonting dyrt har man kommit långt. Låt barnen sätta upp sparmål och låt dem förstå att pengar
+                        som sparas växer med tiden. Det är en realistisk bil av hur vår värld ser ut idag.</p>
+                    <p><strong>När pengarna tar slut<br/>
+                    </strong>Om pengarna inte räcker till det barnet önskar bör ni ha ett snack kring varför, om det är
+                        så att ditt barn får för lite pengar eller om han eller hon spenderar pengarna alldeles för
+                        lätt. Oförutsedda utgifter är en sak, men om du lär barnet att de alltid kan ta ut mer pengar
+                        kommer barnet inte förstå att pengars värde.</p>
+                </div>
+            </div>
+            <div class="medium-5 columns">
+                <aside class="tips-tab-content__box fadeInRight wow">
+                    <div class="tips-tab-content__profile">
+                        <div class="row">
+                            <div class="large-2 columns no-padding">
+                                <img class="tips-tab-content__avatar"
+                                     src="../uploads/2015/10/liv.png"
+                                     alt="">
+                            </div>
+
+                            <div class="large-10 columns">
+                                <p><strong>Liv Svirsky</strong>
+                                </p>
+                                <p class="profession">Leg. psykolog och leg. psykoterapeut</p>
                             </div>
                         </div>
-                        <div class="medium-5 columns">
-                                                            <aside class="tips-tab-content__box fadeInRight wow">
-                                    <div class="tips-tab-content__profile">
-                                        <div class="row">
-                                            <div class="large-2 columns no-padding">
-                                                                                                    <img class="tips-tab-content__avatar"
-                                                         src="../uploads/2015/10/liv.png"
-                                                         alt="">
-                                                                                            </div>
-
-                                            <div class="large-10 columns">
-                                                <p><strong>Liv Svirsky</strong>
-                                                </p>
-                                                                                                    <p class="profession">Leg. psykolog och leg. psykoterapeut</p>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Liv har lång erfarenhet av att arbeta med barn, ungdomar och familjer och hon har gett ut flera böcker i ämnet för att hjälpa familjer runt om i landet.</p>
-<p><strong>Livs tips</strong></p>
-<ul>
-<li>Låt barnen skapa en affär i hemmet för att förstå sig på handel.</li>
-<li>Att lära sig konsekvenser av sina beteenden är lärorikt för alla barn och Veckpengen kan hjälpa till med det.</li>
-</ul>
-                                </aside>
-                            
-                            <div class="tips-tab-content__bubbles">
-                                                                                                <div
-                                        class="tips-tab-content__bubble wow"><span
-                                            class="text"> Tänk på att det bästa sättet att påverka barns beteende är att uppmuntra det man vill  se mer av.</span>
-                                    </div>
-                                                                                                                                                                                                                </div>
-
-                        </div>
                     </div>
-                </section>
-                        </main>
+                    <p>Liv har lång erfarenhet av att arbeta med barn, ungdomar och familjer och hon har gett ut flera
+                        böcker i ämnet för att hjälpa familjer runt om i landet.</p>
+                    <p><strong>Livs tips</strong></p>
+                    <ul>
+                        <li>Låt barnen skapa en affär i hemmet för att förstå sig på handel.</li>
+                        <li>Att lära sig konsekvenser av sina beteenden är lärorikt för alla barn och Veckpengen kan
+                            hjälpa till med det.
+                        </li>
+                    </ul>
+                </aside>
+
+                <div class="tips-tab-content__bubbles">
+                    <div
+                            class="tips-tab-content__bubble wow"><span
+                            class="text"> Tänk på att det bästa sättet att påverka barns beteende är att uppmuntra det man vill  se mer av.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
 <footer>
     <div class="media">
         <div class="row">
@@ -609,32 +740,32 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
                 <ul>
                     <li class="media__logo">
                         <a href="http://www.di.se/di/artiklar/2015/4/1/koll-pa-hur-det-rullar/">
-                                                            <img src="../uploads/2015/11/di.png" alt=""/>
-                                                    </a>
+                            <img src="../uploads/2015/11/di.png" alt=""/>
+                        </a>
                     </li>
 
                     <li class="media__logo">
                         <a href="http://www.expressen.se/dinapengar/surf-ar-barnens-nya-hardvaluta/">
-                                                            <img src="../uploads/2015/11/EXPRESSEN.png" alt=""/>
-                                                    </a>
+                            <img src="../uploads/2015/11/EXPRESSEN.png" alt=""/>
+                        </a>
                     </li>
 
                     <li class="media__logo">
                         <a href="http://www.va.se/nyheter/2015/11/12/appen-som-ska-ersatta-spargrisen/" class="">
-                                                            <img src="../uploads/2015/11/veckans-affarer.png" alt=""/>
-                                                    </a>
+                            <img src="../uploads/2015/11/veckans-affarer.png" alt=""/>
+                        </a>
                     </li>
 
                     <li class="media__logo">
                         <a href="http://www.svd.se/sveriges-hetaste-startups">
-                                                            <img src="../uploads/2015/11/svd.png" alt=""/>
-                                                    </a>
+                            <img src="../uploads/2015/11/svd.png" alt=""/>
+                        </a>
                     </li>
 
                     <li class="media__logo">
                         <a href="http://breakit.se/artikel/1053/fotbollsstjarnan-som-vill-lara-barn-spara-plockar-in-miljonbelopp">
-                                                            <img src="../uploads/2015/11/breakit.png" alt=""/>
-                                                    </a></li>
+                            <img src="../uploads/2015/11/breakit.png" alt=""/>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -650,8 +781,8 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
                     <span class="kr">kr</span>
                 </div>
 
-                                    <p>Utbetalda vecko- och månadspengar</p>
-                
+                <p>Utbetalda vecko- och månadspengar</p>
+
 
                 <div class="footer-bottom__appstore-links">
 
@@ -665,24 +796,27 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
                              src="../themes/veckopengen/assets/images/google-badge.png"
                              alt="">
                     </a>
-                                            <img class="vidiggar medium" src="../uploads/2015/11/vidiggar.png"
-                             alt=""/>
-                                    </div>
+                    <img class="vidiggar medium" src="../uploads/2015/11/vidiggar.png"
+                         alt=""/>
+                </div>
             </div>
 
             <div class="medium-6 medium-pull-6 large-4 large-pull-4 columns">
                 <div class="footer-bottom__content">
-                                            <h5>Om Veckopengen</h5>
-                        <p>Vi på Veckopengen arbetar för att barn och unga enkelt ska kunna hantera pengar på ett sunt och ansvarsfullt sätt. Våra verktyg ska främja en trygg, lärorik och roligare privatekonomi för både barn och föräldrar.</p>
-<p>Kontakta oss gärna för support eller feedback: <a href="mailto:info@veckopengen.se" target="_blank">info@veckopengen.se</a></p>
-<p>Signa up för vårt nyhetsbrev</p>
-                    
+                    <h5>Om Veckopengen</h5>
+                    <p>Vi på Veckopengen arbetar för att barn och unga enkelt ska kunna hantera pengar på ett sunt och
+                        ansvarsfullt sätt. Våra verktyg ska främja en trygg, lärorik och roligare privatekonomi för både
+                        barn och föräldrar.</p>
+                    <p>Kontakta oss gärna för support eller feedback: <a href="mailto:info@veckopengen.se"
+                                                                         target="_blank">info@veckopengen.se</a></p>
+                    <p>Signa up för vårt nyhetsbrev</p>
+
                     <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
                         <form
-                            action="http://veckopengen.us11.list-manage.com/subscribe/post?u=dd1fcf21d5484198d5b22b548&amp;id=bec2661b2f"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank" novalidate>
+                                action="http://veckopengen.us11.list-manage.com/subscribe/post?u=dd1fcf21d5484198d5b22b548&amp;id=bec2661b2f"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
 
                                 <div class="mc-field-group">
@@ -691,9 +825,9 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
                                            placeholder="Email adress">
                                     <button type="submit">
                                         <img
-                                            src="../themes/veckopengen/assets/images/submit-button-arrow.png"
-                                            alt="Subscribe"
-                                            name="subscribe" id="mc-embedded-subscribe">
+                                                src="../themes/veckopengen/assets/images/submit-button-arrow.png"
+                                                alt="Subscribe"
+                                                name="subscribe" id="mc-embedded-subscribe">
                                     </button>
                                 </div>
 
@@ -716,32 +850,57 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
             </div>
 
             <div class="large-4 large-pull-4 columns">
-                                    <img class="vidiggar large" src="../uploads/2015/11/vidiggar.png"
-                         alt=""/>
-                            </div>
+                <img class="vidiggar large" src="../uploads/2015/11/vidiggar.png"
+                     alt=""/>
+            </div>
         </div>
     </div>
 
     <div class="footer-copyright">
         <div class="row">
             <div class="medium-5 columns">
-                                    <p>Copyright 2016 - Gimi AB - All rights reserved</p>
-                
+                <p>Copyright 2016 - Gimi AB - All rights reserved</p>
+
             </div>
             <div class="medium-3 columns">
                 <div class="footer-social-nav-menu">
-                    <div class="menu-social-nav-se-container"><ul id="menu-social-nav-se" class=""><li id="menu-item-203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-203"><a target="_blank" href="https://www.facebook.com/veckopengen/"><span class="fb"></span></a></li>
-<li id="menu-item-204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204"><a target="_blank" href="https://twitter.com/veckopengen"><span class="tw"></span></a></li>
-<li id="menu-item-205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-205"><a target="_blank" href="https://www.instagram.com/veckopengen/"><span class="ig"></span></a></li>
-<li id="menu-item-491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-491"><a href="#ex1"><span class="sc"></span></a></li>
-</ul></div>                </div>
+                    <div class="menu-social-nav-se-container">
+                        <ul id="menu-social-nav-se" class="">
+                            <li id="menu-item-203"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-203"><a
+                                    target="_blank" href="https://www.facebook.com/veckopengen/"><span
+                                    class="fb"></span></a></li>
+                            <li id="menu-item-204"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204"><a
+                                    target="_blank" href="https://twitter.com/veckopengen"><span class="tw"></span></a>
+                            </li>
+                            <li id="menu-item-205"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-205"><a
+                                    target="_blank" href="https://www.instagram.com/veckopengen/"><span
+                                    class="ig"></span></a></li>
+                            <li id="menu-item-491"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-491"><a
+                                    href="#ex1"><span class="sc"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="medium-4 columns">
                 <div class="footer-nav-menu">
-                    <div class="menu-footer-nav-se-container"><ul id="menu-footer-nav-se" class=""><li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="../press/index.html">Press</a></li>
-<li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a href="../villkor/index.html">Villkor</a></li>
-<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="../faq/index.html">Frågor &#038; svar</a></li>
-</ul></div>                </div>
+                    <div class="menu-footer-nav-se-container">
+                        <ul id="menu-footer-nav-se" class="">
+                            <li id="menu-item-498"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a
+                                    href="../press/index.html">Press</a></li>
+                            <li id="menu-item-247"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a
+                                    href="../villkor/index.html">Villkor</a></li>
+                            <li id="menu-item-249"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a
+                                    href="../faq/index.html">Frågor &#038; svar</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -749,20 +908,21 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
 
 <div id="snapModal" class="reveal-modal snapchat-modal" data-reveal aria-hidden="true"
      role="dialog">
-            <h3>Följ oss på snapchat</h3>
-    
-            <h3><p>På snapchat kan du följa utvecklingen av Veckopengen, du kan också skicka frågor direkt till oss om det är något du undrar! Skanna koden i snapchat!</p>
-</h3>
-        
-            <img src="../uploads/2015/11/snapchat_code.png"
-             alt=""/>
-    
+    <h3>Följ oss på snapchat</h3>
+
+    <h3><p>På snapchat kan du följa utvecklingen av Veckopengen, du kan också skicka frågor direkt till oss om det är
+        något du undrar! Skanna koden i snapchat!</p>
+    </h3>
+
+    <img src="../uploads/2015/11/snapchat_code.png"
+         alt=""/>
+
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
-        <div class="video-player">
-        <div class="close-video">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 357 357"xml:space="preserve">
+<div class="video-player">
+    <div class="close-video">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 357 357"xml:space="preserve">
 <g>
 	<g id="close">
 		<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
@@ -770,94 +930,99 @@ En annan myt är den om att mobiler och surfplattor hämmar kreativiteten hos ba
 	</g>
 </g>
 </svg>
-        </div>
-
-        <div class="video-wrapper">
-            <video width="100%" height="100%" id="veckopengen-video" preload="none">
-                <source src="../uploads/2015/11/VECKOPENGEN-FILM.m4v" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
     </div>
 
+    <div class="video-wrapper">
+        <video width="100%" height="100%" id="veckopengen-video" preload="none">
+            <source src="../uploads/2015/11/VECKOPENGEN-FILM.m4v" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1518004268504566',
-      xfbml      : true,
-      version    : 'v2.7'
-    });
-  };
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1518004268504566',
+            xfbml: true,
+            version: 'v2.7'
+        });
+    };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "http://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
 
-(function() {
-    window['DRTB'] = window['DRTB'] || {};
-    function drtb() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = (('https:' === document.location.protocol) ? 'https' : 'http') + '://s3.eu-central-1.amazonaws.com/cc-drtb/drtb.min.js';
-        var e = document.getElementsByTagName('script')[0];
-        e.parentNode.insertBefore(s, e);
-    }
-    window.attachEvent ? window.attachEvent('onload', drtb) : window.addEventListener('load', drtb, false);
-}());
+    (function () {
+        window['DRTB'] = window['DRTB'] || {};
+        function drtb() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = (('https:' === document.location.protocol) ? 'https' : 'http') + '://s3.eu-central-1.amazonaws.com/cc-drtb/drtb.min.js';
+            var e = document.getElementsByTagName('script')[0];
+            e.parentNode.insertBefore(s, e);
+        }
 
-DRTB.seat = 'Gimi';
-DRTB.info = {}
+        window.attachEvent ? window.attachEvent('onload', drtb) : window.addEventListener('load', drtb, false);
+    }());
+
+    DRTB.seat = 'Gimi';
+    DRTB.info = {}
 
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://cdn.rawgit.com/noelboss/featherlight/1.6.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://cdn.rawgit.com/noelboss/featherlight/1.6.1/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script>
 
 <script>
-$(document).ready(function() {
-if (window.location.href.indexOf('veckopengen.se') !== -1) {
-var send = true
-$(".open-movie").before("<div><span class='smsHeader'>SMS:a mig appen:</span><br/><input class='smsButton' type='submit' value='Skicka'><input value='+46' placeholder='SKRIV DITT NUMMER HÄR' class='smsInput' type='text'></div>")
-$(".open-movie").after("<a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>")
-  $(".open-movie").after("<div id='mylightbox' class='lightbox'></div>")
-  $( ".smsButton" ).click(function() {
-    var number = $(".smsInput").val().toString()
-  if(number.startsWith("07")) {
-    number = number.substring(1,10) 
-    number = "+46" + number
-    }
-    console.log(number)
-    if(!send)
-      return
-    window.jQuery.ajax({
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-        },
-        type: "POST",
-        url: "http://vp-live.herokuapp.com/v0.5/send-sms/",
-        data: '{"phoneNo" : "' + number + '"}',
-        dataType: 'json',
-        success: function() {
-        console.log("success")
-        send = false
-        $(".smsInput").val("+46")
-        $(".smsButton").val("Skickat")
-$(".smsButton").addClass("sent")
-        },
-        error: function(e) {
-          console.log(e)
+    $(document).ready(function () {
+        if (window.location.href.indexOf('veckopengen.se') !== -1) {
+            var send = true
+            $(".open-movie").before("<div><span class='smsHeader'>SMS:a mig appen:</span><br/><input class='smsButton' type='submit' value='Skicka'><input value='+46' placeholder='SKRIV DITT NUMMER HÄR' class='smsInput' type='text'></div>")
+            $(".open-movie").after("<a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>")
+            $(".open-movie").after("<div id='mylightbox' class='lightbox'></div>")
+            $(".smsButton").click(function () {
+                var number = $(".smsInput").val().toString()
+                if (number.startsWith("07")) {
+                    number = number.substring(1, 10)
+                    number = "+46" + number
+                }
+                console.log(number)
+                if (!send)
+                    return
+                window.jQuery.ajax({
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    type: "POST",
+                    url: "http://vp-live.herokuapp.com/v0.5/send-sms/",
+                    data: '{"phoneNo" : "' + number + '"}',
+                    dataType: 'json',
+                    success: function () {
+                        console.log("success")
+                        send = false
+                        $(".smsInput").val("+46")
+                        $(".smsButton").val("Skickat")
+                        $(".smsButton").addClass("sent")
+                    },
+                    error: function (e) {
+                        console.log(e)
+                    }
+                });
+            });
         }
     });
-  });
-}
-});
 </script>
 
 
@@ -865,26 +1030,39 @@ $(".smsButton").addClass("sent")
     adroll_adv_id = "WCNZUGWZSZADLIW5DVFFP4";
     adroll_pix_id = "CO57CJJ6O5BPLHTS2OPSJW";
     (function () {
-        var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+        var _onload = function () {
+            if (document.readyState && !/loaded|complete/.test(document.readyState)) {
+                setTimeout(_onload, 10);
+                return
+            }
+            if (!window.__adroll_loaded) {
+                __adroll_loaded = true;
+                setTimeout(_onload, 50);
+                return
+            }
             var scr = document.createElement("script");
             var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
             scr.setAttribute('async', 'true');
             scr.type = "text/javascript";
             scr.src = host + "/j/roundtrip.js";
             ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+            document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
         };
-        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
-        else {window.attachEvent('onload', _onload)}
+        if (window.addEventListener) {
+            window.addEventListener('load', _onload, false);
+        }
+        else {
+            window.attachEvent('onload', _onload)
+        }
     }());
 </script>
 <script type='text/javascript' src='../wordpress/wp-includes/js/wp-embede100.js?ver=4.7.2'></script>
 
-			<div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: #fff; background-color: #727272;"><div class="cookie-notice-container"><span id="cn-notice-text">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Cool</a>
-				</div>
-			</div>
+<div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: #fff; background-color: #727272;">
+    <div class="cookie-notice-container"><span id="cn-notice-text">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><a
+            href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie button bootstrap">Cool</a>
+    </div>
+</div>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
