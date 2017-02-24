@@ -2,11 +2,44 @@
  * Created by amitava on 23/02/17.
  */
 import React from 'react';
+import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 export default class Family extends React.Component {
+
+    renderSlides(idx) {
+        return (
+            <div className="medium-6 columns">
+                <div className="why-timeline__content">
+                    <p className="number">
+                        <FormattedMessage id={`family.slider${idx}.amount`}/>
+                    </p>
+                    <FormattedMessage tagName="p" id={`family.slider${idx}.period`}/>
+                    <p className="number">
+                                            <span style={{lineHeight: 1.5}}>
+                                                <FormattedMessage id={`family.slider${idx}.task`}/>
+                                            </span>
+                    </p>
+                    <FormattedMessage tagName="p" id="family.slider1.common" />
+                    <p className="number"><FormattedMessage id={`family.slider${idx}.goal`}/></p>
+                    <p className="number"><FormattedMessage id={`family.slider${idx}.popular`}/></p>
+                </div>
+            </div>
+        );
+    }
+
+    renderBullets() {
+        return ['5-6','7-8','9-10','11-12', '13-14', '5-16'].map((i, idx) => (
+            <div className={`timeline-point point-${idx+1}`} key={idx}>
+                <div className="timeline-point__content">
+                    {i} <FormattedMessage id="years"/>
+                </div>
+            </div>
+        ));
+    }
+
     render() {
         return (
             <main>
@@ -17,12 +50,8 @@ export default class Family extends React.Component {
                         <div className="row">
                             <div className="medium-7 columns fadeInLeft wow">
                                 <div className="why-veckopengen__content">
-                                    <h2>Familjerna i Veckopengen</h2>
-
-                                    <p>… håller just nu på att bli självlärda superhjältar i ekonomi. De sparar, delar uppgifter och
-                                        håller enkelt koll på sina vecko- och månadspengar. Här kan du följa deras resa mot att bättre
-                                        kunna hantera pengar inom familjen!
-                                    </p>
+                                    <FormattedMessage tagName="h2" id="family.section1.header" />
+                                    <FormattedMessage tagName="p" id="family.section1.desc"/>
                                 </div>
                             </div>
 
@@ -42,17 +71,7 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/5.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-                                        <p className="number">20 kr</p>
-                                        <p>Genomsnittlig veckopeng</p>
-                                        <p className="number">Diska efter maten</p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p className="number">Biobesök</p>
-                                        <p>Populäraste sparmålet</p>
-                                    </div>
-
-                                </div>
+                                {this.renderSlides(1)}
                             </div>
                             <div className="row item">
                                 <div className="medium-6 columns">
@@ -60,19 +79,7 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/7.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-                                        <p className="number">26 kr</p>
-                                        <p>Genomsnittlig veckopeng</p>
-                                        <p className="number">
-                                            <span style={{lineHeight: 1.5}}>Städa rummet</span>
-                                        </p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p className="number">Lego</p>
-                                        <p>Populäraste sparmålet</p>
-                                    </div>
-
-                                </div>
+                                {this.renderSlides(2)}
                             </div>
                             <div className="row item">
                                 <div className="medium-6 columns">
@@ -80,19 +87,7 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/9.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-
-                                        <p className="number">33 kr</p>
-                                        <p>Genomsnittlig veckopeng</p>
-                                        <p className="number">
-                                            <span style={{lineHeight: 1.5}}>Bädda sängen</span>
-                                        </p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p className="number">Mobiltelefon</p>
-                                        <p className="number">Populäraste sparmålet</p>
-                                    </div>
-                                </div>
+                                {this.renderSlides(3)}
                             </div>
                             <div className="row item">
                                 <div className="medium-6 columns">
@@ -100,16 +95,7 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/11.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-                                        <p className="number">48 kr</p>
-                                        <p>Genomsnittlig veckopeng</p>
-                                        <p>Bära ut soporna</p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p className="number">Airboard</p>
-                                        <p>Populäraste sparmålet</p>
-                                    </div>
-                                </div>
+                                {this.renderSlides(4)}
                             </div>
                             <div className="row item">
                                 <div className="medium-6 columns">
@@ -117,17 +103,7 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/13.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-                                        <p className="number">490 kr</p>
-                                        <p>Genomsnittlig månadspeng</p>
-                                        <p className="number">Hjälpa med tvätten</p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p className="number">Dataspel</p>
-                                        <p>Populäraste sparmålet</p>
-                                    </div>
-
-                                </div>
+                                {this.renderSlides(5)}
                             </div>
                             <div className="row item">
                                 <div className="medium-6 columns">
@@ -135,62 +111,15 @@ export default class Family extends React.Component {
                                         <img src="/assets/uploads/2015/10/15.svg" alt=""/>
                                     </div>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="why-timeline__content">
-                                        <p className="number">690 kr</p>
-                                        <p>Genomsnittlig månadspeng</p>
-                                        <p>Klara läxor</p>
-                                        <p>Vanligaste uppgiften</p>
-                                        <p>Drönare</p>
-                                        <p>Populäraste sparmålet</p>
-                                    </div>
-
-                                </div>
+                                {this.renderSlides(6)}
                             </div>
                         </div>
                         <div className="row">
                             <div className="medium-12 columns">
                                 <div className="why-timeline__timeline">
-
                                     <div className="timeline-bar">
-                                        <div className="timeline-point point-1">
-                                            <div className="timeline-point__content">
-                                                5-6 år
-                                            </div>
-                                        </div>
-
-                                        <div className="timeline-point point-2">
-                                            <div className="timeline-point__content">
-                                                7-8 år
-                                            </div>
-                                        </div>
-
-                                        <div className="timeline-point point-3">
-                                            <div className="timeline-point__content">
-                                                9-10 år
-                                            </div>
-                                        </div>
-
-                                        <div className="timeline-point point-4">
-                                            <div className="timeline-point__content">
-                                                11-12 år
-                                            </div>
-                                        </div>
-
-                                        <div className="timeline-point point-5">
-                                            <div className="timeline-point__content">
-                                                13-14 år
-                                            </div>
-                                        </div>
-
-
-                                        <div className="timeline-point point-6">
-                                            <div className="timeline-point__content">
-                                                15-16 år
-                                            </div>
-                                        </div>
+                                        {this.renderBullets()}
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -214,92 +143,69 @@ export default class Family extends React.Component {
                 </section>
 
                 <section className="saved-money">
-
                     <div className="saved-money-counter fadeInUp wow">
-
                         <div className="row">
                             <div className="counter"></div>
                         </div>
-
-
                         <div className="row">
                             <div className="medium-8 medium-push-2 columns">
                                 <div className="saved-money-counter__content">
-
-                                    <h2>kronor har sparats av barn genom Veckopengen</h2>
-                                    <p>Det motsvarar</p>
+                                    <FormattedMessage tagName="h2" id="family.section2.header"/>
+                                    <FormattedMessage tagName="p" id="family.section2.subtitle"/>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
-
                     <div className="saved-money-goals fadeInUp wow">
                         <div className="row">
                             <div className="medium-4 columns">
                                 <div className="saved-money-goals__goal">
                                     <img src="/assets/images/konsol.png" alt=""/>
-
                                     <p className="number" id="consolesNumber"></p>
-
-                                    <p>Spelkonsoler</p>
+                                    <FormattedMessage tagName="p" id="family.section2.item1"/>
                                 </div>
                             </div>
-
                             <div className="medium-4 columns">
                                 <div className="saved-money-goals__goal">
                                     <img src="/assets/images/funfair.png" alt=""/>
-
                                     <p className="number" id="funfairNumber"></p>
-
-                                    <p>Tivoli-besök</p>
+                                    <FormattedMessage tagName="p" id="family.section2.item2"/>
                                 </div>
                             </div>
-
                             <div className="medium-4 columns">
                                 <div className="saved-money-goals__goal">
                                     <img src="/assets/images/ball.png" alt=""/>
-
                                     <p className="number" id="ballsNumber"></p>
-
-                                    <p>Fotbollar</p>
+                                    <FormattedMessage tagName="p" id="family.section2.item3"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div className="why-save-money">
                         <div className="row">
-
                             <div className="medium-8 columns">
-
                                 <div className="why-save-money__content">
                                     <div className="fadeInLeft wow">
-                                        <h2>Räntan som hjälper till 100 %</h2>
-                                        <p>
-                                            <p>För att barnen i Veckopengen ska lyckas nå sina sparmål kan föräldrarna sätta en ränta
-                                                som får pengarna i spargrisen att växa. Det gör att allt fler barn når sina sparmål.
-                                                Just nu är genomsnittsräntan:
-                                                <span style={{color: '#ffff00'}}>1,5%</span>
-                                            </p>
+                                        <FormattedMessage tagName="h2" id="family.section3.header"/>
+                                        <p> <FormattedMessage id="family.section3.body"/>
+                                            <span style={{color: '#ffff00'}}>1,5%</span>
                                         </p>
                                     </div>
                                     <div className="features__appstore-badges fadeInLeft wow">
                                         <div className="features__tip">
-                            <span className="features__tip-pointer">
-                                <img src="/assets/images/tip-pointer.png"
-                                     alt="Tip pointer"/>
-                            </span>
-                                            <span className="features__tip-text">Ladda ner appen här!</span>
+                                        <span className="features__tip-pointer">
+                                            <img src="/assets/images/tip-pointer.png"
+                                                 alt="Tip pointer"/>
+                                        </span>
+                                            <span className="features__tip-text">
+                                                <FormattedMessage id="family.section3.download"/>
+                                            </span>
                                         </div>
-
                                         <a href="#">
                                             <img className="appstore-badge"
                                                  src="/assets/images/apple-badge.png"
                                                  alt=""/>
                                         </a>
-
                                         <a href="#">
                                             <img className="appstore-badge"
                                                  src="/assets/images/google-badge.png"
@@ -308,17 +214,14 @@ export default class Family extends React.Component {
                                     </div>
                                 </div>
                             </div>
-
-
                             <div className="medium-4 columns">
 
                                 <div className="why-save-money__progress fadeInRight wow">
 
                                     <div className="progress-bar-wrapper">
-                        <span className="progress-bar">
-                        </span>
+                                    <span className="progress-bar">
+                                    </span>
                                     </div>
-
                                     <p className="progress-percent">0%</p>
                                 </div>
                             </div>
@@ -330,18 +233,11 @@ export default class Family extends React.Component {
                     <div className="common-tasks__content">
                         <div className="row">
                             <div className="medium-10 medium-push-1 columns fadeInDown wow">
-                                <h2>Populäraste uppgifterna</h2>
-                                <p>
-                                    <p>Tusentals barn utför varje dag uppgifter som bidrar till hemmen och en ökad förståelse för
-                                        pengar. Bland våra användare finns det barn som har gjort däckbyten, klippt häcken, suttit
-                                        barnvakt, målat garaget, nattat småsyskon, lärt sig hjula och hållit sig från att äta godis på
-                                        en hel vecka.
-                                    </p>
-                                </p>
+                                <FormattedMessage tagName="h2" id="family.section4.header"/>
+                                <FormattedMessage tagName="p" id="family.section4.body" />
                             </div>
                         </div>
                     </div>
-
                     <div className="common-tasks-bubbles">
                         <div className="row">
                             <div className="medium-12 columns">
@@ -349,7 +245,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">9 %</span>
-                                            Bär ut soporna
+                                            <FormattedMessage id="family.section4.item1"/>
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +253,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">26 %</span>
-                                            Diska efter maten
+                                            <FormattedMessage id="family.section4.item2"/>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +261,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">12 %</span>
-                                            Bädda sängen
+                                            <FormattedMessage id="family.section4.item3"/>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +269,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">9 %</span>
-                                            Tvätta
+                                            <FormattedMessage id="family.section4.item4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -381,7 +277,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">16 %</span>
-                                            Städa rummet
+                                            <FormattedMessage id="family.section4.item5"/>
                                         </div>
                                     </div>
                                 </div>
@@ -389,7 +285,7 @@ export default class Family extends React.Component {
                                     <div className="common-tasks-bubbles__bubble__content">
                                         <div className="inner">
                                             <span className="percents">8 %</span>
-                                            Läxor
+                                            <FormattedMessage id="family.section4.item6"/>
                                         </div>
                                     </div>
                                 </div>
@@ -404,27 +300,26 @@ export default class Family extends React.Component {
                         <div className="row">
 
                             <div className="medium-12 columns">
-                                <h2 className="fadeInLeft wow">Alla barn ska ha rätt till ekonomisk träning</h2>
+                                <h2 className="fadeInLeft wow">
+                                    <FormattedMessage id="family.section5.header"/>
+                                </h2>
                                 <div className="medium-9 fadeInLeft wow">
-                                    <p>Det är i hemmet som barn pratar och lär sig om pengar. Veckopengen har därför
-                                        samlat tips och
-                                        trix till alla föräldrar som vill ha kul med sina barn och samtidigt hjälpa dem
-                                        i deras resa mot
-                                        en bättre förståelse för pengar. Kika in på ekonomisk träning för att bli en
-                                        superförälder!
-                                    </p>
+                                    <FormattedMessage id="family.section5.body" tagName="p"/>
                                     <p>&nbsp;</p>
                                 </div>
 
                                 <div className="training-link__content fadeInLeft wow">
                                     <a href="/traning"
-                                       className="button button-dark">Ekonomisk träning
+                                       className="button button-dark">
+                                        <FormattedMessage id="family.section5.button"/>
                                     </a>
                                     <div className="features__tip">
                                         <span className="features__tip-pointer">
                                             <img src="/assets/images/tip-pointer.png" alt="Tip pointer"/>
                                         </span>
-                                        <span className="features__tip-text">Bli en superförälder</span>
+                                        <span className="features__tip-text">
+                                            <FormattedMessage id="family.section5.tip"/>
+                                        </span>
                                     </div>
                                 </div>
                                 <img className="fadeInRight wow"

@@ -6,7 +6,8 @@ import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Section from '../../components/Section';
+import Hero from '../../components/Hero';
+import Section from './Section';
 
 window.footerCounterValue = 173672608;
 window.counterValue = 74931501;
@@ -23,7 +24,6 @@ export default class Home extends React.Component {
                 number = number.substring(1, 10)
                 number = "+46" + number
             }
-            console.log(number)
             if (!send)
                 return
             window.jQuery.ajax({
@@ -50,122 +50,14 @@ export default class Home extends React.Component {
     }
 
     render() {
+        const {params} = this.props;
         return (
             <div className="home page-template-page-home">
-                <Header/>
+                <Header lang={params.lang}/>
                 <main>
-                    <section className="landing-hero">
-                        <div className="row">
-                            <div className="landing-hero__image">
-                                <img src="http://veckopengen.se/uploads/2015/10/NYNY-PHONE-NYHEMSIDA.png" alt=""/>
-                            </div>
-                        </div>
-                        <div className="landing-hero-bg-slider">
-                            <div className="landing-hero-slide equal-height" style={
-                                {   backgroundSize: 'cover',
-                                    backgroundPosition: 'cover',
-                                    backgroundImage: 'url(/assets/images/slide1.jpg)'}}>
-                                <div className="landing-hero__see-more">
-                                    <a href="#" id="slideDown">
-                                        <img src="/assets/images/arrow-down-large-colored.png"
-                                             alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="landing-hero-slide equal-height" style={
-                                {   backgroundSize: 'cover',
-                                    backgroundPosition: 'cover',
-                                    backgroundImage: 'url(/assets/images/slide2.jpg)'}}>
-                                <div className="landing-hero__see-more">
-                                    <a href="#" id="slideDown">
-                                        <img src="/assets/images/arrow-down-large-white.png"
-                                             alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="landing-hero-slide equal-height" style={
-                                {   backgroundSize: 'cover',
-                                    backgroundPosition: 'cover',
-                                    backgroundImage: 'url(/assets/images/slide2.jpg)'}}>
-                                <div className="landing-hero__see-more">
-                                    <a href="#" id="slideDown">
-                                        <img src="/assets/images/arrow-down-large-white.png"
-                                             alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="landing-hero-content equal-height">
-                            <div className="landing-hero-content__inner">
-                                <div className="landing-hero-content-slider">
-                                    <div className="row">
-                                        <div className="medium-8 medium-push-4 columns">
-                                            <div className="landing-hero-content-slider__content">
-                                                <FormattedMessage tagName="h2" id="home.slide1.header"/>
-
-                                                <div className="large-10">
-                                                    <p className="p1"><span className="s1">
-                                                        <FormattedMessage id="home.slide1.desc"/>
-                                                    </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="medium-8 medium-push-4 columns">
-                                            <div className="landing-hero-content-slider__content">
-                                                <FormattedMessage tagName="h2" id="home.slide2.header"/>
-
-                                                <div className="large-10">
-                                                    <FormattedHTMLMessage tagName="p" id="home.slide2.desc"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="medium-8 medium-push-4 columns">
-                                            <div className="landing-hero-content-slider__content">
-                                                <FormattedMessage tagName="h2" id="home.slide3.header"/>
-
-                                                <div className="large-10">
-                                                    <FormattedHTMLMessage tagName="p" id="home.slide3.desc"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="landing-hero__app-stores">
-                                    <div className="row">
-                                        <div className="landing-hero__app-stores-inner medium-push-4 columns">
-                                            <a href="https://itunes.apple.com/se/app/veckopengen-for-barn-och-foraldrar/id935778197?mt=8">
-                                                <img className="appstore-badge"
-                                                     src="/assets/images/apple-badge.png"
-                                                     alt=""/>
-                                            </a>
-
-                                            <a href="https://play.google.com/store/apps/details?id=se.veckopengen.app&amp;hl=sv">
-                                                <img className="appstore-badge"
-                                                     src="/assets/images/google-badge.png"
-                                                     alt=""/>
-                                            </a>
-
-                                            <div className="open-movie">
-                                                <a href="#" className="button button-movie">
-                                                    <img src="/assets/images/play-icon.png"
-                                                         alt=""/>
-                                                    <FormattedMessage id="home.watch"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <Section/>
-                    <Footer/>
+                    <Hero lang={params.lang} />
+                    <Section lang={params.lang}/>
+                    <Footer lang={params.lang}/>
                 </main>
                 <div className="video-player">
                     <div className="close-video">

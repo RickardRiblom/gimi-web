@@ -131,8 +131,7 @@ export default class Footer extends React.Component {
                                     <ul id="menu-social-nav-se" className="">
                                         <li id="menu-item-203"
                                             className="menu-item menu-item-type-custom menu-item-object-custom menu-item-203">
-                                            <a target="_blank" href="https://www.facebook.com/veckopengen/"><span
-                                            className="fb"></span></a>
+                                            <a target="_blank" href="https://www.facebook.com/veckopengen/"><span className="fb"></span></a>
                                         </li>
                                         <li id="menu-item-204"
                                             className="menu-item menu-item-type-custom menu-item-object-custom menu-item-204">
@@ -155,15 +154,9 @@ export default class Footer extends React.Component {
                             <div className="footer-nav-menu">
                                 <div className="menu-footer-nav-se-container">
                                     <ul id="menu-footer-nav-se" className="">
-                                        <li id="menu-item-498"
-                                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a
-                                            href="press/index.html"><FormattedMessage id="footer.press"/></a></li>
-                                        <li id="menu-item-247"
-                                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a
-                                            href="villkor/index.html"><FormattedMessage id="footer.terms"/></a></li>
-                                        <li id="menu-item-249"
-                                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a
-                                            href="faq/index.html"><FormattedMessage id="footer.faq"/></a></li>
+                                        <li className="menu-item"><Link to="/blog"><FormattedMessage id="footer.press"/></Link></li>
+                                        <li className="menu-item"><Link to="/terms"><FormattedMessage id="footer.terms"/></Link></li>
+                                        <li className="menu-item"><Link to="/faq"><FormattedMessage id="footer.faq"/></Link></li>
                                     </ul>
                                 </div>
                             </div>
