@@ -760,41 +760,54 @@ export default class Section extends React.Component {
                             <div className="footer-carousel">
                                 <blockquote className="features__quote fadeInUp wow">
                                     <FormattedMessage tagName="p" id="home.quote1"/>
-                                    <footer>– <span
-                                        className="features__quote-name">Anna</span>,
-                                        <span className="features__quote-age">37 år</span>
+                                    <footer>– <span className="features__quote-name">
+                                        <FormattedMessage id="home.quote1_name"/>
+                                    </span>,
+                                        <span className="features__quote-age">
+                                            <FormattedMessage id="home.quote1_sub"/>
+                                        </span>
                                     </footer>
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
                                     <FormattedMessage tagName="p" id="home.quote2"/>
                                     <footer>– <span
-                                        className="features__quote-name">Lion</span>,
-                                        <span className="features__quote-age">10 år</span>
+                                        className="features__quote-name">
+                                        <FormattedMessage id="home.quote2_name"/>
+                                    </span>,
+                                        <span className="features__quote-age">
+                                            <FormattedMessage id="home.quote2_sub"/>
+                                        </span>
                                     </footer>
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
                                     <FormattedMessage tagName="p" id="home.quote3"/>
                                     <footer>– <span
-                                        className="features__quote-name">Benny</span>,
-                                        <span className="features__quote-age">8 år</span>
+                                        className="features__quote-name"><FormattedMessage id="home.quote3_name"/></span>,
+                                        <span className="features__quote-age">
+                                            <FormattedMessage id="home.quote3_sub"/>
+                                        </span>
                                     </footer>
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
                                     <FormattedMessage tagName="p" id="home.quote4"/>
                                     <footer>– <span
-                                        className="features__quote-name">Thomas</span>,
-                                        <span className="features__quote-age">Pappa till fyra</span>
+                                        className="features__quote-name"><FormattedMessage id="home.quote4_name"/></span>,
+                                        <span className="features__quote-age">
+                                            <FormattedMessage id="home.quote4_sub"/>
+                                        </span>
                                     </footer>
 
                                 </blockquote>
                                 <blockquote className="features__quote fadeInUp wow">
                                     <FormattedMessage tagName="p" id="home.quote5"/>
                                     <footer>– <span
-                                        className="features__quote-name">Johanna</span>,
-                                        <span className="features__quote-age">Mamma</span>
+                                        className="features__quote-name"><FormattedMessage id="home.quote5_name"/></span>,
+                                        <span className="features__quote-age">
+                                            <FormattedMessage id="home.quote4_sub"/>
+                                        </span>
                                     </footer>
 
                                 </blockquote>
