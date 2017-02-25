@@ -16,7 +16,7 @@ const lang = getLang();
 
 export default class Main extends React.Component {
     render() {
-        const locale = this.props.params.lang;
+        const locale = this.props.params.lang || 'en';
         const intlConfig = {
             locale: locale,
             messages: translations[locale] || translations.en
@@ -25,7 +25,7 @@ export default class Main extends React.Component {
         return (
             <IntlProvider {...intlConfig}>
                 <div>
-                    {this.props.children}
+                    {React.cloneElement(this.props.children, {lang})}
                 </div>
             </IntlProvider>
         )

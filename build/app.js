@@ -5382,7 +5382,7 @@ webpackJsonp([0],[
 	    _createClass(Main, [{
 	        key: 'render',
 	        value: function render() {
-	            var locale = this.props.params.lang;
+	            var locale = this.props.params.lang || 'en';
 	            var intlConfig = {
 	                locale: locale,
 	                messages: _i18n2.default[locale] || _i18n2.default.en
@@ -5394,7 +5394,7 @@ webpackJsonp([0],[
 	                _react2.default.createElement(
 	                    'div',
 	                    null,
-	                    this.props.children
+	                    _react2.default.cloneElement(this.props.children, { lang: lang })
 	                )
 	            );
 	        }
@@ -10558,6 +10558,12 @@ webpackJsonp([0],[
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 
 
+	var VIDEO = {
+	    en: 'http://gimitheapp.com/uploads/2016/05/Alt_GIMI_6-10801.mp4',
+	    se: 'http://veckopengen.se/uploads/2015/11/VECKOPENGEN-FILM.m4v',
+	    no: 'http://no.gimitheapp.com/uploads/2016/05/Alt_GIMI_6-1080.mp4'
+	};
+
 	var Home = function (_React$Component) {
 	    _inherits(Home, _React$Component);
 
@@ -10625,19 +10631,19 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var params = this.props.params;
+	            var lang = this.props.params.lang;
 
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'home page-template-page-home' },
-	                _react2.default.createElement(_Header2.default, { lang: params.lang, isHome: true }),
+	                _react2.default.createElement(_Header2.default, { lang: lang, isHome: true }),
 	                _react2.default.createElement(
 	                    'main',
 	                    null,
-	                    _react2.default.createElement(_Hero2.default, { lang: params.lang }),
-	                    _react2.default.createElement(_Section2.default, { lang: params.lang })
+	                    _react2.default.createElement(_Hero2.default, { lang: lang }),
+	                    _react2.default.createElement(_Section2.default, { lang: lang })
 	                ),
-	                _react2.default.createElement(_Footer2.default, { lang: params.lang }),
+	                _react2.default.createElement(_Footer2.default, { lang: lang }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'video-player' },
@@ -10664,7 +10670,7 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            'video',
 	                            { width: '100%', height: '100%', id: 'veckopengen-video', preload: 'none' },
-	                            _react2.default.createElement('source', { src: '/assets/uploads/2015/11/VECKOPENGEN-FILM.m4v', type: 'video/mp4' }),
+	                            _react2.default.createElement('source', { src: VIDEO[lang], type: 'video/mp4' }),
 	                            'Your browser does not support the video tag.'
 	                        )
 	                    )

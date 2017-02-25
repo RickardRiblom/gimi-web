@@ -9,6 +9,12 @@ import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
 import Section from './Section';
 
+const VIDEO = {
+    en: 'http://gimitheapp.com/uploads/2016/05/Alt_GIMI_6-10801.mp4',
+    se: 'http://veckopengen.se/uploads/2015/11/VECKOPENGEN-FILM.m4v',
+    no: 'http://no.gimitheapp.com/uploads/2016/05/Alt_GIMI_6-1080.mp4'
+};
+
 export default class Home extends React.Component {
     componentDidMount() {
 
@@ -65,15 +71,15 @@ export default class Home extends React.Component {
     }
 
     render() {
-        const {params} = this.props;
+        const {lang} = this.props.params;
         return (
             <div className="home page-template-page-home">
-                <Header lang={params.lang} isHome={true} />
+                <Header lang={lang} isHome={true} />
                 <main>
-                    <Hero lang={params.lang} />
-                    <Section lang={params.lang}/>
+                    <Hero lang={lang} />
+                    <Section lang={lang}/>
                 </main>
-                <Footer lang={params.lang}/>
+                <Footer lang={lang}/>
                 <div className="video-player">
                     <div className="close-video">
                         <svg x="0px" y="0px" viewBox="0 0 357 357">
@@ -87,7 +93,7 @@ export default class Home extends React.Component {
 
                     <div className="video-wrapper">
                         <video width="100%" height="100%" id="veckopengen-video" preload="none">
-                            <source src="/assets/uploads/2015/11/VECKOPENGEN-FILM.m4v" type="video/mp4"/>
+                            <source src={VIDEO[lang]} type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
                     </div>

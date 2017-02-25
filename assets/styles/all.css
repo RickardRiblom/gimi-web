@@ -7525,6 +7525,9 @@ section.hero-bg p {
     background-color: #FFF;
     position: fixed;
   }
+  .scroll .site-header a.current_page_item {
+    color: black !important;
+  }
 }
 
 .site-header .nav-logo {
