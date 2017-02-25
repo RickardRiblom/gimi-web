@@ -1,11 +1,17 @@
 import React from 'react';
 import {FormattedMessage, injectIntl} from 'react-intl';
-import {Link} from 'react-router';
+import {Link, IndexLink} from 'react-router';
 
 const LOGO = {
     en: '/assets/images/gimi_logo.png',
     no: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png',
     se: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png'
+};
+
+const LOGO_SCROLL = {
+    en: '/assets/images/gimi_logo_inverse.png',
+    no: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png',
+    se: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png'
 };
 
 export default class Header extends React.Component {
@@ -16,8 +22,9 @@ export default class Header extends React.Component {
     }
 
     render() {
-        const { lang = 'en'}= this.props;
-        const logo = LOGO[lang];
+        const { lang = 'en', isHome}= this.props;
+        const logo = isHome ?  LOGO[lang] :  LOGO_SCROLL[lang];
+        const logo_alt = !isHome ? LOGO[lang] : LOGO_SCROLL[lang];
 
         return (
             <header className="site-header" role="navigation">
@@ -34,13 +41,13 @@ export default class Header extends React.Component {
                         </Link>
 
                         <Link to="/" className="scroll">
-                            <img src={logo} alt=""/>
+                            <img src={isHome ? logo : logo_alt} alt=""/>
                         </Link>
                     </div>
 
                     <div className="nav-logo-mobile">
                         <Link to="/">
-                            <img src={logo} alt=""/>
+                            <img src={isHome ? logo : logo_alt} alt=""/>
                         </Link>
                     </div>
 
@@ -48,16 +55,16 @@ export default class Header extends React.Component {
                         <div className="nav-menu">
                             <div className="menu-primary-nav-se-container">
                                 <ul id="menu-primary-nav-se" className="">
-                                    <li className="menu-item current-menu-item current_page_item">
-                                        <Link to="/"><FormattedMessage id="header.home"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/family`}><FormattedMessage id="header.family"/></Link></li>
+                                        <IndexLink to={`/${lang}`} activeClassName="current_page_item"><FormattedMessage id="header.home"/></IndexLink></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/training`}><FormattedMessage id="header.training"/></Link></li>
+                                        <Link to={`/${lang}/family`} activeClassName="current_page_item"><FormattedMessage id="header.family"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/news`}><FormattedMessage id="header.news"/></Link></li>
+                                        <Link to={`/${lang}/training`} activeClassName="current_page_item"><FormattedMessage id="header.training"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/about`}><FormattedMessage id="header.about"/></Link></li>
+                                        <Link to={`/${lang}/news`} activeClassName="current_page_item"><FormattedMessage id="header.news"/></Link></li>
+                                    <li className="menu-item">
+                                        <Link to={`/${lang}/about`} activeClassName="current_page_item"><FormattedMessage id="header.about"/></Link></li>
                                     <li className="menu-item">
                                         <a href="http://veckopengen.teamtailor.com/"><FormattedMessage id="header.job"/></a></li>
                                     <li className="lang-item lang-item-en menu-item">

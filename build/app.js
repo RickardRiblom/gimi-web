@@ -10630,7 +10630,7 @@ webpackJsonp([0],[
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'home page-template-page-home' },
-	                _react2.default.createElement(_Header2.default, { lang: params.lang }),
+	                _react2.default.createElement(_Header2.default, { lang: params.lang, isHome: true }),
 	                _react2.default.createElement(
 	                    'main',
 	                    null,
@@ -10713,6 +10713,12 @@ webpackJsonp([0],[
 	    se: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png'
 	};
 
+	var LOGO_SCROLL = {
+	    en: '/assets/images/gimi_logo_inverse.png',
+	    no: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png',
+	    se: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png'
+	};
+
 	var Header = function (_React$Component) {
 	    _inherits(Header, _React$Component);
 
@@ -10731,10 +10737,13 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _props$lang = this.props.lang,
-	                lang = _props$lang === undefined ? 'en' : _props$lang;
+	            var _props = this.props,
+	                _props$lang = _props.lang,
+	                lang = _props$lang === undefined ? 'en' : _props$lang,
+	                isHome = _props.isHome;
 
-	            var logo = LOGO[lang];
+	            var logo = isHome ? LOGO[lang] : LOGO_SCROLL[lang];
+	            var logo_alt = !isHome ? LOGO[lang] : LOGO_SCROLL[lang];
 
 	            return _react2.default.createElement(
 	                'header',
@@ -10760,7 +10769,7 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            _reactRouter.Link,
 	                            { to: '/', className: 'scroll' },
-	                            _react2.default.createElement('img', { src: logo, alt: '' })
+	                            _react2.default.createElement('img', { src: isHome ? logo : logo_alt, alt: '' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -10769,7 +10778,7 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            _reactRouter.Link,
 	                            { to: '/' },
-	                            _react2.default.createElement('img', { src: logo, alt: '' })
+	                            _react2.default.createElement('img', { src: isHome ? logo : logo_alt, alt: '' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -10786,10 +10795,10 @@ webpackJsonp([0],[
 	                                    { id: 'menu-primary-nav-se', className: '' },
 	                                    _react2.default.createElement(
 	                                        'li',
-	                                        { className: 'menu-item current-menu-item current_page_item' },
+	                                        { className: 'menu-item' },
 	                                        _react2.default.createElement(
-	                                            _reactRouter.Link,
-	                                            { to: '/' },
+	                                            _reactRouter.IndexLink,
+	                                            { to: '/' + lang, activeClassName: 'current_page_item' },
 	                                            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'header.home' })
 	                                        )
 	                                    ),
@@ -10798,7 +10807,7 @@ webpackJsonp([0],[
 	                                        { className: 'menu-item' },
 	                                        _react2.default.createElement(
 	                                            _reactRouter.Link,
-	                                            { to: '/' + lang + '/family' },
+	                                            { to: '/' + lang + '/family', activeClassName: 'current_page_item' },
 	                                            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'header.family' })
 	                                        )
 	                                    ),
@@ -10807,7 +10816,7 @@ webpackJsonp([0],[
 	                                        { className: 'menu-item' },
 	                                        _react2.default.createElement(
 	                                            _reactRouter.Link,
-	                                            { to: '/' + lang + '/training' },
+	                                            { to: '/' + lang + '/training', activeClassName: 'current_page_item' },
 	                                            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'header.training' })
 	                                        )
 	                                    ),
@@ -10816,7 +10825,7 @@ webpackJsonp([0],[
 	                                        { className: 'menu-item' },
 	                                        _react2.default.createElement(
 	                                            _reactRouter.Link,
-	                                            { to: '/' + lang + '/news' },
+	                                            { to: '/' + lang + '/news', activeClassName: 'current_page_item' },
 	                                            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'header.news' })
 	                                        )
 	                                    ),
@@ -10825,7 +10834,7 @@ webpackJsonp([0],[
 	                                        { className: 'menu-item' },
 	                                        _react2.default.createElement(
 	                                            _reactRouter.Link,
-	                                            { to: '/' + lang + '/about' },
+	                                            { to: '/' + lang + '/about', activeClassName: 'current_page_item' },
 	                                            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'header.about' })
 	                                        )
 	                                    ),
@@ -24564,7 +24573,8 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var lang = this.props.params;
+	            var lang = this.props.params.lang;
+
 
 	            return _react2.default.createElement(
 	                'div',
@@ -25677,7 +25687,8 @@ webpackJsonp([0],[
 	    _createClass(About, [{
 	        key: 'render',
 	        value: function render() {
-	            var lang = this.props.params;
+	            var lang = this.props.params.lang;
+
 
 	            return _react2.default.createElement(
 	                'div',

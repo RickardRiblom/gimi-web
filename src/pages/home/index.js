@@ -68,7 +68,7 @@ export default class Home extends React.Component {
         const {params} = this.props;
         return (
             <div className="home page-template-page-home">
-                <Header lang={params.lang}/>
+                <Header lang={params.lang} isHome={true} />
                 <main>
                     <Hero lang={params.lang} />
                     <Section lang={params.lang}/>

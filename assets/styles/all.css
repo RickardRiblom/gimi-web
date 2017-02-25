@@ -7643,7 +7643,7 @@ section.hero-bg p {
   color: #FFF;
 }
 
-.site-navigation .nav-menu ul li.current_page_item a {
+.site-navigation .nav-menu ul a.current_page_item  {
   color: #FFF;
 }
 
@@ -7683,7 +7683,7 @@ section.hero-bg p {
     color: #FFF;
   }
 
-  .site-navigation .nav-menu ul li.current_page_item a {
+  .site-navigation .nav-menu ul a.current_page_item {
     color: #FFF;
   }
 }
@@ -7711,14 +7711,14 @@ section.hero-bg p {
     color: #000;
   }
 
-  .home .nav-menu ul li.current_page_item a,
-  .page-template-default .nav-menu ul li.current_page_item a,
-  .page-template-page-faq .nav-menu ul li.current_page_item a,
-  .page-template-page-current .nav-menu ul li.current_page_item a,
-  .scroll .nav-menu ul li.current_page_item a,
-  .single-current .nav-menu ul li.current_page_item a,
-  .post-type-archive-current .nav-menu ul li.current_page_item a,
-  .page-template-page-press .nav-menu ul li.current_page_item a {
+  .home .nav-menu ul a.current_page_item ,
+  .page-template-default .nav-menu ul a.current_page_item ,
+  .page-template-page-faq .nav-menu ul a.current_page_item ,
+  .page-template-page-current .nav-menu ul a.current_page_item,
+  .scroll .nav-menu ul a.current_page_item a,
+  .single-current .nav-menu ul li.current_page_item,
+  .post-type-archive-current .nav-menu ul a.current_page_item,
+  .page-template-page-press .nav-menu ul a.current_page_item {
     color: #000;
   }
 }

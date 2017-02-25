@@ -54,7 +54,7 @@ export default class Family extends React.Component {
     }
 
     render() {
-        const lang = this.props.params;
+        const {lang} = this.props.params;
 
         return (
             <div className="page-template page-template-page-why">
