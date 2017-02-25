@@ -1,7 +1,34 @@
 import React from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
+const QUOTES_COUNT = {
+    en: 5,
+    no: 1,
+    se: 5
+};
+
 export default class Section extends React.Component {
+
+    renderQuotes() {
+        const lang = this.props.lang;
+        const quotes = [];
+        for(let i = 0; i < QUOTES_COUNT[lang]; i++) {
+            quotes.push(
+                <blockquote className="features__quote fadeInUp wow" key={i}>
+                    <FormattedMessage tagName="p" id="home.quote1"/>
+                    <footer>– <span className="features__quote-name">
+                                <FormattedMessage id={`home.quote${i+1}_name`}/>
+                              </span>,
+                              <span className="features__quote-age">
+                                 <FormattedMessage id={`home.quote${i+1}_sub`}/>
+                              </span>
+                    </footer>
+                </blockquote>
+            )
+        }
+        return quotes;
+    }
+
     render() {
         return (
             <section className="features">
@@ -758,59 +785,7 @@ export default class Section extends React.Component {
                                 </a>
                             </div>
                             <div className="footer-carousel">
-                                <blockquote className="features__quote fadeInUp wow">
-                                    <FormattedMessage tagName="p" id="home.quote1"/>
-                                    <footer>– <span className="features__quote-name">
-                                        <FormattedMessage id="home.quote1_name"/>
-                                    </span>,
-                                        <span className="features__quote-age">
-                                            <FormattedMessage id="home.quote1_sub"/>
-                                        </span>
-                                    </footer>
-
-                                </blockquote>
-                                <blockquote className="features__quote fadeInUp wow">
-                                    <FormattedMessage tagName="p" id="home.quote2"/>
-                                    <footer>– <span
-                                        className="features__quote-name">
-                                        <FormattedMessage id="home.quote2_name"/>
-                                    </span>,
-                                        <span className="features__quote-age">
-                                            <FormattedMessage id="home.quote2_sub"/>
-                                        </span>
-                                    </footer>
-
-                                </blockquote>
-                                <blockquote className="features__quote fadeInUp wow">
-                                    <FormattedMessage tagName="p" id="home.quote3"/>
-                                    <footer>– <span
-                                        className="features__quote-name"><FormattedMessage id="home.quote3_name"/></span>,
-                                        <span className="features__quote-age">
-                                            <FormattedMessage id="home.quote3_sub"/>
-                                        </span>
-                                    </footer>
-
-                                </blockquote>
-                                <blockquote className="features__quote fadeInUp wow">
-                                    <FormattedMessage tagName="p" id="home.quote4"/>
-                                    <footer>– <span
-                                        className="features__quote-name"><FormattedMessage id="home.quote4_name"/></span>,
-                                        <span className="features__quote-age">
-                                            <FormattedMessage id="home.quote4_sub"/>
-                                        </span>
-                                    </footer>
-
-                                </blockquote>
-                                <blockquote className="features__quote fadeInUp wow">
-                                    <FormattedMessage tagName="p" id="home.quote5"/>
-                                    <footer>– <span
-                                        className="features__quote-name"><FormattedMessage id="home.quote5_name"/></span>,
-                                        <span className="features__quote-age">
-                                            <FormattedMessage id="home.quote4_sub"/>
-                                        </span>
-                                    </footer>
-
-                                </blockquote>
+                                {this.renderQuotes()}
                             </div>
                             <a href="upplev-veckopengen/index.html"
                                className="button fadeInUp wow">

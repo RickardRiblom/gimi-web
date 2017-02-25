@@ -9,6 +9,12 @@ const LOGO = {
 };
 
 export default class Header extends React.Component {
+
+    componentDidMount() {
+        veckopengen.navigation.init();
+        veckopengen.siteHeader.init();
+    }
+
     render() {
         const { lang = 'en'}= this.props;
         const logo = LOGO[lang];

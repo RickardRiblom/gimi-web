@@ -7,6 +7,9 @@ const _routes = routes();
 
 import './scss/style.scss';
 
+window.footerCounterValue = 173672608;
+window.counterValue = 74931501;
+
 const App = () => {
     return (
         <Router history={browserHistory}>

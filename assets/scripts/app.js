@@ -8,33 +8,20 @@ var modernizr = require('./components/modernizr');
 var countup = require('./components/countup');
 var wow = require('./components/wow');
 
-var veckopengen = {};
+var veckopengen = window.veckopengen = {};
 
 // Remove is-loading class when page is loaded.
 $(window).on('load', function () {});
 
 $(document).ready(function () {
-    veckopengen.counter.init();
-    veckopengen.navigation.init();
-    veckopengen.pigBankAnimation.init();
-    veckopengen.footerQuote.init();
-    veckopengen.heroHeader.init();
-    veckopengen.progressScroll.init();
-    veckopengen.saveObjectiveSlider.init();
-    veckopengen.tabs.init();
-    veckopengen.timeline.init();
-    veckopengen.walletAnimation.init();
-    veckopengen.landingScrollButton.init();
-    veckopengen.videoPlayer.init();
-    veckopengen.wow.init();
-    veckopengen.quickTips.init();
-    veckopengen.faqAccordion.init();
-    veckopengen.siteHeader.init();
-    veckopengen.current.init();
 
-    window.setTimeout(function () {
-        $('body').removeClass('is-loading');
-    }, 100);
+
+
+    //global
+    veckopengen.wow.init();
+
+    //veckopengen.current.init();
+
 
     $(document).foundation();
 
@@ -87,11 +74,8 @@ veckopengen.counter = {
         if ($('.counter').length) {
             this.counter();
         }
-
-        if ($('.footer-counter').length) {
-            this.footerCounter();
-        }
     },
+
 
     counter: function counter() {
         var funfairStartingValue = Math.round(counterValue / 1000);
@@ -111,7 +95,7 @@ veckopengen.counter = {
         var consolesAnim = new CountUp("consolesNumber", 0, consoleStartingValue, 0, 3, animOptions);
         var ballsAnim = new CountUp("ballsNumber", 0, footballStartingValue, 0, 3, animOptions);
 
-        $(window).scroll(function (e) {
+        function _scroll() {
             // Start counter animation if in viewport:
             if (isElementInViewport($('#consolesNumber'))) {
                 consolesAnim.start();
@@ -124,29 +108,29 @@ veckopengen.counter = {
             if (isElementInViewport($('#ballsNumber'))) {
                 ballsAnim.start();
             }
-        });
+        }
+        $(window).on('scroll', _scroll);
 
         var counter = $('.counter').FlipClock(counterValue, {
             clockFace: 'Counter',
             minimumDigits: 9
         });
 
-        setTimeout(function () {
-            setInterval(function () {
-                counterValue = counterValue + 4;
-                counter.setValue(counterValue);
+        const interval = setInterval(function () {
+            counterValue = counterValue + 4;
+            counter.setValue(counterValue);
 
-                var funfairValue = Math.round(counterValue / 1000),
-                    consolesValue = Math.round(counterValue / 2000),
-                    ballsValue = Math.round(counterValue / 100);
+            var funfairValue = Math.round(counterValue / 1000),
+                consolesValue = Math.round(counterValue / 2000),
+                ballsValue = Math.round(counterValue / 100);
 
-                funfairAnim.update(funfairValue);
-                consolesAnim.update(consolesValue);
-                ballsAnim.update(ballsValue);
-            }, 4000);
-        });
+            funfairAnim.update(funfairValue);
+            consolesAnim.update(consolesValue);
+            ballsAnim.update(ballsValue);
+        }, 4000);
 
         function isElementInViewport(el) {
+            if(!el) return false;
             //special bonus for those using jQuery
             if (typeof jQuery === "function" && el instanceof jQuery) {
                 el = el[0];
@@ -157,7 +141,14 @@ veckopengen.counter = {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
             ;
         }
+        
+        this.off = function () {
+            $(window).off('scroll', _scroll);
+            clearInterval(interval);
+            counter.timer._destroyTimer();
+        }
     },
+
     footerCounter: function footerCounter() {
 
         var footerCounter = $('.footer-counter').FlipClock(footerCounterValue, {
@@ -201,6 +192,10 @@ veckopengen.pigBankAnimation = {
         if ($('.pigbank-anim').length) {
             this.setbehaviour();
         }
+    },
+
+    off() {
+        $(".pigbank-anim").owlCarousel('destroy.owl.carousel');
     },
 
     setbehaviour: function setbehaviour() {
@@ -335,7 +330,12 @@ veckopengen.footerQuote = {
             mouseDrag: true,
             navigationText: ["<img src='/assets/images/arrow-left.png'>", "<img src='/assets/images/arrow-right.png'>"]
         });
+    },
+
+    off() {
+        $(".save-footer-carousel").owlCarousel('destroy.owl.carousel');
     }
+
 };
 
 veckopengen.heroHeader = {
@@ -366,6 +366,10 @@ veckopengen.heroHeader = {
         $('.equal-height').matchHeight({
             byRow: 0
         });
+    },
+
+    off() {
+        $(".landing-hero-bg-slider").owlCarousel('destroy.owl.carousel');
     }
 };
 
@@ -377,19 +381,25 @@ veckopengen.progressScroll = {
         }
     },
 
+    onScroll(e) {
+        var el = $(".why-save-money__progress")[0];
+        var rect = el.getBoundingClientRect();
+        var clientHeight = window.innerHeight || document.documentElement.clientHeight;
+        var height = rect.bottom - rect.top;
+
+        var value = -((rect.bottom - clientHeight) / (clientHeight - height)) * 100 | 0;
+        var percent = Math.min(Math.max(value, 0), 100) + '%';
+
+        $('.progress-bar').css('height', percent);
+        $('.progress-percent').text(percent);
+    },
+
     setbehaviour: function setbehaviour() {
-        $(window).scroll(function (e) {
-            var el = $(".why-save-money__progress")[0];
-            var rect = el.getBoundingClientRect();
-            var clientHeight = window.innerHeight || document.documentElement.clientHeight;
-            var height = rect.bottom - rect.top;
+        $(window).on('scroll', this.onScroll);
+    },
 
-            var value = -((rect.bottom - clientHeight) / (clientHeight - height)) * 100 | 0;
-            var percent = Math.min(Math.max(value, 0), 100) + '%';
-
-            $('.progress-bar').css('height', percent);
-            $('.progress-percent').text(percent);
-        });
+    off() {
+        $(window).off('scroll', this.onScroll);
     }
 };
 
@@ -399,6 +409,10 @@ veckopengen.saveObjectiveSlider = {
         if ($('.save-objective__slider').length) {
             this.setbehaviour();
         }
+    },
+
+    off() {
+        $(".save-objective__slider").owlCarousel('destroy.owl.carousel');
     },
 
     setbehaviour: function setbehaviour() {
@@ -431,6 +445,10 @@ veckopengen.tabs = {
         if ($('.tips-tabs').length) {
             this.setbehaviour();
         }
+    },
+
+    off() {
+        $('#tips-tabs a').off();
     },
 
     setbehaviour: function setbehaviour() {
@@ -567,6 +585,11 @@ veckopengen.timeline = {
             $('.timeline-point').removeClass('active');
             $('.point-' + (this.owl.currentItem + 1)).addClass('active');
         }
+    },
+
+    off() {
+        var owl = $(".owl-carousel");
+        owl.trigger('destroy.owl.carousel');
     }
 };
 
@@ -575,6 +598,10 @@ veckopengen.quickTips = {
         if ($('.quick-tips').length) {
             this.setbehaviour();
         }
+    },
+
+    off() {
+        $(".owl-carousel").owlCarousel('destroy.owl.carousel');
     },
 
     setbehaviour: function setbehaviour() {
@@ -626,6 +653,10 @@ veckopengen.faqAccordion = {
         $('.feature__faqs').on('click', '.feature__faq-toggle-trigger', function () {
             $(this).parent('.feature__faq').toggleClass('out').find('.feature__faq-toggle').slideToggle(200);
         });
+    },
+
+    off() {
+        $('.feature__faqs').off();
     }
 };
 
@@ -648,6 +679,11 @@ veckopengen.videoPlayer = {
             vid.pause();
             vid.currentTime = 0;
         });
+    },
+
+    off() {
+        $('.open-movie a').off();
+        $('.close-video').off();
     }
 };
 
@@ -657,6 +693,11 @@ veckopengen.walletAnimation = {
         if ($('.feature.veckopengen').length) {
             this.setbehaviour();
         }
+    },
+
+    off() {
+        $('#wallet-minus-button').off();
+        $('#wallet-plus-button').off();
     },
 
     setbehaviour: function setbehaviour() {
@@ -746,7 +787,7 @@ veckopengen.wow = {
             animateClass: 'animated',
             offset: 50,
             mobile: true,
-            live: false
+            live: true
         });
         wow.init();
     }

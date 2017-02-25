@@ -9,12 +9,18 @@ import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
 import Section from './Section';
 
-window.footerCounterValue = 173672608;
-window.counterValue = 74931501;
-
 export default class Home extends React.Component {
     componentDidMount() {
-        var send = true
+
+        veckopengen.heroHeader.init();
+        veckopengen.counter.init();
+        veckopengen.pigBankAnimation.init();
+        veckopengen.walletAnimation.init();
+        veckopengen.saveObjectiveSlider.init();
+        veckopengen.footerQuote.init();
+        veckopengen.videoPlayer.init();
+
+        var send = true;
         $(".open-movie").before("<div><span class='smsHeader'>SMS:a mig appen:</span><br/><input class='smsButton' type='submit' value='Skicka'><input value='+46' placeholder='SKRIV DITT NUMMER HÄR' class='smsInput' type='text'></div>")
         $(".open-movie").after("<a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>")
         $(".open-movie").after("<div id='mylightbox' class='lightbox'></div>")
@@ -49,6 +55,15 @@ export default class Home extends React.Component {
         });
     }
 
+    componentWillUnmount () {
+        veckopengen.heroHeader.off();
+        veckopengen.pigBankAnimation.off();
+        veckopengen.walletAnimation.off();
+        veckopengen.saveObjectiveSlider.off();
+        veckopengen.footerQuote.off();
+        veckopengen.videoPlayer.off();
+    }
+
     render() {
         const {params} = this.props;
         return (
@@ -57,8 +72,8 @@ export default class Home extends React.Component {
                 <main>
                     <Hero lang={params.lang} />
                     <Section lang={params.lang}/>
-                    <Footer lang={params.lang}/>
                 </main>
+                <Footer lang={params.lang}/>
                 <div className="video-player">
                     <div className="close-video">
                         <svg x="0px" y="0px" viewBox="0 0 357 357">

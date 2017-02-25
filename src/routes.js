@@ -6,6 +6,8 @@ import Home from './pages/home';
 import Family from './pages/family';
 import Training from './pages/training';
 import About from './pages/about';
+import Terms from './pages/terms';
+import FAQ from './pages/faq';
 import NotFound from './pages/NotFound';
 
 export default () => {
@@ -17,6 +19,8 @@ export default () => {
                 <Route path="family" component={Family}/>
                 <Route path="training" component={Training}/>
                 <Route path="about" component={About}/>
+                <Route path="terms" component={Terms}/>
+                <Route path="faq" component={FAQ}/>
             </Route>
         </Route>
     )
