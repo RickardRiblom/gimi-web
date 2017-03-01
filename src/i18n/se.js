@@ -2,6 +2,12 @@
  * Created by amitava on 22/02/17.
  */
 export default {
+    "title.home": "Veckopengen",
+    "title.family": "Veckopengen >> Upplev veckopengen",
+    "title.coaching": "Veckopengen >> Träning",
+    "title.news": "Veckopengen >> Aktuellt",
+    "title.about": "Veckopengen >> Om oss",
+
     "header.home": "Hem",
     "header.family": "Upplev veckopengen",
     "header.training": "Träning",
@@ -339,7 +345,7 @@ export default {
     'about.section3.matilda': 'Matilda är en positiv kraft som har lätt för att se moderna, digitala och effektiva lösningar. Hennes skarpa analyser har gjort henne till en lysande stjärna med flera års erfarenheter av tillväxtmodeller och B2C marknadsföring.',
     'about.section3.stefan': 'Stefan vet hur man skapar digitala verktyg med fokus på användarna. Han har en förkärlek för ny typ av kommunikation och att alltid sätta familjen i första rummet.',
     'about.section3.oscar': 'Oscar har en tydlig ådra av entreprenörskap med engagemang i flera branscher och en släkt som under generationer varit med och tagit svensk skepparindustri till nya nivåer.',
-    'about.section3.arenbalk': 'Stefan är en entreprenör och investerare som älskar att få både siffror och användarlösningar att hamna i harmoni.qwe',
+    'about.section3.arenbalk': 'Stefan är en entreprenör och investerare som älskar att få både siffror och användarlösningar att hamna i harmoni.',
 
     "faq.title": "Frågor & svar",
     "faq.q1":"Varför måste jag skriva in telefonnummer?",

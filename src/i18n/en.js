@@ -2,6 +2,13 @@
  * Created by amitava on 22/02/17.
  */
 export default {
+    "title.home": "Gimi",
+    "title.family": "Gimi >> Family Community",
+    "title.coaching": "Gimi >> Coaching",
+    "title.news": "Gimi >> News",
+    "title.about": "Gimi >> About us",
+
+
     "header.home": "Home",
     "header.family": "Family community",
     "header.training": "Coaching",
@@ -262,6 +269,23 @@ export default {
     'training.tab3.person.tip1': 'Let the children create a business at home so that they better can understand trading.',
     'training.tab3.person.tip2': 'To become aware of consequences from own behaviour is educative for children and Gimi can help focus more on that subject.',
     'training.tab3.bubble1': 'Encouraging the stuff you want to see more from, is the best way to affect childrens behaviour.',
+
+    'about.header': 'This is family business!',
+    'about.subtitle': 'We are here to change and improve the way young people learn how to handle digital money. We welcome all kids and parents to join our cause!',
+    'about.section1.header': 'Let the weekly pocket money live on!',
+    'about.section1.block1': 'I grew up with my parents and five siblings during the 90’s. I had 200 meters to the kiosk, a bike with 21 gears and twelve marbles. I was eight years and king every Saturday when i got my golden 10 kr coin. The golden coin wasn’t only precious and shiny, I could even trade it for my favorite ice cream and still have 6 kroners left that i could put in my piggy bank. You could say that I had superpowers.',
+    'about.section1.block2': 'I was pretty good at nagging at that time. Even though i  pointed at items and stuff i wanted i had to save money or wait for christmas eve. When i had saved for some time, i normally bought marbles or hockeycards for my collectorbinder. For a long time i was hoping for Mario Lemieux, a center who played for Pittsburg Penguins. When he finally popped out of a package i bought i started crying and jumping because i was so happy. My mother asked me to run to times around the house so i could calm down. Even though i have stopped running around the house i still get a smile on my face when i know that Mario is framed in my binder.',
+    'about.section1.block3': 'I miss my childhood. I miss Donald Duck pockets, stealing apples and buying candy for Saturday evening at the local kiosk. It’s because of this longing that I created Gimi. Because it’s different today. Many children are today not able to be kings or queens for a day or dosen’t even get any weekly pocket money at Saturdays. Sure, the ice cream dosen’t cost 4 kroners and the local kiosk has probably been shut down. But I want to be part of creating new ways to keep golden coins, weekly pocket money and piggy banks to live on in the digital world. I want to make sure that todays children also will get that amazing feeling, that Saturdays are the greatest of days.',
+    'about.section1.footer': 'Philip Haglund CEO & Founder',
+    'about.section2.header': 'The Micro Managers',
+    'about.section2.content': 'Children are one third of our population and all of our future. Here at Gimi are children therefore obviously at the center. Not only in the use of the app, but also in the creation. The Micro Managers is our own group of experts who discuss, evaluate, and share ideas so that Gimi can become as good as possible. Would you like to get in touch with the Micro Managers, feel free to e-mail them at micromanagers@gimitheapp.com.',
+    'about.section3.header': 'The Board',
+    'about.section3.patrik': ' ',
+    'about.section3.matilda': ' ',
+    'about.section3.stefan': ' ',
+    'about.section3.oscar': ' ',
+    'about.section3.arenbalk': ' ',
+
 
     "faq.title": "FAQ",
     "faq.q1":"In which way do you use the information that is collected through the app?",

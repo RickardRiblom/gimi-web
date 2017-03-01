@@ -12,11 +12,9 @@ import translations from './i18n';
 
 addLocaleData([...en, ...no, ...se]);
 
-const lang = getLang();
-
 export default class Main extends React.Component {
     render() {
-        const locale = this.props.params.lang || 'en';
+        const locale = this.props.route.path;
         const intlConfig = {
             locale: locale,
             messages: translations[locale] || translations.en
@@ -25,7 +23,7 @@ export default class Main extends React.Component {
         return (
             <IntlProvider {...intlConfig}>
                 <div>
-                    {React.cloneElement(this.props.children, {lang})}
+                    {React.cloneElement(this.props.children, {lang: locale})}
                 </div>
             </IntlProvider>
         )

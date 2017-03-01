@@ -2,12 +2,13 @@
  * Created by amitava on 25/02/17.
  */
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
+import DocumentTitle from 'react-document-title';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-
+@injectIntl
 export default class FAQ extends React.Component {
     componentDidMount() {
         veckopengen.faqAccordion.init();
@@ -35,7 +36,9 @@ export default class FAQ extends React.Component {
     }
 
     render() {
-        const {lang} = this.props.params;
+        const title = this.props.intl.formatMessage({id: 'title.faq'});
+
+        const {lang} = this.props;
         const group1 = [];
         const group2 = [];
 
@@ -47,29 +50,31 @@ export default class FAQ extends React.Component {
         }
 
         return (
-            <div className="page-template-page-faq">
-                <Header lang={lang}/>
-                <main role="main">
-                    <div className="row">
-                        <div className="small-12 columns fadeInLeft wow">
-                            <FormattedMessage tagName="h1" id="faq.title"/>
+            <DocumentTitle title={title}>
+                <div className="page-template-page-faq">
+                    <Header lang={lang}/>
+                    <main role="main">
+                        <div className="row">
+                            <div className="small-12 columns fadeInLeft wow">
+                                <FormattedMessage tagName="h1" id="faq.title"/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="row fadeInUp wow">
-                        <div className=" medium-6 columns">
-                            <ul className="feature__faqs">
-                                {group1}
-                            </ul>
+                        <div className="row fadeInUp wow">
+                            <div className=" medium-6 columns">
+                                <ul className="feature__faqs">
+                                    {group1}
+                                </ul>
+                            </div>
+                            <div className=" medium-6 columns">
+                                <ul className="feature__faqs">
+                                    {group2}
+                                </ul>
+                            </div>
                         </div>
-                        <div className=" medium-6 columns">
-                            <ul className="feature__faqs">
-                                {group2}
-                            </ul>
-                        </div>
-                    </div>
-                </main>
-                <Footer lang={lang}/>
-            </div>
+                    </main>
+                    <Footer lang={lang}/>
+                </div>
+            </DocumentTitle>
         )
     }
 }

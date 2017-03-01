@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
-
+import { Link } from 'react-router';
+import { LINKS } from '../../constants';
 const QUOTES_COUNT = {
     en: 5,
     no: 1,
@@ -30,6 +31,7 @@ export default class Section extends React.Component {
     }
 
     render() {
+        const lang = this.props.lang;
         return (
             <section className="features">
                 <div className="features__header wow fadeInDown">
@@ -787,10 +789,10 @@ export default class Section extends React.Component {
                             <div className="footer-carousel">
                                 {this.renderQuotes()}
                             </div>
-                            <a href="upplev-veckopengen/index.html"
+                            <Link to={`/${lang}/${LINKS[lang].family}`}
                                className="button fadeInUp wow">
                                 <FormattedMessage id="home.section6.button"/>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

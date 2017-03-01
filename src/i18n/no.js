@@ -2,8 +2,14 @@
  * Created by amitava on 22/02/17.
  */
 export default {
+    "title.home": "Gimi",
+    "title.family": "Gimi >> Opplev",
+    "title.coaching": "Gimi >> Trening",
+    "title.news": "Gimi >> Aktuellt",
+    "title.about": "Gimi >> Om Oss",
+
     "header.home": "Hjem",
-    "header.family": "Opplev Ukepengen",
+    "header.family": "OPPLEV",
     "header.training": "Trening",
     "header.about": "Om oss",
     "header.news": "Aktuellt",

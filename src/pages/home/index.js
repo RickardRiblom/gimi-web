@@ -2,19 +2,17 @@
  * Created by amitava on 22/02/17.
  */
 import React from 'react';
-import {FormattedMessage, FormattedHTMLMessage} from 'react-intl';
+import {FormattedMessage, injectIntl} from 'react-intl';
+import DocumentTitle from 'react-document-title';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
 import Section from './Section';
 
-const VIDEO = {
-    en: 'http://gimitheapp.com/uploads/2016/05/Alt_GIMI_6-10801.mp4',
-    se: 'http://veckopengen.se/uploads/2015/11/VECKOPENGEN-FILM.m4v',
-    no: 'http://no.gimitheapp.com/uploads/2016/05/Alt_GIMI_6-1080.mp4'
-};
+import { VIDEO } from '../../constants';
 
+@injectIntl
 export default class Home extends React.Component {
     componentDidMount() {
 
@@ -71,34 +69,38 @@ export default class Home extends React.Component {
     }
 
     render() {
-        const {lang} = this.props.params;
-        return (
-            <div className="home page-template-page-home">
-                <Header lang={lang} isHome={true} />
-                <main>
-                    <Hero lang={lang} />
-                    <Section lang={lang}/>
-                </main>
-                <Footer lang={lang}/>
-                <div className="video-player">
-                    <div className="close-video">
-                        <svg x="0px" y="0px" viewBox="0 0 357 357">
-                            <g>
-                                <g id="close">
-                                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
+        const {lang} = this.props;
+        const title = this.props.intl.formatMessage({id: 'title.home'});
 
-                    <div className="video-wrapper">
-                        <video width="100%" height="100%" id="veckopengen-video" preload="none">
-                            <source src={VIDEO[lang]} type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
+        return (
+            <DocumentTitle title={title}>
+                <div className="home page-template-page-home">
+                    <Header lang={lang} isHome={true} />
+                    <main>
+                        <Hero lang={lang} />
+                        <Section lang={lang}/>
+                    </main>
+                    <Footer lang={lang}/>
+                    <div className="video-player">
+                        <div className="close-video">
+                            <svg x="0px" y="0px" viewBox="0 0 357 357">
+                                <g>
+                                    <g id="close">
+                                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div className="video-wrapper">
+                            <video width="100%" height="100%" id="veckopengen-video" preload="none">
+                                <source src={VIDEO[lang]} type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </DocumentTitle>
         )
     }
 }

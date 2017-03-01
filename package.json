@@ -29,6 +29,7 @@
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",
+    "react-document-title": "^2.0.2",
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
     "react-intl": "^2.2.3",
@@ -40,6 +41,7 @@
     "react-slick": "^0.14.5",
     "react-star-rating-component": "^1.2.2",
     "reactstrap": "^4.1.1",
+    "request": "^2.79.0",
     "scroll-to-element": "^2.0.0",
     "slick-carousel": "^1.6.0"
   },

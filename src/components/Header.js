@@ -2,6 +2,8 @@ import React from 'react';
 import {FormattedMessage, injectIntl} from 'react-intl';
 import {Link, IndexLink} from 'react-router';
 
+import { LINKS } from '../constants';
+
 const LOGO = {
     en: '/assets/images/gimi_logo.png',
     no: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png',
@@ -25,7 +27,7 @@ export default class Header extends React.Component {
         const { lang = 'en', isHome}= this.props;
         const logo = isHome ?  LOGO[lang] :  LOGO_SCROLL[lang];
         const logo_alt = !isHome ? LOGO[lang] : LOGO_SCROLL[lang];
-
+        const links = LINKS[lang];
         return (
             <header className="site-header" role="navigation">
                 <div className="row">
@@ -58,13 +60,13 @@ export default class Header extends React.Component {
                                     <li className="menu-item">
                                         <IndexLink to={`/${lang}`} activeClassName="current_page_item"><FormattedMessage id="header.home"/></IndexLink></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/family`} activeClassName="current_page_item"><FormattedMessage id="header.family"/></Link></li>
+                                        <Link to={`/${lang}/${links.family}`} activeClassName="current_page_item"><FormattedMessage id="header.family"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/training`} activeClassName="current_page_item"><FormattedMessage id="header.training"/></Link></li>
+                                        <Link to={`/${lang}/${links.coaching}`} activeClassName="current_page_item"><FormattedMessage id="header.training"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/news`} activeClassName="current_page_item"><FormattedMessage id="header.news"/></Link></li>
+                                        <Link to={`/${lang}/${links.news}`} activeClassName="current_page_item"><FormattedMessage id="header.news"/></Link></li>
                                     <li className="menu-item">
-                                        <Link to={`/${lang}/about`} activeClassName="current_page_item"><FormattedMessage id="header.about"/></Link></li>
+                                        <Link to={`/${lang}/${links.about}`} activeClassName="current_page_item"><FormattedMessage id="header.about"/></Link></li>
                                     <li className="menu-item">
                                         <a href="http://veckopengen.teamtailor.com/"><FormattedMessage id="header.job"/></a></li>
                                     <li className="lang-item lang-item-en menu-item">

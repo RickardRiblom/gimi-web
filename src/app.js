@@ -10,9 +10,13 @@ import './scss/style.scss';
 window.footerCounterValue = 173672608;
 window.counterValue = 74931501;
 
+function scrollTop() {
+    window.scrollTo(0, 0);
+}
+
 const App = () => {
     return (
-        <Router history={browserHistory}>
+        <Router history={browserHistory} onUpdate={scrollTop}>
             {_routes}
         </Router>
     )
