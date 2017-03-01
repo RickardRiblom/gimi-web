@@ -15,7 +15,7 @@ export default class Hero extends React.Component {
             <section className="landing-hero">
                 <div className="row">
                     <div className="landing-hero__image">
-                        <img src="http://veckopengen.se/uploads/2015/10/NYNY-PHONE-NYHEMSIDA.png" alt=""/>
+                        <img src="/assets/images/NYNY-PHONE-NYHEMSIDA.png" alt=""/>
                     </div>
                 </div>
                 <div className="landing-hero-bg-slider">

@@ -79,7 +79,7 @@ export default class Header extends React.Component {
                                             title="Norsk Bokmål" alt="Norsk Bokmål"/></a></li>
                                     <li className="lang-item lang-item-sv menu-item">
                                         <a href="/se" hrefLang="sv-SE" lang="sv-SE">
-                                            <img src="http://veckopengen.se/polylang/sv_SE.png" title="Svenska" alt="Svenska" /></a></li>
+                                            <img src="/assets/images/sv_SE.png" title="Svenska" alt="Svenska" /></a></li>
                                 </ul>
                             </div>
                         </div>
