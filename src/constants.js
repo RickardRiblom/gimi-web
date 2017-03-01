@@ -50,5 +50,5 @@ export const VIDEO = {
 export const HOSTS = {
     en: 'http://beta.gimitheapp.com',
     se: 'http://beta.veckopengen.se',
-    no: 'http://ukepengen.no'
+    no: 'http://beta.ukepengen.no'
 };
