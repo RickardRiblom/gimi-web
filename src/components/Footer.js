@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav } from 'reactstrap';
 import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
 import { Link } from 'react-router';
+import { LINKS } from '../constants'
 
 export default class Footer extends React.Component {
 
@@ -11,6 +12,7 @@ export default class Footer extends React.Component {
 
     render() {
         const {lang} = this.props;
+
         return (
             <footer>
                 <div className="media">
@@ -160,7 +162,7 @@ export default class Footer extends React.Component {
                             <div className="footer-nav-menu">
                                 <div className="menu-footer-nav-se-container">
                                     <ul id="menu-footer-nav-se" className="">
-                                        <li className="menu-item"><Link to={`/${lang}/blog`}><FormattedMessage id="footer.press"/></Link></li>
+                                        <li className="menu-item"><Link to={`/${lang}/${LINKS[lang].news}`}><FormattedMessage id="footer.press"/></Link></li>
                                         <li className="menu-item"><Link to={`/${lang}/terms`}><FormattedMessage id="footer.terms"/></Link></li>
                                         <li className="menu-item"><Link to={`/${lang}/faq`}><FormattedMessage id="footer.faq"/></Link></li>
                                     </ul>
