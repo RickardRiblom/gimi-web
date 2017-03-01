@@ -7,6 +7,8 @@ export default {
     "title.coaching": "Gimi >> Trening",
     "title.news": "Gimi >> Aktuellt",
     "title.about": "Gimi >> Om Oss",
+    "title.terms": "Gimi >> Terms",
+    "title.faq": "Gimi >> Spørsmål & svar",
 
     "header.home": "Hjem",
     "header.family": "OPPLEV",

@@ -13,7 +13,7 @@ import Footer from '../../components/Footer';
 @injectIntl
 export default class Terms extends React.Component {
     render() {
-        const {lang} = this.props.params;
+        const {lang} = this.props;
         const title = this.props.intl.formatMessage({id: 'title.terms'});
 
         let body = null

@@ -7,6 +7,8 @@ export default {
     "title.coaching": "Veckopengen >> Träning",
     "title.news": "Veckopengen >> Aktuellt",
     "title.about": "Veckopengen >> Om oss",
+    "title.terms": "Veckopengen >> Terms",
+    "title.faq": "Veckopengen >> Frågor & svar",
 
     "header.home": "Hem",
     "header.family": "Upplev veckopengen",

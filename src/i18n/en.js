@@ -7,6 +7,8 @@ export default {
     "title.coaching": "Gimi >> Coaching",
     "title.news": "Gimi >> News",
     "title.about": "Gimi >> About us",
+    "title.terms": "Gimi >> Terms",
+    "title.faq": "Gimi >> FAQ",
 
 
     "header.home": "Home",
