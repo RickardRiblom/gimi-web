@@ -13,29 +13,10 @@ import NotFound from './pages/NotFound';
 
 
 export default () => {
-    return (
-        <Route path="/">
-            <IndexRedirect to="/en" />
-            <Route path="en" component={Main}>
-                <IndexRoute component={Home}/>
-                <Route path="family-community" component={Family}/>
-                <Route path="coaching" component={Training}/>
-                <Route path="news" component={News}/>
-                <Route path="about-us" component={About}/>
-                <Route path="terms" component={Terms}/>
-                <Route path="faq" component={FAQ}/>
 
-            </Route>
-            <Route path="no" component={Main}>
-                <IndexRoute component={Home}/>
-                <Route path="opplev" component={Family}/>
-                <Route path="trening" component={Training}/>
-                <Route path="aktuellt" component={News}/>
-                <Route path="om-oss" component={About}/>
-                <Route path="terms" component={Terms}/>
-                <Route path="faq" component={FAQ}/>
-            </Route>
-            <Route path="se" component={Main}>
+    if (location.href.includes('veckopengen')) {
+        return (
+            <Route path="/" component={Main} lang="se">
                 <IndexRoute component={Home}/>
                 <Route path="upplev-veckopengen" component={Family}/>
                 <Route path="traning" component={Training}/>
@@ -43,8 +24,34 @@ export default () => {
                 <Route path="om-oss" component={About}/>
                 <Route path="terms" component={Terms}/>
                 <Route path="faq" component={FAQ}/>
+                <Route path="*" component={NotFound} />
             </Route>
-            <Route path="*" component={NotFound} />
-        </Route>
-    )
+        )
+    } else if(location.href.includes('ukepengen')) {
+        return (
+            <Route path="/" component={Main} lang="no">
+                <IndexRoute component={Home}/>
+                <Route path="opplev" component={Family}/>
+                <Route path="trening" component={Training}/>
+                <Route path="aktuellt" component={News}/>
+                <Route path="om-oss" component={About}/>
+                <Route path="terms" component={Terms}/>
+                <Route path="faq" component={FAQ}/>
+                <Route path="*" component={NotFound} />
+            </Route>
+        )
+    } else {
+        return (
+            <Route path="/" component={Main} lang="en">
+                <IndexRoute component={Home}/>
+                <Route path="family-community" component={Family}/>
+                <Route path="coaching" component={Training}/>
+                <Route path="news" component={News}/>
+                <Route path="about-us" component={About}/>
+                <Route path="terms" component={Terms}/>
+                <Route path="faq" component={FAQ}/>
+                <Route path="*" component={NotFound} />
+            </Route>
+        )
+    }
 };

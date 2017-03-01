@@ -46,3 +46,9 @@ export const VIDEO = {
     se: 'http://veckopengen.se/uploads/2015/11/VECKOPENGEN-FILM.m4v',
     no: 'http://no.gimitheapp.com/uploads/2016/05/Alt_GIMI_6-1080.mp4'
 };
+
+export const HOSTS = {
+    en: 'http://beta.gimitheapp.com',
+    se: 'http://beta.veckopengen.se',
+    no: 'http://ukepengen.no'
+};

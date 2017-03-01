@@ -14,7 +14,7 @@ addLocaleData([...en, ...no, ...se]);
 
 export default class Main extends React.Component {
     render() {
-        const locale = this.props.route.path;
+        const locale = this.props.route.lang;
         const intlConfig = {
             locale: locale,
             messages: translations[locale] || translations.en

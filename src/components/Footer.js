@@ -162,9 +162,9 @@ export default class Footer extends React.Component {
                             <div className="footer-nav-menu">
                                 <div className="menu-footer-nav-se-container">
                                     <ul id="menu-footer-nav-se" className="">
-                                        <li className="menu-item"><Link to={`/${lang}/${LINKS[lang].news}`}><FormattedMessage id="footer.press"/></Link></li>
-                                        <li className="menu-item"><Link to={`/${lang}/terms`}><FormattedMessage id="footer.terms"/></Link></li>
-                                        <li className="menu-item"><Link to={`/${lang}/faq`}><FormattedMessage id="footer.faq"/></Link></li>
+                                        <li className="menu-item"><Link to={`/${LINKS[lang].news}`}><FormattedMessage id="footer.press"/></Link></li>
+                                        <li className="menu-item"><Link to={`/terms`}><FormattedMessage id="footer.terms"/></Link></li>
+                                        <li className="menu-item"><Link to={`/faq`}><FormattedMessage id="footer.faq"/></Link></li>
                                     </ul>
                                 </div>
                             </div>
