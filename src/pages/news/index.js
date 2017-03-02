@@ -27,7 +27,7 @@ export default class News extends React.Component {
             <DocumentTitle title={title}>
                 <div className="page-template page-template-page-current">
                     <Header lang={lang}/>
-                    <div id="blog" style={{minHeight: 600}}>
+                    <div id="blog" style={{minHeight: 1200}}>
 
                     </div>
                     <Footer lang={lang}/>
