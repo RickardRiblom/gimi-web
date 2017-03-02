@@ -7,7 +7,6 @@ var owlcarousel = require('./components/owlcarousel');
 var modernizr = require('./components/modernizr');
 var countup = require('./components/countup');
 var wow = require('./components/wow');
-
 var veckopengen = window.veckopengen = {};
 
 // Remove is-loading class when page is loaded.
@@ -22,6 +21,9 @@ $(document).ready(function () {
 
     //veckopengen.current.init();
 
+    window.intercomSettings = {
+        app_id: "ybo9v9ss"
+      };
 
     $(document).foundation();
 
@@ -141,7 +143,7 @@ veckopengen.counter = {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
             ;
         }
-        
+
         this.off = function () {
             $(window).off('scroll', _scroll);
             clearInterval(interval);
