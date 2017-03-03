@@ -10,6 +10,10 @@
     "build": "cross-env NODE_ENV=production webpack -p",
     "postinstall": "webpack -p --progress"
   },
+  "engines": {
+    "node": "7.2.0",
+    "npm": "3.10.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Barnpengar/gimi-web.git"
