@@ -27,11 +27,11 @@ export default {
     "footer.faq": " Frågor & svar",
 
     "home.slide1.header": "Det nya sättet att hantera vecko- eller månadspengen!",
-    "home.slide1.desc": 'Woop woop! Mobilappen Veckopengen har ekonomiska superfunktioner som gör det roligt och lärorikt att hantera pengar. Både för barn och föräldrar.',
-    "home.slide2.header": "Surfkollen!",
-    "home.slide2.desc": ' <strong>Nu lanserar vi tjänsten Sufkollen tillsammans med Telenor, för att göra det lättare att hålla koll på surfen. <a href="aktuellt/surfkoll-lanseras-tillsammans-med-telenor/index.html">Läs mer här!</a></strong>',
+    "home.slide1.desc": 'Woop woop! Veckopengen har ekonomiska superfunktioner som gör det roligt och lärorikt att hantera pengar. Både för barn och föräldrar.',
+    "home.slide2.header": "Banköverföringar!",
+    "home.slide2.desc": ' <strong>Nu lanserar vi tjänsten Banköverföringar tillsammans med Trustly, så att föräldrar ska kunna skicka över pengar direkt till barnens bankkonton. <a href="https://www.youtube.com/watch?v=oDmm3EkGpWI">Se mer här!</a></strong>',
     "home.slide3.header": 'Med familjen i fokus',
-    "home.slide3.desc": '<strong>Veckopengen har etiska regler för att hela familjen ska känna sig trygg. <em><a href="http://veckopengen.stuff.wmyl.se/villkor/">Läs mer om våra etiska regler här</a>.</em></strong>',
+    "home.slide3.desc": '<strong>Veckopengen har etiska regler för att hela familjen ska känna sig trygg. <em><a href="/terms">Läs mer om våra etiska regler här</a>.</em></strong>',
     'home.watch': 'Visa film',
 
     "home.section1.header": 'Barnsligt bra för hela familjen',
@@ -348,6 +348,7 @@ export default {
     'about.section3.stefan': 'Stefan vet hur man skapar digitala verktyg med fokus på användarna. Han har en förkärlek för ny typ av kommunikation och att alltid sätta familjen i första rummet.',
     'about.section3.oscar': 'Oscar har en tydlig ådra av entreprenörskap med engagemang i flera branscher och en släkt som under generationer varit med och tagit svensk skepparindustri till nya nivåer.',
     'about.section3.arenbalk': 'Stefan är en entreprenör och investerare som älskar att få både siffror och användarlösningar att hamna i harmoni.',
+
 
     "faq.title": "Frågor & svar",
     "faq.q1":"Varför måste jag skriva in telefonnummer?",
