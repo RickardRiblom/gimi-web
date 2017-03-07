@@ -222,12 +222,12 @@ export default class Family extends React.Component {
                                                     <FormattedMessage id="family.section3.download"/>
                                                 </span>
                                                 </div>
-                                                <a href="#">
+                                                <a href="https://itunes.apple.com/se/app/veckopengen-for-barn-och-foraldrar/id935778197?mt=8">
                                                     <img className="appstore-badge"
                                                          src="/assets/images/apple-badge.png"
                                                          alt=""/>
                                                 </a>
-                                                <a href="#">
+                                                <a href="https://play.google.com/store/apps/details?id=se.veckopengen.app&amp;hl=sv">
                                                     <img className="appstore-badge"
                                                          src="/assets/images/google-badge.png"
                                                          alt=""/>
