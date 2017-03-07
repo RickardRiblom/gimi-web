@@ -48,7 +48,7 @@ export default class Family extends React.Component {
     }
 
     renderBullets() {
-        return ['5-6','7-8','9-10','11-12', '13-14', '5-16'].map((i, idx) => (
+        return ['5-6','7-8','9-10','11-12', '13-14', '15-16'].map((i, idx) => (
             <div className={`timeline-point point-${idx+1}`} key={idx}>
                 <div className="timeline-point__content">
                     {i} <FormattedMessage id="years"/>
