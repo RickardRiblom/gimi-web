@@ -789,7 +789,7 @@ export default class Section extends React.Component {
                             <div className="footer-carousel">
                                 {this.renderQuotes()}
                             </div>
-                            <Link to={`/${lang}/${LINKS[lang].family}`}
+                            <Link to={`/${LINKS[lang].family}`}
                                className="button fadeInUp wow">
                                 <FormattedMessage id="home.section6.button"/>
                             </Link>

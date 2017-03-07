@@ -6,13 +6,13 @@ import { LINKS, HOSTS } from '../constants';
 
 const LOGO = {
     en: '/assets/images/gimi_logo.png',
-    no: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png',
+    no: '/assets/images/gimi_logo.png',
     se: '/assets/uploads/2015/11/NYLOGGA_hem_gra.png'
 };
 
 const LOGO_SCROLL = {
     en: '/assets/images/gimi_logo_inverse.png',
-    no: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png',
+    no: '/assets/images/gimi_logo_inverse.png',
     se: '/assets/uploads/2015/11/NYLOGGA_hem_vit.png'
 };
 

@@ -38,7 +38,8 @@ export const LINKS = {
         coaching: 'trening',
         family: 'opplev',
         news: 'aktuellt',
-        about: 'om-oss'
+        about: 'om-oss',
+        faq: 'https://intercom.help/gimi'
     }
 
 };

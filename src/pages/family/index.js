@@ -330,7 +330,7 @@ export default class Family extends React.Component {
                                         </div>
 
                                         <div className="training-link__content fadeInLeft wow">
-                                            <Link to={`/${lang}/${LINKS[lang].coaching}`}
+                                            <Link to={`/${LINKS[lang].coaching}`}
                                                className="button button-dark">
                                                 <FormattedMessage id="family.section5.button"/>
                                             </Link>

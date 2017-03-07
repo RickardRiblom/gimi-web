@@ -22,7 +22,7 @@ export default {
     "footer.about": "Vi på Veckopengen arbetar för att barn och unga enkelt ska kunna hantera pengar på ett sunt och ansvarsfullt sätt. Våra verktyg ska främja en trygg, lärorik och roligare privatekonomi för både barn och föräldrar.",
     "footer.about2": 'Kontakta oss gärna för support eller feedback: <a href="mailto:{email}" target="_blank">{email}</a>',
     "footer.newsletter": "Signa up för vårt nyhetsbrev",
-    "footer.press": "Press",
+    "footer.press": "Aktuellt",
     "footer.terms": " Villkor",
     "footer.faq": " Frågor & svar",
 
@@ -348,6 +348,18 @@ export default {
     'about.section3.stefan': 'Stefan vet hur man skapar digitala verktyg med fokus på användarna. Han har en förkärlek för ny typ av kommunikation och att alltid sätta familjen i första rummet.',
     'about.section3.oscar': 'Oscar har en tydlig ådra av entreprenörskap med engagemang i flera branscher och en släkt som under generationer varit med och tagit svensk skepparindustri till nya nivåer.',
     'about.section3.arenbalk': 'Stefan är en entreprenör och investerare som älskar att få både siffror och användarlösningar att hamna i harmoni.',
+    'about.section4.header': 'Teamet',
+    'about.section4.philip': 'Philip är en visionär som genom åren samlat på sig såväl högskolepoäng som gula kort på fotbollsplanen. På Veckopengen jobbar han för att teamet och produkten ska gå hand i hand.',
+    'about.section4.caj': 'Caj är en social nytänkare som gärna är i naturen eller tar ett samtal om segling. Med Veckopengen hoppas Caj kunna ge barn och ungdomar en röst i vuxenvärlden.',
+    'about.section4.anders': 'Anders är en tuggummi-älskande kodare som förutom tidiga morgnar gillar saker som går fort och effektivt. När han tar rast kan du se honom träna sin långa forehand vid pingisbordet.',
+    'about.section4.nic': 'Niclas är en av medgrundarna på Veckopengen och en entreprenör som med stort driv och envishet tar såväl samarbeten som nya idéer hela vägen från skissbordet till lansering.',
+    'about.section4.martin': 'Martin är en stilmedveten motorcyklist som gillar när kod blir till en kul och vacker upplevelse för användaren. Och ja, Martin är väldigt glad över att för tillfället inneha företagets största bildskärm.',
+    'about.section4.andy': 'Andy är vår nya superstjärna bakom tangentbordet. Han är uppväxt med databaser som kvällsläsning och ett förhållningssätt till java-kod som gör att han ibland dagdrömmer fram vår nya strukturer på Veckopengen.',
+    'about.section4.frida': 'Som världens första Kids and Family Manager har Frida som jobb att hjälpa familjerna i Veckopengen och att göra appen mer pedagogisk. Hon är civilingenjör från KTH och utbildad lärare!',
+    'about.section4.joa': 'När Joakim inte sjunger hårdrock med sina kompisar så pluggar han datateknik på KTH, på Veckopengen så chefar Joakim över alla tester som görs i appen.',
+    'about.section4.mat': 'Mathias är en modern kreatör som uttrycker sig i kod, med en gitarr eller på en skateboard, på Veckopengen så jobbar han med front end.',
+    'about.section4.join': 'Vill du joina vårat team?',
+    'about.section5': 'Att hjälpa barn och ungdomar är ett arbete som vi tar på största allvar. Därför försöker vi inte bara utbilda unga i hanterandet av pengar. Varje månad bidrar vi med pengar till Barncancerfonden för att hjälpa dem i deras viktiga arbete i kampen mot cancer',
 
 
     "faq.title": "Frågor & svar",

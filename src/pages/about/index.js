@@ -11,117 +11,6 @@ import Footer from '../../components/Footer';
 @injectIntl
 export default class About extends React.Component {
 
-    renderTeam() {
-        return (
-            <section className="employee collection">
-                <div className="row">
-                    <div className="medium-12 columns fadeInLeft wow">
-                        <h2>Teamet</h2>
-                    </div>
-                    <div className="medium-12 columns fadeInLeft wow">
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/PHILIP.jpg" alt=""/>
-
-                            <div>
-                                <span className="blue">Philip Haglund</span>
-                                <br />
-                                Philip är en visionär som genom åren samlat på sig såväl högskolepoäng som gula kort på
-                                fotbollsplanen. På Veckopengen jobbar han för att teamet och produkten ska gå hand i hand.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/Caj-Westlund.jpg" alt=""/>
-
-                            <div>
-                                <span className="blue">Caj Westlund</span>
-                                <br />
-                                Caj är en social nytänkare som gärna är i naturen eller tar ett samtal om segling. Med
-                                Veckopengen hoppas Caj kunna ge barn och ungdomar en röst i vuxenvärlden.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/Anders.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Anders Bäck</span>
-                                <br />
-                                Anders är en tuggummi-älskande kodare som förutom tidiga morgnar gillar saker som går fort
-                                och effektivt. När han tar rast kan du se honom träna sin långa forehand vid pingisbordet.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/Niclas.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Niclas Blomqvist</span>
-                                <br />
-                                Niclas är en av medgrundarna på Veckopengen och en entreprenör som med stort driv och
-                                envishet tar såväl samarbeten som nya idéer hela vägen från skissbordet till lansering.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/Martin1.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Martin Agnälv</span>
-                                <br />
-                                Martin är en stilmedveten motorcyklist som gillar när kod blir till en kul och vacker
-                                upplevelse för användaren. Och ja, Martin är väldigt glad över att för tillfället inneha
-                                företagets största bildskärm.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/ANDY1.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Andy Sun</span>
-                                <br />
-                                Andy är vår nya superstjärna bakom tangentbordet. Han är uppväxt med databaser som
-                                kvällsläsning och ett förhållningssätt till java-kod som gör att han ibland dagdrömmer fram
-                                vår nya strukturer på Veckopengen.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/FRIDA.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Frida Berggren</span>
-                                <br />
-                                Som världens första Kids and Family Manager har Frida som jobb att hjälpa familjerna i
-                                Veckopengen och att göra appen mer pedagogisk. Hon är civilingenjör från KTH och utbildad
-                                lärare!
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/JOAKIM.jpg" alt="" />
-
-                                <div>
-                                    <span className="blue">Joakim Bäck</span>
-                                    <br />
-                                    När Joakim inte sjunger hårdrock med sina kompisar så pluggar han datateknik på KTH, på
-                                    Veckopengen så chefar Joakim över alla tester som görs i appen.
-                                </div>
-                        </div>
-                        <div className="flow medium-3 columns">
-                            <img src="/assets/uploads/2015/10/MATHIAS.jpg" alt="" />
-
-                            <div>
-                                <span className="blue">Mathias Eriksson</span>
-                                <br />
-                                Mathias är en modern kreatör som uttrycker sig i kod, med en gitarr eller på en skateboard,
-                                på Veckopengen så jobbar han med front end.
-                            </div>
-                        </div>
-                        <div className="flow medium-3 columns apply fadeInLeft wow">
-                            <a href="mailto:philip@veckopengen.se">
-                                Vill du joina vårat team?
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
     render() {
         const {lang} = this.props;
         const title = this.props.intl.formatMessage({id: 'title.about'});
@@ -306,7 +195,112 @@ export default class About extends React.Component {
                                 </div>
                             </div>
                         </section>
-                        {lang == 'se' ? this.renderTeam() : null}
+                        <section className="employee collection">
+                            <div className="row">
+                                <div className="medium-12 columns fadeInLeft wow">
+                                    <FormattedMessage id="about.section4.header" tagName="h2"/>
+                                </div>
+                                <div className="medium-12 columns fadeInLeft wow">
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/PHILIP.jpg" alt=""/>
+
+                                        <div>
+                                            <span className="blue">Philip Haglund</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.philip"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/Caj-Westlund.jpg" alt=""/>
+
+                                        <div>
+                                            <span className="blue">Caj Westlund</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.caj"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/Anders.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Anders Bäck</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.anders"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/Niclas.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Niclas Blomqvist</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.nic"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/Martin1.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Martin Agnälv</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.martin"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/ANDY1.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Andy Sun</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.andy"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/FRIDA.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Frida Berggren</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.frida"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/JOAKIM.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Joakim Bäck</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.joa"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns">
+                                        <img src="/assets/uploads/2015/10/MATHIAS.jpg" alt="" />
+
+                                        <div>
+                                            <span className="blue">Mathias Eriksson</span>
+                                            <br />
+                                            <FormattedMessage id="about.section4.mat"/>
+                                        </div>
+                                    </div>
+                                    <div className="flow medium-3 columns apply fadeInLeft wow">
+                                        <a href="mailto:philip@veckopengen.se">
+                                            <FormattedMessage id="about.section4.join"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div className="feature__delimiter short-delimiter"></div>
+                        <section className="diggar-barncancer-fonden">
+                            <img className="diggar fadeInLeft wow" src="/assets/uploads/2015/10/diggar.png" />
+                            <div className="row">
+                                <div className="medium-12 columns fadeInLeft wow">
+                                    <p className="end_test">
+                                        <FormattedMessage id="about.section5"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
                     </main>
                     <Footer lang={lang}/>
                 </div>

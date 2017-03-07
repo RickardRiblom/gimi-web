@@ -98,7 +98,7 @@ export default class Footer extends React.Component {
                                         <div id="mc_embed_signup_scroll">
 
                                             <div className="mc-field-group">
-                                                <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL"
+                                                <input type="email"  name="EMAIL" className="required email" id="mce-EMAIL"
                                                        placeholder="Email address"/>
                                                     <button type="submit">
                                                         <img
@@ -164,7 +164,9 @@ export default class Footer extends React.Component {
                                     <ul id="menu-footer-nav-se" className="">
                                         <li className="menu-item"><Link to={`/${LINKS[lang].news}`}><FormattedMessage id="footer.press"/></Link></li>
                                         <li className="menu-item"><Link to={`/terms`}><FormattedMessage id="footer.terms"/></Link></li>
-                                        <li className="menu-item"><Link to={`/faq`}><FormattedMessage id="footer.faq"/></Link></li>
+                                        <li className="menu-item">
+                                            <a href={`${LINKS[lang].faq || 'faq'}`}><FormattedMessage id="footer.faq"/></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

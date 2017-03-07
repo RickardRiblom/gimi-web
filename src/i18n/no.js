@@ -22,7 +22,7 @@ export default {
     "footer.about": "Vi på Gimi jobber for at barn og unge enkelt skal kunne håndtere penger på en sunn og ansvarsfull måte. Våre verktøy skal fremheve en trygg, lærerik og morsommere privatøkonomi for både barn og foreldre.",
     "footer.about2": 'Kontakt oss gjerne for support eller feedback: <a href="mailto:info@barnpengar.se" target="_blank">info@barnpengar.se</a>',
     "footer.newsletter": "Sign up for våre nyhetsbrev",
-    "footer.press": "Press",
+    "footer.press": "Media",
     "footer.terms": " Villkor",
     "footer.faq": " Frågor & svar",
 
@@ -275,6 +275,19 @@ export default {
     'about.section3.stefan': 'Stefan vet hur man skapar digitala verktyg med fokus på användarna. Han har en förkärlek för ny typ av kommunikation och att alltid sätta familjen i första rummet.',
     'about.section3.oscar': 'Oscar har en tydlig ådra av entreprenörskap med engagemang i flera branscher och en släkt som under generationer varit med och tagit svensk skepparindustri till nya nivåer.',
     'about.section3.arenbalk': 'Stefan är en entreprenör och investerare som älskar att få både siffror och användarlösningar att hamna i harmoni.qwe',
+    'about.section4.header': 'Teamet',
+    'about.section4.philip': 'Philip er en pådriver og leder som er overbevist om om å virkliggjøre sin visjon om å forandre hvordan barn kan forstå og håndtere penger i den digitale verden.',
+    'about.section4.caj': 'Caj er en varm og sosial nytenkende person som blir inspirert av å gi barn og ungdommer verktøy og egenskaper slik at de kan kommunisere sine ønsker i den voksne verden.',
+    'about.section4.anders': 'Anders blir inspirert av å skrive koder som forbedrer og utvikler nye applikasjoner som finansielle verktøy for vår kommende generasjon.',
+    'about.section4.nic': 'Head of cellaborations',
+    'about.section4.martin': 'Martin er en talentfull programmerer som har et smil om munnen hver eneste dag når han forsøker å finne nye løsninger samt utvikle kontantenes utseende i våre digitale verktøy.',
+    'about.section4.andy': 'Back End Lead',
+    'about.section4.frida': 'Kids and Family Manager',
+    'about.section4.joa': 'Head of testing',
+    'about.section4.mat': 'Front end',
+    'about.section4.join': 'Vil du bli en del av vårt team?',
+    'about.section5': 'Å hjelpe barn og ungdommer er en jobb som vi tar på störste alvor. Vi forsøker å utdanne unge når det kommer till håndtering av penger, men samtidig hjelpe andre organisasjoner som jobber med barn. Vi bidrar blant annet hver måned med penger till Barncancerfondet for å hjelpe dem i deres viktige jobb i kampen mot kreft.',
+
 
     "faq.title": "Spørsmål & svar",
     "faq.q1":"Lär Veckopengen verkligen mina barn om pengar?",
