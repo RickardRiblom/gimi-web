@@ -48,7 +48,7 @@ export default class Family extends React.Component {
     }
 
     renderBullets() {
-        return ['5-6','7-8','9-10','11-12', '13-14', '5-16'].map((i, idx) => (
+        return ['5-6','7-8','9-10','11-12', '13-14', '15-16'].map((i, idx) => (
             <div className={`timeline-point point-${idx+1}`} key={idx}>
                 <div className="timeline-point__content">
                     {i} <FormattedMessage id="years"/>
@@ -222,12 +222,12 @@ export default class Family extends React.Component {
                                                     <FormattedMessage id="family.section3.download"/>
                                                 </span>
                                                 </div>
-                                                <a href="#">
+                                                <a href="https://itunes.apple.com/se/app/veckopengen-for-barn-och-foraldrar/id935778197?mt=8">
                                                     <img className="appstore-badge"
                                                          src="/assets/images/apple-badge.png"
                                                          alt=""/>
                                                 </a>
-                                                <a href="#">
+                                                <a href="https://play.google.com/store/apps/details?id=se.veckopengen.app&amp;hl=sv">
                                                     <img className="appstore-badge"
                                                          src="/assets/images/google-badge.png"
                                                          alt=""/>
