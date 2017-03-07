@@ -43,3 +43,10 @@ Final feedback is 200 dollars, the reset of the milestones is 1300/number of mil
 
 ## Guidelines ##
 Use bootstrap as layout engine. I encourage you to use babel/es6 however create clear build/deploy scripts in package.json if you do. If yor prefer not to work with the generated html pages youre free to do so. The raw psd files ar located in psd. Also if you have a better flow than the one presented above plz feel free to run it by me. We do a milestone for each point here over. That means you get a reward for every completed point stated above.
+
+## Getting started ##
+How to get this party started
+* git clone this repo
+* npm install
+* npm run-script build
+* npm start
