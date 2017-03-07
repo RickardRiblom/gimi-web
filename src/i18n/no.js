@@ -26,7 +26,7 @@ export default {
     "footer.terms": " Villkor",
     "footer.faq": " Frågor & svar",
 
-    "home.slide1.header": "Dette er den nye metoden som skaper en fornuftig håndtering avuke- eller månedspenger!",
+    "home.slide1.header": "Dette er den nye metoden som skaper en fornuftig håndtering av uke- eller månedspenger!",
     "home.slide1.desc": 'Woop woop! Gimi inneholder økonomiske superfunksjoner som gjør at håndteringen av penger blir morsomt og lærerikt. Både for barn og foreldre.',
     "home.slide2.header": "Surfkollen!",
     "home.slide2.desc": ' <strong>Nu lanserar vi tjänsten Sufkollen tillsammans med Telenor, för att göra det lättare att hålla koll på surfen. <a href="aktuellt/surfkoll-lanseras-tillsammans-med-telenor/index.html">Läs mer här!</a></strong>',
