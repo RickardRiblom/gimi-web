@@ -4,7 +4,7 @@
 import React from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
-import { SLIDES } from '../constants';
+import { SLIDES, LINKS } from '../constants';
 
 export default class Hero extends React.Component {
     render() {
@@ -47,7 +47,7 @@ export default class Hero extends React.Component {
                                             <div className="large-10">
                                                 <p className="p1">
                                                     <span className="s1" style={!i.image ? {color: '#333'} : {}}>
-                                                        <FormattedHTMLMessage id={`home.slide${idx+1}.desc`}/>
+                                                        <FormattedHTMLMessage id={`home.slide${idx+1}.desc`} values={{about: LINKS[lang]['about']}}/>
                                                     </span>
                                                 </p>
                                             </div>

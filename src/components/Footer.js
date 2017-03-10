@@ -4,6 +4,12 @@ import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
 import { Link } from 'react-router';
 import { LINKS } from '../constants'
 
+const SOCIAL = {
+    en: 'gimitheapp',
+    no: 'gimitheapp',
+    se: 'veckopengen',
+};
+
 export default class Footer extends React.Component {
 
     componentDidMount() {
@@ -24,13 +30,19 @@ export default class Footer extends React.Component {
                                         <img src="/assets/uploads/2015/11/di.png" alt=""/>
                                     </a>
                                 </li>
-
-                                <li className="media__logo">
-                                    <a href="http://www.expressen.se/dinapengar/surf-ar-barnens-nya-hardvaluta/">
-                                        <img src="/assets/uploads/2015/11/EXPRESSEN.png" alt=""/>
-                                    </a>
-                                </li>
-
+                                {lang != 'se'? (
+                                    <li className="media__logo">
+                                        <a href="http://www.aftenposten.no/okonomi/Lommepenge-appene-som-far-barna-til-a-jobbe-606435b.html">
+                                            <img src="http://gimitheapp.com/uploads/2016/05/aftenposten_logo_svart_stor.png" alt="" />
+                                        </a>
+                                    </li>
+                                ) : (
+                                    <li className="media__logo">
+                                        <a href="http://www.expressen.se/dinapengar/surf-ar-barnens-nya-hardvaluta/">
+                                            <img src="/assets/uploads/2015/11/EXPRESSEN.png" alt=""/>
+                                        </a>
+                                    </li>
+                                )}
                                 <li className="media__logo">
                                     <a href="http://www.va.se/nyheter/2015/11/12/appen-som-ska-ersatta-spargrisen/" className="">
                                         <img src="/assets/uploads/2015/11/veckans-affarer.png" alt=""/>
@@ -138,21 +150,22 @@ export default class Footer extends React.Component {
                                 <div className="menu-social-nav-se-container">
                                     <ul id="menu-social-nav-se" className="">
                                         <li id="menu-item-203"
-                                            className="menu-item menu-item-type-custom menu-item-object-custom menu-item-203">
-                                            <a target="_blank" href="https://www.facebook.com/veckopengen/"><span className="fb"></span></a>
+                                            className="menu-item">
+                                            <a target="_blank" href={`https://www.facebook.com/${SOCIAL[lang]}`}><span className="fb"></span></a>
                                         </li>
                                         <li id="menu-item-204"
-                                            className="menu-item menu-item-type-custom menu-item-object-custom menu-item-204">
-                                            <a target="_blank" href="https://twitter.com/veckopengen"><span className="tw"></span></a>
+                                            className="menu-item">
+                                            <a target="_blank" href={`https://twitter.com/${SOCIAL[lang]}`}><span className="tw"></span></a>
                                         </li>
                                         <li id="menu-item-205"
-                                            className="menu-item menu-item-type-custom menu-item-object-custom menu-item-205">
-                                            <a target="_blank" href="https://www.instagram.com/veckopengen/"><span
-                                            className="ig"></span></a>
+                                            className="menu-item">
+                                            <a target="_blank" href={`https://www.instagram.com/${SOCIAL[lang]}`}>
+                                                <span className="ig"></span>
+                                            </a>
                                         </li>
                                         <li id="menu-item-491"
-                                            className="menu-item menu-item-type-custom menu-item-object-custom menu-item-491">
-                                            <a  href="#ex1"><span className="sc"></span></a>
+                                            className="menu-item">
+                                            <a  href=""><span className="sc"></span></a>
                                         </li>
                                     </ul>
                                 </div>

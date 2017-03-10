@@ -29,9 +29,9 @@ export default {
     "home.slide1.header": "Dette er den nye metoden som skaper en fornuftig håndtering av uke- eller månedspenger!",
     "home.slide1.desc": 'Woop woop! Gimi inneholder økonomiske superfunksjoner som gjør at håndteringen av penger blir morsomt og lærerikt. Både for barn og foreldre.',
     "home.slide2.header": "Surfkollen!",
-    "home.slide2.desc": ' <strong>Nu lanserar vi tjänsten Sufkollen tillsammans med Telenor, för att göra det lättare att hålla koll på surfen. <a href="aktuellt/surfkoll-lanseras-tillsammans-med-telenor/index.html">Läs mer här!</a></strong>',
+    "home.slide2.desc": ' <strong>Nu lanserar vi tjänsten Sufkollen tillsammans med Telenor, för att göra det lättare att hålla koll på surfen. <a href="{about}">Läs mer här!</a></strong>',
     "home.slide3.header": 'Med familjen i fokus',
-    "home.slide3.desc": '<strong>Veckopengen har etiska regler för att hela familjen ska känna sig trygg. <em><a href="http://veckopengen.stuff.wmyl.se/villkor/">Läs mer om våra etiska regler här</a>.</em></strong>',
+    "home.slide3.desc": '<strong>Veckopengen har etiska regler för att hela familjen ska känna sig trygg. <em><a href="/terms" target="_blank">Läs mer om våra etiska regler här</a>.</em></strong>',
     'home.watch': 'Visa film',
 
     "home.section1.header": 'Barnslig bra for hele familien',
