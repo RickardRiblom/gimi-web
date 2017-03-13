@@ -1,37 +1,37 @@
-var webpack = require('webpack');
-var path = require('path');
-var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+var webpack = require('webpack')
+var path = require('path')
+var autoprefixer = require('autoprefixer')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
+var CleanWebpackPlugin = require('clean-webpack-plugin')
 
-var projectRoot = process.cwd(); // Absolute path to the project root
-var resolveRoot = path.join(projectRoot, 'node_modules'); // project root/node_modules
-var buildPath = './build/';
+var projectRoot = process.cwd() // Absolute path to the project root
+var resolveRoot = path.join(projectRoot, 'node_modules') // project root/node_modules
+var buildPath = './build/'
 
-var extractCSS = new ExtractTextPlugin('app.css');
-var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'vendor.js');
+var extractCSS = new ExtractTextPlugin('app.css')
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'vendor.js')
 
-var copy = new CopyWebpackPlugin([{from: 'public'}]);
+var copy = new CopyWebpackPlugin([{from: 'public'}])
 var clean = new CleanWebpackPlugin(['build'], {
-    //root: __dirname,
-    verbose: true,
-    dry: false
-});
+    // root: __dirname,
+  verbose: true,
+  dry: false
+})
 
-var plugins = [clean, commonsPlugin, extractCSS, copy];
+var plugins = [clean, commonsPlugin, extractCSS, copy]
 
-if(process.env.NODE_ENV == 'production'){
+if (process.env.NODE_ENV == 'production') {
   plugins.push(new webpack.DefinePlugin({
-      "process.env": {
-          NODE_ENV: JSON.stringify("production")
-      }
-  }));
-  plugins.push(new webpack.optimize.OccurenceOrderPlugin());
-  plugins.push(new webpack.optimize.DedupePlugin());
+    'process.env': {
+      NODE_ENV: JSON.stringify('production')
+    }
+  }))
+  plugins.push(new webpack.optimize.OccurenceOrderPlugin())
+  plugins.push(new webpack.optimize.DedupePlugin())
   plugins.push(new webpack.optimize.UglifyJsPlugin({
     compressor: { warnings: false }
-  }));
+  }))
 }
 
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
     app: path.resolve(__dirname, 'src/app.js'),
     vendors: ['babel-polyfill', 'react', 'react-dom', 'react-helmet']
   },
-  //devtool: 'source-map',
+  // devtool: 'source-map',
   output: {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
@@ -53,8 +53,8 @@ module.exports = {
         exclude: [resolveRoot],
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', "stage-1", 'react'],
-          plugins: ["transform-decorators-legacy"]
+          presets: ['es2015', 'stage-1', 'react'],
+          plugins: ['transform-decorators-legacy']
         }
       },
       {
@@ -63,10 +63,10 @@ module.exports = {
       },
      /// { test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader: "url-loader?mimetype=application/font-woff" },
 
-      { test: /\.(ttf|eot|svg|woff|png|jpg|svg)(\?\S*)?$/, loader: "file-loader?/static/name=[name].[ext]" }
+      { test: /\.(ttf|eot|svg|woff|png|jpg|svg)(\?\S*)?$/, loader: 'file-loader?/static/name=[name].[ext]' }
     ]
   },
-    
+
   resolve: {
     root: [
       resolveRoot,
@@ -78,9 +78,9 @@ module.exports = {
   modulesDirectories: [
     'node_modules'
   ],
-  postcss: function() {
+  postcss: function () {
     return [
-        autoprefixer()
-    ];
+      autoprefixer()
+    ]
   }
-};
+}

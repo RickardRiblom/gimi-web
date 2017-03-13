@@ -1,14 +1,13 @@
 /* global mejs, _wpmejsSettings */
-(function( window, $ ) {
-
-	window.wp = window.wp || {};
+(function (window, $) {
+  window.wp = window.wp || {}
 
 	// add mime-type aliases to MediaElement plugin support
-	mejs.plugins.silverlight[0].types.push('video/x-ms-wmv');
-	mejs.plugins.silverlight[0].types.push('audio/x-ms-wma');
+  mejs.plugins.silverlight[0].types.push('video/x-ms-wmv')
+  mejs.plugins.silverlight[0].types.push('audio/x-ms-wma')
 
-	function wpMediaElement() {
-		var settings = {};
+  function wpMediaElement () {
+    var settings = {}
 
 		/**
 		 * Initialize media elements.
@@ -18,44 +17,43 @@
 		 *
 		 * @since 4.4.0
 		 */
-		function initialize() {
-			if ( typeof _wpmejsSettings !== 'undefined' ) {
-				settings = $.extend( true, {}, _wpmejsSettings );
-			}
+    function initialize () {
+      if (typeof _wpmejsSettings !== 'undefined') {
+        settings = $.extend(true, {}, _wpmejsSettings)
+      }
 
-			settings.success = settings.success || function (mejs) {
-				var autoplay, loop;
+      settings.success = settings.success || function (mejs) {
+        var autoplay, loop
 
-				if ( 'flash' === mejs.pluginType ) {
-					autoplay = mejs.attributes.autoplay && 'false' !== mejs.attributes.autoplay;
-					loop = mejs.attributes.loop && 'false' !== mejs.attributes.loop;
+        if (mejs.pluginType === 'flash') {
+          autoplay = mejs.attributes.autoplay && mejs.attributes.autoplay !== 'false'
+          loop = mejs.attributes.loop && mejs.attributes.loop !== 'false'
 
-					autoplay && mejs.addEventListener( 'canplay', function () {
-						mejs.play();
-					}, false );
+          autoplay && mejs.addEventListener('canplay', function () {
+            mejs.play()
+          }, false)
 
-					loop && mejs.addEventListener( 'ended', function () {
-						mejs.play();
-					}, false );
-				}
-			};
+          loop && mejs.addEventListener('ended', function () {
+            mejs.play()
+          }, false)
+        }
+      }
 
 			// Only initialize new media elements.
-			$( '.wp-audio-shortcode, .wp-video-shortcode' )
-				.not( '.mejs-container' )
+      $('.wp-audio-shortcode, .wp-video-shortcode')
+				.not('.mejs-container')
 				.filter(function () {
-					return ! $( this ).parent().hasClass( '.mejs-mediaelement' );
-				})
-				.mediaelementplayer( settings );
-		}
+  return !$(this).parent().hasClass('.mejs-mediaelement')
+})
+				.mediaelementplayer(settings)
+    }
 
-		return {
-			initialize: initialize
-		};
-	}
+    return {
+      initialize: initialize
+    }
+  }
 
-	window.wp.mediaelement = new wpMediaElement();
+  window.wp.mediaelement = new wpMediaElement()
 
-	$( window.wp.mediaelement.initialize );
-
-})( window, jQuery );
+  $(window.wp.mediaelement.initialize)
+})(window, jQuery)
