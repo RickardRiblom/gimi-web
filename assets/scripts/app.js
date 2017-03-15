@@ -654,6 +654,8 @@
     }
   }
 
+
+
   veckopengen.videoPlayer = {
     init: function init () {
       var _base = this
@@ -663,6 +665,35 @@
 
         var vid = document.getElementById('veckopengen-video')
         vid.play()
+      })
+
+      $('.smsButton').click(function () {
+        var number = $('.smsInput').val().toString()
+        if (number.startsWith('07')) {
+          number = number.substring(1, 10)
+          number = '+46' + number
+        }
+        if (!send) { return }
+        window.jQuery.ajax({
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          type: 'POST',
+          url: 'http://vp-live.herokuapp.com/v0.5/send-sms/',
+          data: '{"phoneNo" : "' + number + '"}',
+          dataType: 'json',
+          success: function () {
+            console.log('success')
+            send = false
+            $('.smsInput').val('+46')
+            $('.smsButton').val('Skickat')
+            $('.smsButton').addClass('sent')
+          },
+          error: function (e) {
+            console.log(e)
+          }
+        })
       })
 
       $('.close-video').click(function (e) {

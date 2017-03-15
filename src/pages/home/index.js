@@ -24,40 +24,6 @@ export default class Home extends React.Component {
     veckopengen.videoPlayer.init()
 
     var send = true
-    if (this.props.lang == 'se') {
-      $('.open-movie').before("<div><span class='smsHeader'>SMS:a mig appen:</span><br/><input class='smsButton' type='submit' value='Skicka'><input value='+46' placeholder='SKRIV DITT NUMMER HÄR' class='smsInput' type='text'></div>")
-      $('.open-movie').after("<a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>")
-      $('.open-movie').after("<div id='mylightbox' class='lightbox'></div>")
-
-      $('.smsButton').click(function () {
-        var number = $('.smsInput').val().toString()
-        if (number.startsWith('07')) {
-          number = number.substring(1, 10)
-          number = '+46' + number
-        }
-        if (!send) { return }
-        window.jQuery.ajax({
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          type: 'POST',
-          url: 'http://vp-live.herokuapp.com/v0.5/send-sms/',
-          data: '{"phoneNo" : "' + number + '"}',
-          dataType: 'json',
-          success: function () {
-            console.log('success')
-            send = false
-            $('.smsInput').val('+46')
-            $('.smsButton').val('Skickat')
-            $('.smsButton').addClass('sent')
-          },
-          error: function (e) {
-            console.log(e)
-          }
-        })
-      })
-    }
   }
 
   componentWillUnmount () {
@@ -69,10 +35,25 @@ export default class Home extends React.Component {
     veckopengen.videoPlayer.off()
   }
 
-  render () {
+  getSpecialContent (): * {
+    var {lang} = this.props
+    return lang === 'se' ? (
+      <div>
+        <div>
+          <span className='smsHeader'>SMS:a mig appen:</span>
+          <br />
+          <input className='smsButton' type='submit' value='Skicka' />
+          <input value='+46' placeholder='SKRIV DITT NUMMER HÄR' className='smsInput' type='text' />
+        </div>
+        <a id='success-lightbox' style='display:none;' href='#' data-featherlight='#mylightbox'>Open element in lightbox</a>
+        <div id='mylightbox' className='lightbox' />
+      </div>) : undefined
+  }
+
+  render (): * {
     const {lang} = this.props
     const title = this.props.intl.formatMessage({id: 'title.home'})
-
+    var specialContent = this.getSpecialContent()
     return (
       <DocumentTitle title={title}>
         <div className='home page-template-page-home'>
