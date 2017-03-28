@@ -9,6 +9,11 @@ var projectRoot = process.cwd() // Absolute path to the project root
 var resolveRoot = path.join(projectRoot, 'node_modules') // project root/node_modules
 var buildPath = './build/'
 
+var HMR = new webpack.HotModuleReplacementPlugin()
+
+var namedM = new webpack.NamedModulesPlugin()
+// prints more readable module names in the browser console on HMR updates
+
 var extractCSS = new ExtractTextPlugin('app.css')
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'vendor.js')
 
@@ -19,7 +24,7 @@ var clean = new CleanWebpackPlugin(['build'], {
   dry: false
 })
 
-var plugins = [clean, commonsPlugin, extractCSS, copy]
+var plugins = [clean, commonsPlugin, extractCSS, copy, HMR, namedM]
 
 if (process.env.NODE_ENV == 'production') {
   plugins.push(new webpack.DefinePlugin({
@@ -77,10 +82,20 @@ module.exports = {
   plugins: plugins,
   modulesDirectories: [
     'node_modules'
+
   ],
   postcss: function () {
     return [
       autoprefixer()
     ]
+  },
+  devServer: {
+    host: 'localhost',
+    port: 3000,
+    historyApiFallback: true,
+    // respond to 404s with index.html
+    hot: true
+    // enable HMR on the server
   }
+
 }

@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node node_modules/eslint/bin/eslint.js .",
     "start": "node ./server/app.js",
+    "start-dev": "webpack-dev-server",
     "dev": "concurrently --kill-others \"npm run start\" \"webpack -w\"",
     "build": "cross-env NODE_ENV=production webpack -p",
     "heroku-postbuild": "webpack -p --progress",
