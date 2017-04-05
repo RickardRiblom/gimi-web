@@ -11,6 +11,6 @@ phases:
 artifacts:
   files:
     - assets/**/*
-    - '*.html'
+    - '*'
   base-directory: build
 
