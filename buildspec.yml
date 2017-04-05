@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - sudo npm i
+  build:
+    commands:
+      - npm run heroku-postbuild
+
+artifacts:
+  files:
+    - assets/**/*
+    - '*.html'
+  base-directory: build
+
