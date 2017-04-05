@@ -10,7 +10,6 @@ phases:
 
 artifacts:
   files:
-    - assets/**/*
-    - '*'
+    - '**/*'
   base-directory: build
 
