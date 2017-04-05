@@ -9,7 +9,7 @@ phases:
       - npm run heroku-postbuild
   post_build:
     commands:
-      - mv assets build/assets
+      - mv assets build/
 
 artifacts:
   files:
